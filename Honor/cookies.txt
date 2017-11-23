@@ -1,8 +1,9 @@
 # HTTrack Website Copier Cookie File
 # This file format is compatible with Netscape cookies
-store.hihonor.com	TRUE	/it	FALSE	1999999999	JSESSIONID	16BF0112D7A37912EC660529955A10DB
-.hihonor.com	TRUE	/	FALSE	1999999999	euid	7340a5888a6b467f9e596fef4cd79bd5
-store.hihonor.com	TRUE	/	FALSE	1999999999	huaweielbsession	6263736967bbc19d1c196cc7bfa16892
+store.hihonor.com	TRUE	/it	FALSE	1999999999	JSESSIONID	A311E771BB2B02A4ED1F7B509E6B98EA
+.hihonor.com	TRUE	/	FALSE	1999999999	euid	22fb08f72ba4462fbc30b953eb9b5ade
+cdn-it.hihonor.com	TRUE	/	FALSE	1999999999	huaweielbsession	8f4ff64947353e8c9fa906cf81116819
+store.hihonor.com	TRUE	/	FALSE	1999999999	huaweielbsession	cbaec082f557065fe5585a266df8104a
 .hihonor.com	TRUE	/	FALSE	1999999999	locale_MS	it_IT
 .hihonor.com	TRUE	/	FALSE	1999999999	_areacode	IT
 
