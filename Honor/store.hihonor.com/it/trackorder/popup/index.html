@@ -1,0 +1,263 @@
+<!--  -->
+<!-- to show or hide back to availabilty date at Product CMS/ECOMM pages -->
+<!---->
+<!---->
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from store.hihonor.com/it/trackorder/popup/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Nov 2017 08:37:45 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script>
+var domainMain = 'https://store.hihonor.com/it';
+var countrycode = '39';
+var countrynamecode = 'it';
+var scriptPath ='https://cdn-itcname.hihonor.com/it/js';
+var isGuestEnabled = '1';
+var domainWap = 'https://m.hihonor.com/it';
+var domainCart = 'https://cart-it.hihonor.com/';
+var mediaPath = 'https://cdn-itcname.hihonor.com/pms';
+var domainRemark = 'https://remark-it.hihonor.com/';
+var domainShoppingConfig = 'https://address-it.hihonor.com/';
+var imagePath = 'https://cdn-itcname.hihonor.com/it/images';
+var domainAccount = 'https://store.hihonor.com/it';
+var isUseAccount = 'false';
+var upBindPhoneAddr = 'https://hwid7.vmall.com/CAS/portal/userCenter/index.html';
+var dominWapRecycle ='http://mobile.huishoubao.com/?pid=1056';
+var currencySymbol='€';
+var gtmId='GTM-5M9QNMX';
+var cookiedomain='.hihonor.com';
+var fbappId='1966003213633967';
+var checkSslCert='true';
+var freeShippingTxt = '<p>  <span lang="EN-US" style="font-family:calibri, sans-serif;font-size:15px;line-height:15px;background-color:#ffffff;color:#212121;">Consegna gratis Per gli ordini superiori a €99 (1-2<span class="Apple-converted-space"> </span></span><span lang="IT-IT" style="font-family:calibri, sans-serif;font-size:15px;line-height:15px;background-color:#ffffff;color:#212121;">giorni</span><span lang="IT-IT" style="font-family:calibri, sans-serif;font-size:15px;line-height:15px;background-color:#ffffff;color:#212121;">)</span></p>';
+
+var currencyCode='EUR';
+var isGaPushEnabled='1';
+var gaDefaultList = 'All';
+
+// 修改原因: 原B2C的异步加载规格参数，需要调用PMS提供的接口来获取。
+// 修改说明: 需要将 data-skulist中的数据设置为sbomCode
+// 修改日期：2015/11/18
+// 版本号：BR_VMALL_V100R001C01XB2C1510001_EDP
+// 修改人： cWX320570
+// Add by 陈稳 at 2015/11/18 start
+var pmsHttpDomain = 'https://product-it.hihonor.com/';
+var pmsHttpCdnDomain = 'https://cdn-itcname.hihonor.com/pms';
+var hideNotifyMe = 'false';
+var isBackInStockDispl = 'false';
+var dummyGboms = 'Tax Class,Home Url,Notify Button,Display URL,Back to availability,Specifications Main';
+// Add by 陈稳 at 2015/11/18 end
+</script>
+<script>
+(function(){
+    try
+    {
+        cookieGet=function(a){var f=null;if(document.cookie&&document.cookie!=""){var d=document.cookie.split(";");for(var c=0;c<d.length;c++){var b=(d[c]||"").replace(/^(\s|\u00A0)+|(\s|\u00A0)+$/g,"");if(b.substring(0,a.length+1)==(a+"=")){var e=function(i){i=i.replace(/\+/g," ");var h='()<>@,;:\\"/[]?={}';for(var g=0;g<h.length;g++){if(i.indexOf(h.charAt(g))!=-1){if(i.startWith('"')){i=i.substring(1)}if(i.endWith('"')){i=i.substring(0,i.length-1)}break}}return decodeURIComponent(i)};f=e(b.substring(a.length+1));break}}}return f};
+        var uri = location.href;
+            //增加产品详情页判断 
+
+            var emailRedirectUrl = /\w*[\/]*\w*(\/notification\/unsubscribe\/param)+\w*[\/]*\w*/;
+            var isEmailRedirectUrl = emailRedirectUrl.test(uri);
+            var prodReg = /\/\d+\.html/;
+            var isProDetail = prodReg.test(uri);
+            // item/{digit}/(index || buy)
+            var prodTempA = /(\/item\/)(\d+)(\/buy|\/index)/;
+            var isProdTempA = prodTempA.test(uri);
+            var isHonor = uri.indexOf(".com/honor") >0;
+            var isHuawei = uri.indexOf(".com/huawei")>0;
+            var isRecyle = uri.indexOf(".com/recycle")>0;
+			var catReg = /\list-/;
+            var isCategoryList = catReg.test(uri);	
+            if (uri == domainMain || uri == (domainMain + "/")
+                    || uri == (domainMain + "/") || isProDetail || isProdTempA || isCategoryList  || isHonor
+                    || isHuawei || isRecyle || isEmailRedirectUrl) {
+                if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i
+                        .test(navigator.userAgent)) {
+                    var redirectWap = cookieGet("redirectWap");
+
+                    if (!redirectWap == "1" && !isProDetail && !isProdTempA && !isCategoryList && !isEmailRedirectUrl) {
+                        if (isHonor) {
+                            window.location.href = domainWap + "/honor";
+                        } else if (isHuawei) {
+                            window.location.href = domainWap + "/huawei";
+                        } else if (isRecyle) {
+                            window.location.href = dominWapRecycle;
+                        } else {
+                            window.location.href = domainWap;
+                        }
+                    } else if (!redirectWap == "1" && isProDetail) {
+                        var wapUri = domainWap
+                                + uri.substring(uri.indexOf("/product"));
+                        window.location.href = wapUri;
+                    } else if (!redirectWap == "1" && isProdTempA) {
+                        var typeIndex = -1;
+                        if (uri.lastIndexOf("/index") != -1) {
+                            typeIndex = uri.lastIndexOf("/index");
+                        } else if (uri.lastIndexOf("/buy") != -1) {
+                            typeIndex = uri.lastIndexOf("/buy");
+                        }
+                        if (typeIndex != -1) {
+                        	// +6 denotes the index value of "/item" plus 6 digits
+                            // Eg: /item/111/index => 0+6 = 6
+                        	var productId=uri.substring(uri.lastIndexOf("/item")+6, typeIndex);
+                            var wapUri = domainWap
+                                + "/product/" + productId + ".html";
+                            window.location.href = wapUri;
+                        } else {
+                        	window.location.href = domainWap;
+                        }
+                    } else if (!redirectWap == "1" && isEmailRedirectUrl) {
+
+                        var isUnsubscribe = uri.indexOf("notification/unsubscribe/param") >0;
+
+                        if(isUnsubscribe){
+                            var wapUri = domainWap
+                            + uri.substring(uri.indexOf("/notification"));
+                             window.location.href = wapUri;
+                        }
+                    } else if (!redirectWap == "1" && isCategoryList) {
+                    	var listId= uri.substring(uri.indexOf("/list"));
+                        if(listId){
+                            var wapUri = domainWap
+                            + listId;
+                             window.location.href = wapUri;
+                        } else {
+                        	window.location.href = domainWap;
+                        }
+                    }
+                }
+
+            }
+    }catch (err){}
+})();
+</script>
+<title>Honor Official Site（Italy）</title>
+<meta name="description" content="Honor Official Site（ITALY）" />  
+<meta name="keywords" content="" />
+<meta http-equiv=X-UA-Compatible content=IE=edge>
+<link rel="alternate" href="https://m.hihonor.com/it" hreflang="it-IT" />
+
+<link rel="shortcut icon" href="../../images/favicon.ico" />
+<link href="../../../../cdn-itcname.hihonor.com/it/stylus/css/styles.mincc33.css?21112017" rel="stylesheet" type="text/css">
+
+
+
+<script src="../../../../cdn-itcname.hihonor.com/it/js/common/jsapi.mincc33.js?21112017" namespace="ec"></script>
+<script src="../../../../cdn-itcname.hihonor.com/it/js/home-all.mincc33.js?21112017" ></script>
+
+<script src="../../../../cdn-itcname.hihonor.com/it/js/echannel/ga-ecommerce.mincc33.js?21112017"></script>
+
+<!--[if lt IE 9]><script src="https://cdn-itcname.hihonor.com/it/js/common/html5shiv.js"></script> <![endif]-->
+
+<script>
+if(!jQuery.isEmptyObject()){
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push();
+}
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer', 'GTM-5M9QNMX');</script>
+<!-- End Google Tag Manager -->
+
+
+
+<script>
+$(document).ready(function() {
+  	 $('body').addClass('wide');
+});
+</script>
+</head>
+
+
+
+
+
+<body class="wide ctry_it">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5M9QNMX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<!--/**
+	 * Track Order Form
+	 * @author Mayuri K.
+	 */ -->
+<script src="../../../../cdn-itcname.hihonor.com/it/js/echannel/base.mincc33.js?21112017"></script>
+<div class="trackorder-form">
+<div class="mdl-track-order-container2">
+    <div id="trackorder-popup" class="trackorder-popup">
+	<div class="top_section">
+            <h1 class="typo-h1-black">Traccia Ordine</h1>
+
+            <div id="registered-user" class="loginspace">
+                <p class="typo-body-copy-heading-black">Utente registrato, effettua il login per visualizzare i dettagli dell&#39;ordine</p>
+	    	<button class="btn_blue_primary" onclick="loginRedirection(event)">Accedi</button>
+            </div>
+        </div>
+    
+        <div class="divider">O</div>
+        
+        <div id="order-tracking-form">
+            <p class="typo-body-copy-heading-black">Ospite, inserisci i dettagli di seguito:</p>
+            <div id="track-order-message" class="error-message"></div>
+            <form id="track-order" method="post" action="https://store.hihonor.com/it/trackorder/submit.json">
+                <input type="hidden" name="trackorder_random_token" id="trackorder_random_token" value=""/>
+                <input type="hidden" name="flag_code" id="flag_code" value="trackorder"/>
+                <input name="trackorder" type="hidden" id="trackorder" class="trackorder" />
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input input-text required-entry validate-email" maxlength="50" onkeypress="" type="text" id="email_id"
+                       name="email_id" value="" placeholder="Email*"/>
+					   <span class="vam" id="email-msg"></span>
+                </div>
+
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input input-text required-entry validate-digits" maxlength="32" onkeypress="validateNumber(event)" type="text" id="order_id"
+                    name="order_id" value="" placeholder='Numero Ordine'/>
+					<span class="vam" id="order-msg"></span>
+                </div>
+                <input type="hidden" id="upid" name="upid" value=""/>
+                <div class="button-wrapper">
+                    <button type="button" id="apply-coupon" title="Visualizza"
+                    class="btn_blue_primary" 
+                    value='Visualizza'>Visualizza</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+<script>
+  ec.order.trackOrderToken();
+      function loginRedirection(event){
+         event.preventDefault();
+         ec.ga.eventTracking('Account','Login/Register Start', "Track Order");
+      	var redirecturl = domainMain+'/member/order';
+      	parent.window.location.href="https://hwid7.vmall.com/CAS/remoteLogin?loginChannel=26000701&reqClientType=26&countryCode=it&lang=it-IT&loginUrl=https%3A%2F%2Fhwid7.vmall.com%2FCAS%2Fportal%2Flogin.html&service=https%3A%2F%2Fstore.hihonor.com%2Fit%2Faccount%2Facaslogin%3Furl%3D"+encodeURIComponent(encodeURIComponent(redirecturl));          
+		  }
+
+	      $('#apply-coupon').click(function(){
+	      	trackOrder();
+  			 
+		  }); 
+		  
+
+
+
+</script>
+
+       
+   
+
+
+</body>
+
+<!-- Mirrored from store.hihonor.com/it/trackorder/popup/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Nov 2017 08:37:45 GMT -->
+</html>

@@ -1,0 +1,2162 @@
+<!--  -->
+<!-- to show or hide back to availabilty date at Product CMS/ECOMM pages -->
+<!---->
+<!---->
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from store.hihonor.com/it/item/639090033/buy by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Nov 2017 08:43:07 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script>
+var domainMain = 'https://store.hihonor.com/it';
+var countrycode = '39';
+var countrynamecode = 'it';
+var scriptPath ='https://cdn-itcname.hihonor.com/it/js';
+var isGuestEnabled = '1';
+var domainWap = 'https://m.hihonor.com/it';
+var domainCart = 'https://cart-it.hihonor.com/';
+var mediaPath = 'https://cdn-itcname.hihonor.com/pms';
+var domainRemark = 'https://remark-it.hihonor.com/';
+var domainShoppingConfig = 'https://address-it.hihonor.com/';
+var imagePath = 'https://cdn-itcname.hihonor.com/it/images';
+var domainAccount = 'https://store.hihonor.com/it';
+var isUseAccount = 'false';
+var upBindPhoneAddr = 'https://hwid7.vmall.com/CAS/portal/userCenter/index.html';
+var dominWapRecycle ='http://mobile.huishoubao.com/?pid=1056';
+var currencySymbol='€';
+var gtmId='GTM-5M9QNMX';
+var cookiedomain='.hihonor.com';
+var fbappId='1966003213633967';
+var checkSslCert='true';
+var freeShippingTxt = '<p>  <span lang="EN-US" style="font-family:calibri, sans-serif;font-size:15px;line-height:15px;background-color:#ffffff;color:#212121;">Consegna gratis Per gli ordini superiori a €99 (1-2<span class="Apple-converted-space"> </span></span><span lang="IT-IT" style="font-family:calibri, sans-serif;font-size:15px;line-height:15px;background-color:#ffffff;color:#212121;">giorni</span><span lang="IT-IT" style="font-family:calibri, sans-serif;font-size:15px;line-height:15px;background-color:#ffffff;color:#212121;">)</span></p>';
+
+var currencyCode='EUR';
+var isGaPushEnabled='1';
+var gaDefaultList = 'All';
+
+// 修改原因: 原B2C的异步加载规格参数，需要调用PMS提供的接口来获取。
+// 修改说明: 需要将 data-skulist中的数据设置为sbomCode
+// 修改日期：2015/11/18
+// 版本号：BR_VMALL_V100R001C01XB2C1510001_EDP
+// 修改人： cWX320570
+// Add by 陈稳 at 2015/11/18 start
+var pmsHttpDomain = 'https://product-it.hihonor.com/';
+var pmsHttpCdnDomain = 'https://cdn-itcname.hihonor.com/pms';
+var hideNotifyMe = 'false';
+var isBackInStockDispl = 'false';
+var dummyGboms = 'Tax Class,Home Url,Notify Button,Display URL,Back to availability,Specifications Main';
+// Add by 陈稳 at 2015/11/18 end
+</script>
+<script>
+(function(){
+    try
+    {
+        cookieGet=function(a){var f=null;if(document.cookie&&document.cookie!=""){var d=document.cookie.split(";");for(var c=0;c<d.length;c++){var b=(d[c]||"").replace(/^(\s|\u00A0)+|(\s|\u00A0)+$/g,"");if(b.substring(0,a.length+1)==(a+"=")){var e=function(i){i=i.replace(/\+/g," ");var h='()<>@,;:\\"/[]?={}';for(var g=0;g<h.length;g++){if(i.indexOf(h.charAt(g))!=-1){if(i.startWith('"')){i=i.substring(1)}if(i.endWith('"')){i=i.substring(0,i.length-1)}break}}return decodeURIComponent(i)};f=e(b.substring(a.length+1));break}}}return f};
+        var uri = location.href;
+            //增加产品详情页判断 
+
+            var emailRedirectUrl = /\w*[\/]*\w*(\/notification\/unsubscribe\/param)+\w*[\/]*\w*/;
+            var isEmailRedirectUrl = emailRedirectUrl.test(uri);
+            var prodReg = /\/\d+\.html/;
+            var isProDetail = prodReg.test(uri);
+            // item/{digit}/(index || buy)
+            var prodTempA = /(\/item\/)(\d+)(\/buy|\/index)/;
+            var isProdTempA = prodTempA.test(uri);
+            var isHonor = uri.indexOf(".com/honor") >0;
+            var isHuawei = uri.indexOf(".com/huawei")>0;
+            var isRecyle = uri.indexOf(".com/recycle")>0;
+			var catReg = /\list-/;
+            var isCategoryList = catReg.test(uri);	
+            if (uri == domainMain || uri == (domainMain + "/")
+                    || uri == (domainMain + "/") || isProDetail || isProdTempA || isCategoryList  || isHonor
+                    || isHuawei || isRecyle || isEmailRedirectUrl) {
+                if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i
+                        .test(navigator.userAgent)) {
+                    var redirectWap = cookieGet("redirectWap");
+
+                    if (!redirectWap == "1" && !isProDetail && !isProdTempA && !isCategoryList && !isEmailRedirectUrl) {
+                        if (isHonor) {
+                            window.location.href = domainWap + "/honor";
+                        } else if (isHuawei) {
+                            window.location.href = domainWap + "/huawei";
+                        } else if (isRecyle) {
+                            window.location.href = dominWapRecycle;
+                        } else {
+                            window.location.href = domainWap;
+                        }
+                    } else if (!redirectWap == "1" && isProDetail) {
+                        var wapUri = domainWap
+                                + uri.substring(uri.indexOf("/product"));
+                        window.location.href = wapUri;
+                    } else if (!redirectWap == "1" && isProdTempA) {
+                        var typeIndex = -1;
+                        if (uri.lastIndexOf("/index") != -1) {
+                            typeIndex = uri.lastIndexOf("/index");
+                        } else if (uri.lastIndexOf("/buy") != -1) {
+                            typeIndex = uri.lastIndexOf("/buy");
+                        }
+                        if (typeIndex != -1) {
+                        	// +6 denotes the index value of "/item" plus 6 digits
+                            // Eg: /item/111/index => 0+6 = 6
+                        	var productId=uri.substring(uri.lastIndexOf("/item")+6, typeIndex);
+                            var wapUri = domainWap
+                                + "/product/" + productId + ".html";
+                            window.location.href = wapUri;
+                        } else {
+                        	window.location.href = domainWap;
+                        }
+                    } else if (!redirectWap == "1" && isEmailRedirectUrl) {
+
+                        var isUnsubscribe = uri.indexOf("notification/unsubscribe/param") >0;
+
+                        if(isUnsubscribe){
+                            var wapUri = domainWap
+                            + uri.substring(uri.indexOf("/notification"));
+                             window.location.href = wapUri;
+                        }
+                    } else if (!redirectWap == "1" && isCategoryList) {
+                    	var listId= uri.substring(uri.indexOf("/list"));
+                        if(listId){
+                            var wapUri = domainWap
+                            + listId;
+                             window.location.href = wapUri;
+                        } else {
+                        	window.location.href = domainWap;
+                        }
+                    }
+                }
+
+            }
+    }catch (err){}
+})();
+</script>
+<link rel="alternate" href="https://m.hihonor.com/it/product/639090033.html" hreflang="it-IT" />
+	<title>
+		Honor-【Honor 9】Honor 9
+	</title>
+	<meta property="og:title" content="Honor-【Honor 9】Honor 9"/>
+	<meta name="keywords" content="Honor,Honor 9" />
+	<meta name="description" content="【Honor 9】!HonorProvideHonor 9Genuine licensed, the lowest price, and includeHonor 9Online shopping guide，as well asHonor 9image,Honor 9parameter,Honor 9comment,Honor 9Experience、Honor 9Skills and other information，Online shoppingHonor 9On the phoneHonor,Rest assured and relaxed "/>
+<meta property="og:site_name" content='Honor Official Site（Italy）'/>
+<meta property="og:description" content=""/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://cdn-itcname.hihonor.com/pms/product/6901443185719//428_428_1509473530555mp.jpg"/>
+<meta property="og:url" content="https://store.hihonor.com/it/item/639090033/buy"/>
+
+<link rel="shortcut icon" href="../../images/favicon.ico" />
+<link href="../../../../cdn-itcname.hihonor.com/it/stylus/css/styles.min68b3.css?20112017" rel="stylesheet" type="text/css">
+
+
+
+<script src="../../../../cdn-itcname.hihonor.com/it/js/common/jsapi.min68b3.js?20112017" namespace="ec"></script>
+<script src="../../../../cdn-itcname.hihonor.com/it/js/home-all.min68b3.js?20112017" ></script>
+
+<script src="../../../../cdn-itcname.hihonor.com/it/js/echannel/ga-ecommerce.min68b3.js?20112017"></script>
+
+<!--[if lt IE 9]><script src="https://cdn-itcname.hihonor.com/it/js/common/html5shiv.js"></script> <![endif]-->
+
+<script>
+if(!jQuery.isEmptyObject()){
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push();
+}
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer', 'GTM-5M9QNMX');</script>
+<!-- End Google Tag Manager -->
+
+
+
+<script>
+$(document).ready(function() {
+  	 $('body').addClass('wide');
+});
+</script>
+</head>
+
+
+
+
+
+<body class="wide ctry_it">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5M9QNMX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="top-banner" id="top-banner-block"></div>
+<!-- 20130605-qq-彩贝-start -->
+<!--<div class="qq-caibei-bar hide" id="caibeiMsg">
+	<div class="layout">
+		<div class="qq-caibei-bar-tips" id="HeadShow"></div>
+		<div class="qq-caibei-bar-userInfo" id="ShowMsg"></div>
+	</div>
+</div>-->
+<!-- 20130605-qq-彩贝-end -->
+<script>
+var redirecturl;
+if(window.location.href.indexOf("guest/order") > -1) {
+	redirecturl=domainMain;
+} else {
+	redirecturl=window.location.href;
+}
+</script>
+
+
+<textarea id="selectRegion-tips" style="display: none;">
+<!-- 20151105-全球语言弹出框-width:910px-start -->
+<div class="popup-content" style="display:none;"><div class="width-container"><div class="country-selector-popup"><div class="cs-title"><div class="description-black"><h1>SELECT YOUR COUNTRY</h1></div><div class="online-shopping-text"><span class="icon_cart title-icon"></span><span class="text"> Online shopping available </span></div></div><div class="content"><div class="continent-content"><div class="continent-title">GLOBAL</div><div class="countries global"><div class="rows"><div class="global country-common"><div class="countries-top"><div class="countries-title"><span class="country-img icon_globe"></span><span class="country-name">GLOBAL</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/">English</a></div></div></div></div></div><div class="continent-content"><div class="continent-title">ASIA PACIFIC</div><div class="countries asia-pacific"><div class="rows"><div class="china country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/cn.jpg" /></span><span class="country-name">china</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="cn"><a class="langs" data-type-lang="en" href="http://www.honor.cn/">简体中文</a></div></div><div class="india country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/in.jpg" /></span><span class="country-name">india</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="in"><a class="langs" data-type-lang="en" href="http://store.hihonor.com/in">English</a></div></div><div class="malaysia country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/my.jpg" /></span><span class="country-name">malaysia</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="my"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/my/index.html">English</a></div></div></div><div class="rows"><div class="vietnam country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/vi.jpg" /></span><span class="country-name">vietnam</span></div></div><div class="countries-lang" id="vi"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/vn">Tiếng Việt</a></div></div></div></div></div><div class="continent-content"><div class="continent-title">EUROPE</div><div class="countries"><div class="rows"><div class="belgium country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/be.jpg" /></span><span class="country-name">belgium</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="be"><a class="langs" data-type-lang="en" href="https://www.vmall.eu/be">België</a></div></div><div class="bulgaria country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/Flag_bulgaria.jpg" /></span><span class="country-name">bulgaria</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/bg/index.html">Български</a></div></div><div class="czech country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/cz.jpg" /></span><span class="country-name">czech</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang" id="cz"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/cz/index.html">Čeština</a></div></div></div><div class="rows"><div class="finland country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/fi.jpg" /></span><span class="country-name">finland</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang" id="fi"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/fi">Suomi</a></div></div><div class="france country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/fr.jpg" /></span><span class="country-name">france</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="fr"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/fr/index.html">Français</a></div></div><div class="germany country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/de.jpg" /></span><span class="country-name">germany</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="de"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/de/index.html">Deutsch</a></div></div></div><div class="rows"><div class="greece country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/gr.jpg" /></span><span class="country-name">greece</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang" id="gr"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/gr">γλώσσα</a></div></div><div class="hungary country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/Flag_hungary.jpg" /></span><span class="country-name">hungary</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/hu/">Magyar Nyelv</a></div></div><div class="italy country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/pms/template/content/2017/20170913180451794.jpg" /></span><span class="country-name">italy</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="it"><a class="langs" data-type-lang="en" href="../../index.html">Italiano</a></div></div></div><div class="rows"><div class="netherland country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/nl.jpg" /></span><span class="country-name">netherland</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="nl"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/nl">Dutch</a></div></div><div class="norway country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/Flag_norway.jpg" /></span><span class="country-name">norway</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/no/">Norsk språk</a></div></div><div class="poland country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/Flag_poland.jpg" /></span><span class="country-name">poland</span></div></div><div class="countries-lang"><a class="langs" data-type-lang="lang2" href="http://www.hihonor.com/pl/">polski</a></div></div></div><div class="rows"><div class="portugal country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/pt.jpg" /></span><span class="country-name">portugal</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="pt"><a class="langs" data-type-lang="en" href="https://www.vmall.eu/pt/">Portugues</a></div></div><div class="russia country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/ru.jpg" /></span><span class="country-name">russia</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="ru"><a class="langs" data-type-lang="en" href="http://www.honor.ru/">русский</a></div></div><div class="serbia country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/Flag_serbia.jpg" /></span><span class="country-name">serbia</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/rs">Cрпски jезик</a></div></div></div><div class="rows"><div class="spain country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/es.jpg" /></span><span class="country-name">spain</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="es"><a class="langs" data-type-lang="lang2" href="http://www.hihonor.com/es">Español</a></div></div><div class="switzerland country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/ch.jpg" /></span><span class="country-name">switzerland</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="ch"><a class="langs" data-type-lang="lang2" href="https://www.vmall.eu/ch/">Schweiz</a></div></div><div class="united kingdom country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/uk.jpg" /></span><span class="country-name">united kingdom</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="uk"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/uk/index.html">English</a></div></div></div></div></div><div class="continent-content"><div class="continent-title">LATIN AMERICA</div><div class="countries latin-america"><div class="rows"><div class="colombia country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/Flag_colombia.jpg" /></span><span class="country-name">columbia</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/co/">Español</a></div></div></div></div></div><div class="continent-content"><div class="continent-title">MIDDLE EAST</div><div class="countries latin-america"><div class="rows"><div class="saudi-arabia country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/ksa.jpg" /></span><span class="country-name">saudi arabia</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="ksa"><a class="langs" data-type-lang="en" href="https://store.hihonor.com/sa/">English</a><a class="langs" data-type-lang="lang2" href="https://store.hihonor.com/sa/?___store=sa_ar_sa">العربية</a></div></div><div class="uae country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/uae.jpg" /></span><span class="country-name">uae</span></div></div><div class="countries-lang" id="uae"><a class="langs" data-type-lang="en" href="https://store.hihonor.com/ae/">English</a><a class="langs" data-type-lang="lang2" href="https://store.hihonor.com/ae/?___store=sa_ar_sa">العربية</a></div></div></div></div></div><div class="continent-content"><div class="continent-title">NORTH AMERICA</div><div class="countries latin-america"><div class="rows"><div class="united-states country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/us.jpg" /></span><span class="country-name">united states</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="us"><a class="langs" data-type-lang="en" href="https://store.hihonor.com/us/">English</a></div></div></div></div></div></div></div></div></div>
+<!-- 20151105-全球语言弹出框-width:910px-end -->					
+</textarea>
+
+<input type="hidden" value="" id="domainUc"/>
+
+<script src="../../../../cdn-itcname.hihonor.com/it/js/echannel/base.min68b3.js?20112017"></script>
+<script>
+ec.mediaPath = "https://cdn-itcname.hihonor.com/pms";
+//document.write('<script src="/it/account/status?'+(new Date()).getTime()+'"></s' + 'cript>');
+
+
+function urlChange(site) {
+    document.getElementById('trackorder-iframe').src = site;
+}
+
+
+</script>
+<script>
+ec.load("ec.box" , {loadType : "lazy"});
+/**
+*功能：给鼠标移动到s-dropdown上面的时候，记得给他多添加一个hover类样式
+*目的是兼容ie6
+*@author 李峰
+*/
+$(function(){
+	$(".s-dropdown").hover(function(){
+		$(this).addClass("hover");
+	},function(){
+		$(this).removeClass("hover");
+	});
+	var maxcolor=$('.top-banner-max').find('p').children('a').css("background-color");
+	var mincolor=$('.top-banner-min').find('p').children('a').css("background-color");
+	
+	$('.top-banner-max').css({"background-color":maxcolor,overflow:"hidden"});
+	$('.top-banner-min').css({"background-color":mincolor,overflow:"hidden"});
+});
+
+//显示全球导航选择层
+</script>
+   
+
+<div id="cookieid" class="cookies hide"><div class="cookieDetails"><div class="cookies-left">Questo sito usa i cookie per migliorare il nostro sito e la tua esperienza. Utilizzando il nostro sito web dichiari di accettare e acconsentire all’utilizzo dei cookies in conformità con i termini della nostra policy.<a href="../../cmsContent0416.html?key=web_cms_privacy" target="_blank" textvalue="Informazioni aggiuntive">&nbspInformazioni aggiuntive</a></div><div class="cookies-right"><button class="btn_blue_primary" id="btn_blue_primary_id">accetto</button></div></div></div>
+<div class = "headerSection">	
+	<header class="header">
+		<div class="layout">
+			<!-- 21030909-logo-start -->
+			<div class = "selectRegion_support">
+				<div id="selectregion">
+				    <a class="" href="javascript:void(0)">
+				    	<span class = "flagSection" id = "flagImageId">
+				    		<img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/it.jpg" alt="" width="22" height="12"></img>
+				    	</span>
+				    </a>
+				    <a id="selectregion-link" title="" class="selectregion-link mdl-navigation__header-link mdl-links-color" href="#selectregion-popup">
+				    	<span id = "selectLanguage">
+				    		IT (IT)
+				    	</span>
+				    </a>
+				    <div id="selectregion-popup" style="display:none">
+				        <div class="selectregion-popup">
+				            <h3>Per favore, seleziona il tuo paese o regione</h3>
+				            <div class="popup-content" style="display:none;"><div class="width-container"><div class="country-selector-popup"><div class="cs-title"><div class="description-black"><h1>SELECT YOUR COUNTRY</h1></div><div class="online-shopping-text"><span class="icon_cart title-icon"></span><span class="text"> Online shopping available </span></div></div><div class="content"><div class="continent-content"><div class="continent-title">GLOBAL</div><div class="countries global"><div class="rows"><div class="global country-common"><div class="countries-top"><div class="countries-title"><span class="country-img icon_globe"></span><span class="country-name">GLOBAL</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/">English</a></div></div></div></div></div><div class="continent-content"><div class="continent-title">ASIA PACIFIC</div><div class="countries asia-pacific"><div class="rows"><div class="china country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/cn.jpg" /></span><span class="country-name">china</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="cn"><a class="langs" data-type-lang="en" href="http://www.honor.cn/">简体中文</a></div></div><div class="india country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/in.jpg" /></span><span class="country-name">india</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="in"><a class="langs" data-type-lang="en" href="http://store.hihonor.com/in">English</a></div></div><div class="malaysia country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/my.jpg" /></span><span class="country-name">malaysia</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="my"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/my/index.html">English</a></div></div></div><div class="rows"><div class="vietnam country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/vi.jpg" /></span><span class="country-name">vietnam</span></div></div><div class="countries-lang" id="vi"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/vn">Tiếng Việt</a></div></div></div></div></div><div class="continent-content"><div class="continent-title">EUROPE</div><div class="countries"><div class="rows"><div class="belgium country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/be.jpg" /></span><span class="country-name">belgium</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="be"><a class="langs" data-type-lang="en" href="https://www.vmall.eu/be">België</a></div></div><div class="bulgaria country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/Flag_bulgaria.jpg" /></span><span class="country-name">bulgaria</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/bg/index.html">Български</a></div></div><div class="czech country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/cz.jpg" /></span><span class="country-name">czech</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang" id="cz"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/cz/index.html">Čeština</a></div></div></div><div class="rows"><div class="finland country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/fi.jpg" /></span><span class="country-name">finland</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang" id="fi"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/fi">Suomi</a></div></div><div class="france country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/fr.jpg" /></span><span class="country-name">france</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="fr"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/fr/index.html">Français</a></div></div><div class="germany country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/de.jpg" /></span><span class="country-name">germany</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="de"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/de/index.html">Deutsch</a></div></div></div><div class="rows"><div class="greece country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/gr.jpg" /></span><span class="country-name">greece</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang" id="gr"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/gr">γλώσσα</a></div></div><div class="hungary country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/Flag_hungary.jpg" /></span><span class="country-name">hungary</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/hu/">Magyar Nyelv</a></div></div><div class="italy country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/pms/template/content/2017/20170913180451794.jpg" /></span><span class="country-name">italy</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="it"><a class="langs" data-type-lang="en" href="../../index.html">Italiano</a></div></div></div><div class="rows"><div class="netherland country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/nl.jpg" /></span><span class="country-name">netherland</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="nl"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/nl">Dutch</a></div></div><div class="norway country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/Flag_norway.jpg" /></span><span class="country-name">norway</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/no/">Norsk språk</a></div></div><div class="poland country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/Flag_poland.jpg" /></span><span class="country-name">poland</span></div></div><div class="countries-lang"><a class="langs" data-type-lang="lang2" href="http://www.hihonor.com/pl/">polski</a></div></div></div><div class="rows"><div class="portugal country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/pt.jpg" /></span><span class="country-name">portugal</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="pt"><a class="langs" data-type-lang="en" href="https://www.vmall.eu/pt/">Portugues</a></div></div><div class="russia country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/ru.jpg" /></span><span class="country-name">russia</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="ru"><a class="langs" data-type-lang="en" href="http://www.honor.ru/">русский</a></div></div><div class="serbia country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/Flag_serbia.jpg" /></span><span class="country-name">serbia</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/rs">Cрпски jезик</a></div></div></div><div class="rows"><div class="spain country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/es.jpg" /></span><span class="country-name">spain</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="es"><a class="langs" data-type-lang="lang2" href="http://www.hihonor.com/es">Español</a></div></div><div class="switzerland country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/ch.jpg" /></span><span class="country-name">switzerland</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="ch"><a class="langs" data-type-lang="lang2" href="https://www.vmall.eu/ch/">Schweiz</a></div></div><div class="united kingdom country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/uk.jpg" /></span><span class="country-name">united kingdom</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="uk"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/uk/index.html">English</a></div></div></div></div></div><div class="continent-content"><div class="continent-title">LATIN AMERICA</div><div class="countries latin-america"><div class="rows"><div class="colombia country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/Flag_colombia.jpg" /></span><span class="country-name">columbia</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/co/">Español</a></div></div></div></div></div><div class="continent-content"><div class="continent-title">MIDDLE EAST</div><div class="countries latin-america"><div class="rows"><div class="saudi-arabia country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/ksa.jpg" /></span><span class="country-name">saudi arabia</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="ksa"><a class="langs" data-type-lang="en" href="https://store.hihonor.com/sa/">English</a><a class="langs" data-type-lang="lang2" href="https://store.hihonor.com/sa/?___store=sa_ar_sa">العربية</a></div></div><div class="uae country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/uae.jpg" /></span><span class="country-name">uae</span></div></div><div class="countries-lang" id="uae"><a class="langs" data-type-lang="en" href="https://store.hihonor.com/ae/">English</a><a class="langs" data-type-lang="lang2" href="https://store.hihonor.com/ae/?___store=sa_ar_sa">العربية</a></div></div></div></div></div><div class="continent-content"><div class="continent-title">NORTH AMERICA</div><div class="countries latin-america"><div class="rows"><div class="united-states country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/us.jpg" /></span><span class="country-name">united states</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="us"><a class="langs" data-type-lang="en" href="https://store.hihonor.com/us/">English</a></div></div></div></div></div></div></div></div></div>
+				        </div>
+				    </div>
+				</div>
+				<div class= 'supportLink'>
+					<a class="" href="http://www.hihonor.com/it/support/" target="_blank">	Supporto</a>
+				</div>
+			</div>
+			<div class="logo logo-index">
+				<div class = "logoUrlSection">
+					<a href="../../index.html" title="Huawei Honor">
+						<img src="../../../../cdn-itcname.hihonor.com/pimages/common/config/logo/logo20170608163900.png" alt="Huawei Honor" width="84" height="24"/>
+					</a>
+				</div>
+			</div><!-- 21030909-logo-start -->		
+			<!-- 21030910-头部-工具栏-start -->
+			<div class="header-toolbar hide">
+				<!-- 21030910-头部-工具栏-焦点为header-toolbar-item增加ClassName:hover -->
+				<div class="header-toolbar-item" id="header-toolbar-imall">
+					<!-- 21030909-我的商城-start 
+					<div class="i-mall">
+						<div class="h"><a href="https://store.hihonor.com/it/member/home?t=1511426275840timestamp" rel="nofollow" timeType="timestamp">My Member</a>
+						<i></i><s></s><u></u></div>
+						<div class="b" id="header-toolbar-imall-content">
+							<div class="i-mall-prompt" id="cart_unlogin_info">
+								<p>&nbsp;&nbsp;<script>document.write('<a href="https://store.hihonor.com/it/account/login?url='+encodeURIComponent(window.location.pathname)+'"  rel="nofollow">登录</a>');</script> | <a href="https://store.hihonor.com/it/account/registedr" rel="nofollow"></a></p>
+							</div>
+							<div class="i-mall-uc " id="cart_login_info">
+								<ul>
+									<li><a href="https://store.hihonor.com/it/member/order?t=1511426275840timestamp" rel="nofollow" timeType="timestamp">My Order</li>
+									<li><a href="https://store.hihonor.com/it/member/order?t=1511426275840timestamp&tab=unpaid" timeType="timestamp">Unpaid Order</a><span id="toolbar-orderWaitingHandleCount" class="hide">0</span></li>
+									<li><a href="https://store.hihonor.com/it/member/order?t=1511426275840timestamp&tab=nocomment" timeType="timestamp"></a><span id="toolbar-notRemarkCount" class="hide">0</span></li>
+									<li><a href="https://store.hihonor.com/it/member/coupon?t=1511426275840timestamp" timeType="timestamp">My Coupon</a><span id="toolbar-couponCount" class="hide">0</span></li>
+									<li><a href="https://store.hihonor.com/it/member/msg?t=1511426275840timestamp" timeType="timestamp">My Messages</a><span id="toolbar-newMsgCount" class="hide">0</span></li>
+								</ul>
+							</div>
+							<div class="i-mall-event " >
+								<p><a href="/member/petal"><img src="http://res.vmallres.com/20150923/images/echannel/misc/icon_privilege_vip_large_light.png" alt="特权频道" /></a></p>
+							</div>
+						</div>
+					</div><!-- 21030909-我的商城-end -->
+				</div>
+				<!--<div class="header-toolbar-item" id="header-toolbar-minicart">-->
+					<!-- 21030909-迷你购物车-start -->
+				 <!--<div class="minicart">
+						<div class="h" id="header-toolbar-minicart-h"><a href="https://cart-it.hihonor.com/cart/cart.html?t=1511426275840timestamp" rel="nofollow" timeType="timestamp">My Cart<span><em id="header-cart-total">0</em><b></b></span></a><i></i><s></s><u></u></div>
+						<div class="b" id="header-toolbar-minicart-content">
+							<div class="minicart-pro-empty" id="minicart-pro-empty">
+								<span class="icon-minicart">Your cart is empty!</span>
+							</div>
+							<div id="minicart-pro-list-block">
+							<ul class="minicart-pro-list" id="minicart-pro-list">
+															
+							</ul>
+							</div>
+							<div class="minicart-pro-settleup" id="minicart-pro-settleup">
+								<p>Total<em id="micro-cart-total">0</em>Items, total amount<b id="micro-cart-totalPrice">€0</b></p>
+								<a class="button-minicart-settleup" href="https://cart-it.hihonor.com/cart/cart.html">Buy</a>
+							</div>
+						</div>
+					</div>--> 
+					<!-- 21030909-迷你购物车-end -->
+				<!--</div>-->		
+			</div> 
+			<!-- 21030910-头部-工具栏-end -->
+	        <!-- 20130909-搜索条-焦点为search-form增加className:hover -start -->
+			<!--<div class="searchBar relative">-->
+				<!-- 页头热门搜索 -->
+				<!--<div class="searchBar-form" id="searchBar-area">
+					<form method="get" onsubmit="return search(this)">					
+						<input type="text" class="text" maxlength="128" id="search-kw" /><input type="submit" class="button" value="search for" />
+						<input type="hidden" id="default-search" value="荣耀6"/>
+					</form>
+				</div>
+					<div class="searchBar-key">
+		<a href="/it/search?keyword=Honor" target="_blank">Honor</a>
+		<a href="/it/search?keyword=Honor+9" target="_blank">Honor 9</a>
+		<a href="/it/search?keyword=Honor+8" target="_blank">Honor 8</a>
+		<a href="/it/search?keyword=honor+6x" target="_blank">honor 6x</a>
+		<a href="/it/search?keyword=Honor+6A" target="_blank">Honor 6A</a>
+		<a href="/it/search?keyword=Honor+8+Pro" target="_blank">Honor 8 Pro</a>
+</div>
+				
+			</div>--><!-- 20130909-搜索条-end -->
+			<div class = "headerRightIconSection">
+				<div class = "trackOrderLink">
+					<a id="trackorder-link" title="" class="trackorder-link mdl-navigation__header-link mdl-links-color" href="#trackorder-popup">
+						<label>Traccia Ordine</label>
+					</a>
+					<a id="trackorder-link-logged" title="" class="trackorder-link mdl-navigation__header-link mdl-links-color" href="https://hwid7.vmall.com/CAS/remoteLogin?service=https%3A%2F%2Fstore.hihonor.com%2Fit%2Faccount%2Facaslogin%3Furl%3Dhttps%253A%252F%252Fstore.hihonor.com%252Fit%252Fmember%252Forder%253Ft%253D1511426275840&amp;loginChannel=26000701&amp;reqClientType=26&amp;countryCode=it&amp;lang=it-IT&amp;loginUrl=https%3A%2F%2Fhwid7.vmall.com%2FCAS%2Fportal%2Flogin.html">
+						<label>Traccia Ordine</label>
+					</a>
+				</div>
+				<span></span>
+				<div title = "Ricerca" class = "searchIcon icon_search_1"></div>
+				<span></span>
+				<div id= "unlogin_status" title = "Accedi" class = "userIcon icon_user_2">
+					<div class="guest-login-head" id="guestlogin_status" style="display:none;">
+						<a id="guest-user" style="pointer-events:none;">Guest User</a>
+					</div>
+	               		<script>document.write('<a href="https://hwid7.vmall.com/CAS/remoteLogin?loginChannel=26000701&reqClientType=26&countryCode=it&lang=it-IT&loginUrl=https%3A%2F%2Fhwid7.vmall.com%2FCAS%2Fportal%2Flogin.html&service=https%3A%2F%2Fstore.hihonor.com%2Fit%2Faccount%2Facaslogin%3Furl%3D'+encodeURIComponent(encodeURIComponent(redirecturl))+'" class="sign-in" rel="nofollow" id="login"></a>');</script>
+				</div>
+				
+				<div id= "login_status" title = "Membro" class = "userIcon icon_male_2" style="display:none">
+					<a href="https://hwid7.vmall.com/CAS/remoteLogin?service=https%3A%2F%2Fstore.hihonor.com%2Fit%2Faccount%2Facaslogin%3Furl%3Dhttps%253A%252F%252Fstore.hihonor.com%252Fit%252Fmember%252FmyInformation%253Ft%253D1511426275840timestamp&amp;loginChannel=26000701&amp;reqClientType=26&amp;countryCode=it&amp;lang=it-IT&amp;loginUrl=https%3A%2F%2Fhwid7.vmall.com%2FCAS%2Fportal%2Flogin.html" rel="nofollow" timeType="timestamp"></a>
+				</div>
+				<span></span>
+				<div title = "Il mio carrello" class = "cartIcon icon_cart" onclick="location.href='https://cart-it.hihonor.com/cart/cart.html';">
+					<span class="cartItemsCount" id = "header-cart-total" style="display: none;">0</span>
+				</div>	
+			</div>
+		</div>			
+	</header><!-- 21030909-头部-end -->
+	
+	
+	<div class = "activeLinkBorder">
+	</div>
+	<div id="cart-container" class="cart-container">
+		<div class = "empty-cart-container hide" id="empty-cart-container">
+			<div class="myCartHeader">
+				<label>Il mio carrello</label>
+			</div>
+			<div class="myCartHeaderSeparatorLine">
+			</div>
+			<div class = "productListInMyCart"><label>Il tuo carrello &#232; vuoto</label></div>
+		</div>
+		<div class = "cart-details-container hide" id="cart-details-container">
+			<div class="myCartHeader">
+				<label>Il mio carrello (</label>
+				<label id="myCartLabelnoOfItems">0</label>
+				<label>)</label>
+			</div>
+			<div class="myCartHeaderSeparatorLine">
+			</div>
+			<div id="minicart-pro-list-block">
+				<div class = "productListInMyCart" id="productListInMyCart">
+				
+				</div>
+			</div>
+			<div class = "subTotalCartSection">
+				<div class="products_subtotal">
+					<div class = "noOfSubTotalItems">
+						<label id="micro-cart-total">0</label>
+						<label>Prodotti nel tuo carrello</label>
+					</div>
+					<div class = "subTotalItemsPriceSection">
+						<div class = "subTotalLabel"><label>Totale Parziale</label></div>
+						<div class = "subTotalPrice"><label id="micro-cart-totalPrice">€0</label></div>
+					</div>
+				</div>
+				<div class="goToCartButton">
+					<input type="button" class="btn_blue_primary" value="Vai al carrello">
+						<a href="https://cart-it.hihonor.com/cart/cart.html"></a>
+					</input>
+				</div>
+				<!--  <div class="orderInfosection">
+					<div class="orderInfoIcon icon_info"></div>
+					<div class = "orderInfoMessage"><label>Il tuo ordine ha diritto alla consegna gratuita</label></div>
+				</div> -->
+			</div>
+		</div>
+	</div>
+	
+	<div class="myAccountContainer">	
+		<div class = "myAccountListing">
+			<a class="myProfileLabel" href='https://hwid7.vmall.com/CAS/portal/userCenter/index.html?&amp;lang=it-IT' target="_blank">
+				<label>Il mio profilo</label>
+			</a>
+			<div class="myCartHeaderSeparatorLine">
+			</div>
+			<a href='https://hwid7.vmall.com/CAS/remoteLogin?service=https%3A%2F%2Fstore.hihonor.com%2Fit%2Faccount%2Facaslogin%3Furl%3Dhttps%253A%252F%252Fstore.hihonor.com%252Fit%252Fmember%253Ft%253D1511426275840&amp;loginChannel=26000701&amp;reqClientType=26&amp;countryCode=it&amp;lang=it-IT&amp;loginUrl=https%3A%2F%2Fhwid7.vmall.com%2FCAS%2Fportal%2Flogin.html' >
+			<div class="myAccountLabel">
+				<label>Il mio account</label>
+			</div></a>
+			<div class="myCartHeaderSeparatorLine">
+			</div>
+			<div class="myOrdersLabel" onclick="location.href='https://hwid7.vmall.com/CAS/remoteLogin?service=https%3A%2F%2Fstore.hihonor.com%2Fit%2Faccount%2Facaslogin%3Furl%3Dhttps%253A%252F%252Fstore.hihonor.com%252Fit%252Fmember%252Forder%253Ft%253D1511426275840&amp;loginChannel=26000701&amp;reqClientType=26&amp;countryCode=it&amp;lang=it-IT&amp;loginUrl=https%3A%2F%2Fhwid7.vmall.com%2FCAS%2Fportal%2Flogin.html';">
+				<label>I miei ordini</label>
+			</div>
+			<div class="myCartHeaderSeparatorLine" style="border-top:0px;">
+			</div>
+			<!--
+			<a href='https://store.hihonor.com/it/' target="_blank">
+			<div class="myCommunityLabel">
+				<label>Community</label>
+			</div>
+			</a>
+			-->
+			<div class="logInorOutButtonSection">
+					<input type="button" class="btn_blue_primary" value="ESCI"><a href="../../account/logout"></a></input>
+			</div>
+		</div>
+	</div>
+	
+	<div class = "quickSearchLinkPage">
+		<div class="quickSearchLinkSection">
+			<div class="quickSearchClose" title="Close Search Form">
+				<span class="icon_close"></span>
+			</div>
+			<div class="quickSearchInputBoxSection">
+				<div id = "quickSearchForm" >
+					<div id = "quickSearchFormIcon" class = "quickSearchIcon icon_search_1">
+						<a href = "javascript:void()"></a>
+					</div>
+					<input type= "text" maxlength="128" id="keyword" onfocus="inputSearch(event);"
+						onkeyup="inputSearch(event);" autocomplete="off" 
+						onafterpaste="inputSearch(event);" placeholder = "Inserisci la ricerca" class = "quickSearchInput"></input>
+				</div>
+			</div>
+			
+			<div class="quickSearchSeparatorLine">
+			</div>
+			<div id="quickLinksContainer">
+				<div class="quickLinksHeader" id="quickLinksHeader">
+					<label>Link veloci</label>
+				</div>
+				<div class="quickLinksContentSection" id="quickLinks">
+				</div>
+				<div class ="hide">
+					<div class="searchBar-key">
+		<a href="../../searchca92.html?keyword=Honor" target="_blank">Honor</a>
+		<a href="../../searchcbef.html?keyword=Honor+9" target="_blank">Honor 9</a>
+		<a href="../../search27ad.html?keyword=Honor+8" target="_blank">Honor 8</a>
+		<a href="../../searchd75f.html?keyword=honor+6x" target="_blank">honor 6x</a>
+		<a href="../../searchb1c4.html?keyword=Honor+6A" target="_blank">Honor 6A</a>
+		<a href="../../searcha79a.html?keyword=Honor+8+Pro" target="_blank">Honor 8 Pro</a>
+</div>
+				</div>
+			</div>
+			<div class="quickLinksContentSection hide" id="searchResults">
+			</div>
+			<div class="quickLinksContentSection hide" id="noSearchResults">
+				<label>Nessun risultato trovato</label>
+			</div>
+		</div>
+	</div>
+	<div class="naver-main">
+		<div class="layout header-shift">
+			<!-- 20140823-分类-start 
+			<div class="category" id="category-block">
+			 20130909-导航-start -->
+			<nav class="naver">
+				<ul id="naver-list">
+						<li class="" id = "">
+								<a href="../../product/639090033.html#784412699"  class=""><span>Honor 9<s><img src='../../images/echannel/icon/hot_menu.png' alt='hot' /></s></span></a>
+							
+						</li>
+						<li class="" id = "">
+								<a href="../217766903/index.html"  class=""><span>Honor 6C Pro<s><img src='../../images/echannel/icon/new_menu.png'alt='new' /></s></span></a>
+							
+						</li>
+						<li class="has-child" id = "subproductList_1">
+								<a href="javascript:void(0)"  class=""><span>Smartphone</span><span class ='submenuChangeIcon icon_sort_down'></span><span class ='submenuChangeIcon icon_sort_up'></span></a>
+							<ul class="sub-menus">
+									<li><a href="../../product/639090033.html#784412699" >Honor 9</a></li>
+									<li><a href="../../product/775214205.html#814773769" >Honor 8 pro</a></li>
+									<li><a href="../../product/805154013.html#482464994" >Honor 8</a></li>
+									<li><a href="../../product/205715997.html#376934738" >Honor 6X</a></li>
+									<li><a href="../../product/211451478.html#238437241" >Honor 6A</a></li>
+									<li><a href="../../product/672559893.html#651861151" >Honor 5C</a></li>
+							</ul>
+							
+						</li>
+						<li class="has-child" id = "subproductList_2">
+								<a href="javascript:void(0)" target="_blank" class=""><span>Accessori</span><span class ='submenuChangeIcon icon_sort_down'></span><span class ='submenuChangeIcon icon_sort_up'></span></a>
+							<ul class="sub-menus">
+									<li><a href="../../product/593171207.html#636912576" >Honor Band 3</a></li>
+									<li><a href="../../product/626249527.html#261357235" >Honor Sport Bluetooth Earphones</a></li>
+									<li><a href="../../product/277341071.html#681067692" >Honor Monster Headphones</a></li>
+									<li><a href="../../product/154619901.html#165675002" >Honor 8 PC Case</a></li>
+							</ul>
+							
+						</li>
+						<li class="has-child" id = "subproductList_3">
+								<a href="javascript:void(0)"  class=""><span>INIZIATIVE</span><span class ='submenuChangeIcon icon_sort_down'></span><span class ='submenuChangeIcon icon_sort_up'></span></a>
+							<ul class="sub-menus">
+									<li><a href="../../cmsContentfb19.html?key=wap_cms_events" target="_blank">EVENT</a></li>
+							</ul>
+							
+						</li>
+				</ul>
+				
+			</nav><!-- 20130909-导航-end -->
+			<!--</div>-->
+		</div>
+	</div>
+	<div id="submenus-container-parent" class = "submenus-container-parent">
+			<div class = "submenus-container">
+						<div class="sub-menus sub-products" id="subproductList_1_section">
+									<div class="sub-product-items">
+										<div class="category-products-image">
+											<a href="../../product/639090033.html#784412699">
+												<img src="../../../../cdn-itcname.hihonor.com/pms/product/6901443185719/428_428_1509473530555mp.jpg" width="98" height="98">
+											</a>
+										</div>
+										<div class="category-products-label">
+											<a href="../../product/639090033.html#784412699">Honor 9
+											</a>
+										</div>
+									</div>
+									<div class="sub-product-items">
+										<div class="category-products-image">
+											<a href="../../product/775214205.html#814773769">
+												<img src="../../../../cdn-itcname.hihonor.com/pms/product/6901443170173/428_428_1499765543078mp.jpg" width="98" height="98">
+											</a>
+										</div>
+										<div class="category-products-label">
+											<a href="../../product/775214205.html#814773769">Honor 8 pro
+											</a>
+										</div>
+									</div>
+									<div class="sub-product-items">
+										<div class="category-products-image">
+											<a href="../../product/805154013.html#482464994">
+												<img src="../../../../cdn-itcname.hihonor.com/pms/product/6901443131747/428_428_1499762467997mp.jpg" width="98" height="98">
+											</a>
+										</div>
+										<div class="category-products-label">
+											<a href="../../product/805154013.html#482464994">Honor 8
+											</a>
+										</div>
+									</div>
+									<div class="sub-product-items">
+										<div class="category-products-image">
+											<a href="../../product/205715997.html#376934738">
+												<img src="../../../../cdn-itcname.hihonor.com/pms/product/6901443154296/428_428_1499759403525mp.jpg" width="98" height="98">
+											</a>
+										</div>
+										<div class="category-products-label">
+											<a href="../../product/205715997.html#376934738">Honor 6X
+											</a>
+										</div>
+									</div>
+									<div class="sub-product-items">
+										<div class="category-products-image">
+											<a href="../../product/211451478.html#238437241">
+												<img src="../../../../cdn-itcname.hihonor.com/pms/product/6901443184507/428_428_1500452822920mp.jpg" width="98" height="98">
+											</a>
+										</div>
+										<div class="category-products-label">
+											<a href="../../product/211451478.html#238437241">Honor 6A
+											</a>
+										</div>
+									</div>
+						  
+								<div class="sub-product-items viewMoreOption">
+									<a href="../../list-157.html" target="_blank">
+										<span>Scopri di pi&#249;</span>
+										<span class = "viewMoreIcon icon_next_page"></span>
+									</a>
+								</div>
+						 
+						</div>
+						<div class="sub-menus sub-products" id="subproductList_2_section">
+									<div class="sub-product-items">
+										<div class="category-products-image">
+											<a href="../../product/593171207.html#636912576">
+												<img src="../../../../cdn-itcname.hihonor.com/pms/product/008601110000401/428_428_1507899259014mp.jpg" width="98" height="98">
+											</a>
+										</div>
+										<div class="category-products-label">
+											<a href="../../product/593171207.html#636912576">Honor Band 3
+											</a>
+										</div>
+									</div>
+									<div class="sub-product-items">
+										<div class="category-products-image">
+											<a href="../../product/626249527.html#261357235">
+												<img src="../../../../cdn-itcname.hihonor.com/pms/product/6901443189113/428_428_1502090717262mp.jpg" width="98" height="98">
+											</a>
+										</div>
+										<div class="category-products-label">
+											<a href="../../product/626249527.html#261357235">Honor Sport Bluetooth Earphones
+											</a>
+										</div>
+									</div>
+									<div class="sub-product-items">
+										<div class="category-products-image">
+											<a href="../../product/277341071.html#681067692">
+												<img src="../../../../cdn-itcname.hihonor.com/pms/product/6901443191390/428_428_1502095245793mp.jpg" width="98" height="98">
+											</a>
+										</div>
+										<div class="category-products-label">
+											<a href="../../product/277341071.html#681067692">Honor Monster Headphones
+											</a>
+										</div>
+									</div>
+									<div class="sub-product-items">
+										<div class="category-products-image">
+											<a href="../../product/154619901.html#165675002">
+												<img src="../../../../cdn-itcname.hihonor.com/pms/product/69014431123346/428_428_1507892983002mp.jpg" width="98" height="98">
+											</a>
+										</div>
+										<div class="category-products-label">
+											<a href="../../product/154619901.html#165675002">Honor 8 PC Case
+											</a>
+										</div>
+									</div>
+						  
+								<div class="sub-product-items viewMoreOption">
+									<a href="../../list-162.html" target="_blank">
+										<span>Scopri di pi&#249;</span>
+										<span class = "viewMoreIcon icon_next_page"></span>
+									</a>
+								</div>
+						 
+						</div>
+						<div class="sub-menus sub-products" id="subproductList_3_section">
+									<div class="sub-product-items sub-event-items sub-event-desktop-view"><div class="category-event-image ">        <a href="http://www.hihonor.com/it/honorzalandosummer/index.html" target="_blank"><img src="../../../../cdn-itcname.hihonor.com/pms/template/content/2017/20171016193708798.jpg" title="20170907142351552.jpg" style="float:none;" /> </a></div></div><div class="sub-product-items sub-event-items sub-event-desktop-view"><div class="category-event-image ">        <a href="http://www.hihonor.com/it/nightvision/index.html" target="_blank"><img src="../../../../cdn-itcname.hihonor.com/pms/template/content/2017/20171016193724995.jpg" title="2017090714235129.jpg" style="float:none;" /> </a></div></div><div class="sub-product-items sub-event-items sub-event-desktop-view"><div class="category-event-image ">        <a href="http://www.hihonor.com/it/honor8pro_testers/index.html" target="_blank"><img src="../../../../cdn-itcname.hihonor.com/pms/template/content/2017/20171016193736381.jpg" title="20170907142350811.jpg" style="float:none;" /> </a></div></div>
+						  
+								<div class="sub-product-items viewMoreOption">
+									<a href="../../cmsContente6c2.html?key=web_cms_events" target="_blank">
+										<span>Scopri di pi&#249;</span>
+										<span class = "viewMoreIcon icon_next_page"></span>
+									</a>
+								</div>
+						 
+						</div>
+			</div>
+		</div>
+</div>
+
+<div class="trackorder-popup" style="display:none">
+	<div id="trackorder-popup">
+	     <iframe id="trackorder-iframe" src="../../trackorder/popup/index.html" frameborder="0" height="100%" width="100%"></iframe>
+	     <div class="loader"></div>
+	</div>
+</div>
+
+
+<textarea id="micro-cart-tpl" class="hide">
+<!--#macro microCartList data-->
+	<!--#list data.bundlerList as b-->
+		<!--#if (b.skuList && b.skuList.length > 0) -->
+		<!--#var lst = b.skuList[0];-->
+		<!--#var skuId='#'+lst.skuId;-->
+		<div class="productDetailsInCart">
+			<div class="productItemsImage">
+				<a href="../../product/display/%7b#lst.id}.html" title="" >
+					<img src="https://cdn-itcname.hihonor.com/pms{#lst.photoPath}78_78_{#lst.photoName}" alt="{#lst.prdSkuName}" width="80" height="60"/>
+				</a>
+			</div>
+			<div class="productDetailsSection">
+				<div class="productDetails_label">
+					<label>
+						<a href="../../product/display/%7b#lst.id}.html" title="{#lst.prdSkuName}" >{#lst.prdSkuName}</a>
+					</label>
+				</div>
+				<div class="productDetails_config">
+					<label>
+						<a href="../../product/display/%7b#lst.id}.html" title="{#lst.prdSkuName}" ></a>
+						</label>
+				</div>
+				<div class="productDetails_amount_price">
+					<span class= "noOfItemsSelected"><label>{#lst.quantity}</label></span>
+					<span class= "itemsMultiplySign icon_close"></span>
+					<span class= "priceForOneItem"><label>€{#parseFloat(lst.skuPrice).toFixed(2)}</label></span>
+				</div>
+			</div>
+			<!--#if (lst.productType && lst.productType== 2 ) -->
+				<div title = 'Cancella' class="deleteFromCartOperation icon_delete" onclick="ec.minicart.del(this , {#lst.bundleId}, {#lst.productType})">
+			<!--#else-->
+				<div title = 'Cancella' class="deleteFromCartOperation icon_delete" onclick="ec.minicart.del(this , {#lst.skuId}, {#lst.productType})">
+			<!--/#if-->
+			</div>
+		</div>
+		<!--/#if-->
+	<!--/#list-->
+	<!--#list data.productList as lst-->
+	<!--#var skuId='#'+lst.skuId;-->
+	<div class="productDetailsInCart">
+		<div class="productItemsImage">
+			<a href="../../product/display/%7b#lst.id}.html" title="" >
+				<img src="https://cdn-itcname.hihonor.com/pms{#lst.photoPath}78_78_{#lst.photoName}" alt="{#lst.prdSkuName}" width="80" height="60"/>
+			</a>
+		</div>
+		<div class="productDetailsSection">
+			<div class="productDetails_label">
+				<label>
+					<a href="../../product/display/%7b#lst.id}.html" title="{#lst.prdSkuName}" >{#lst.prdSkuName}</a>
+				</label>
+			</div>
+			<div class="productDetails_config">
+				<label></label>
+			</div>
+			<div class="productDetails_amount_price">
+				<span class= "noOfItemsSelected"><label>{#lst.quantity}</label></span>
+				<span class= "itemsMultiplySign icon_close"></span>
+				<span class= "priceForOneItem"><label>€{#parseFloat(lst.skuPrice).toFixed(2)}</label></span>
+			</div>
+		</div>
+		<div title = 'Cancella' class="deleteFromCartOperation icon_delete" onclick="ec.minicart.del(this , {#lst.skuId}, {#lst.productType})">
+		</div>
+	</div>
+	<!--/#list-->
+<!--/#macro-->
+</textarea>
+
+<script>
+ var deliveryFee = "{#data.deliveryFee}";
+ if(deliveryFee=="0") {
+	$(".orderInfosection").hide();
+ }
+ec.load("ec.slider", {
+   loadType : "lazy", 
+   callback : function() {
+		$("#ec-erweima").slider({
+				 width:     91, //必须
+				 height:     96, //必须
+				 style : 1,                    //1显示分页，2只显示左右箭头,3两者都显示
+				 pause : 120000,           //间隔时间
+				 auto : true
+
+		});
+   }
+});
+ec.ready(function(){
+	//ec.form.input.label("#search-kw" , "荣耀6");
+	$("#search-kw").bind(
+		{
+			focus:function(){
+				$(".searchBar-key").css("display","none");
+				$(".wide .autocomplete-w1 .autocomplete").attr("style","display:none;width:"+$(".quickSearchInputBoxSection").width()+'px !important');
+			}
+		});
+	$("#search-kw").bind(	
+		{	blur:function(){
+				if ($("#search-kw").val().trim() == '') {
+					$(".searchBar-key").css("display","block");
+				} else {
+					$(".searchBar-key").css("display","none");
+				}
+			}
+		}
+	);
+	ec.ui.hover("#searchBar-area" , { captureInput : true });
+});
+ec.code.addService({showService : true , showTools : true});
+
+ec.ready(function () {
+	ec.cart.getTotal();
+	//微型购物车hover效果
+	ec.minicart.microCartTpl = new ec.template($('#micro-cart-tpl').val());
+	var $imall = $('#header-toolbar-imall-content'),
+		$miniCart = $("#cart-container");//$('#header-toolbar-minicart-content');
+	$('#header-toolbar-imall').hover(function (){
+		$.ajax({
+			url : "https://remark-it.hihonor.com/remark/queryNotRemarkCount.json?t=" + new Date().getTime(),
+			dataType:"jsonp",
+			success : function(json){
+				$('#toolbar-notRemarkCount').html(+json.notRemarkCount).attr('class',(json.notRemarkCount <= 0) ? 'hide' : '');
+				$('#member-notRemarkCount').text(json.notRemarkCount);
+			}
+		});
+		//
+		//ec.cart.getTotal();
+		
+		$imall.show();
+	}, function () {
+		$imall.hide();
+	});
+});
+
+$("#getPetal").click(function()
+{
+	window.location.href="../../member/petal";
+});
+
+ec.ready(function(){
+	try
+	{	
+			new ec.ajax().get({		
+			url:"https://store.hihonor.com/it/account/getPetalValid.json",
+			successFunction:function(json){		
+				//如果没有签到
+				if(!json.success)
+				{
+					//判断用户是否已签到
+					new ec.ajax().get({		
+						url:"https://store.hihonor.com/it/account/signinValid.json",
+						successFunction:function(json){		
+							//如果没有签到
+							if(!json.success)
+							{
+								$("#dfn").show();
+							}
+							else//如果已经签到
+							{
+								$("#dfn").hide();
+							}
+					},
+						errorFunction : function(json) {
+							// alert(json);
+						}
+					});
+				
+				}
+				else
+				{
+					$("#dfn").hide();
+				}
+			},
+			errorFunction : function(json) {
+				//alert(json);
+			}
+		});
+		
+	}
+	catch (err)
+	{
+		// console.log(err);
+	}
+
+	
+});
+
+var scrollWidth = $("body").width();
+var counterForScrollWidth = 0;
+$('.searchIcon.icon_search_1').on('click',function(){
+$("#keyword").val("");
+var searchQuickLinks = $('.searchBar-key a'),
+	newQuickLink = '';
+	$('#quickLinks').empty();
+for(var i = 0;i<searchQuickLinks.length;i++){
+	var searchItem = searchQuickLinks[i];
+	newQuickLink = newQuickLink +
+						'<li class="quickLinksContent">'+
+							'<label>'+
+								'<a href="'+$(searchItem).attr('href')+'" target="_blank">'+$(searchItem).text().trim()+'</a>'+
+							'</label>'+
+						'</li>';
+}
+$('#quickLinks').append('<ul class = "quickLinksContentSectionBlock">'+newQuickLink+'</ul>');
+	var delay=0.1;
+	$("#quickLinks li").each(function(index){
+			$(this).addClass("animated")
+						.attr('style','-webkit-animation-delay:'+delay+'s;animation-delay:'+delay+'s')
+						.addClass("fadeInUpBig");
+			delay+=0.1;
+	});	
+
+if(counterForScrollWidth<1){
+	scrollWidth = (scrollWidth - $("body").width());
+}
+counterForScrollWidth = counterForScrollWidth +1;
+
+setTimeout(function(){
+	$('.activeLinkBorder').css({"margin-right":scrollWidth+"px"});
+	$('.cartItemsCount').css({"margin-right":scrollWidth+"px"});
+	$('.header').css({"margin-right":scrollWidth+"px"});
+	$('.naver-main').css({"margin-right":scrollWidth+"px"});
+	$('body').attr("style","overflow:hidden;"+"padding-right:"+scrollWidth+"px");
+	$('.wide .autocomplete-w1 .autocomplete').width($('#search-kw').width()+'px !important');
+	
+},50);
+$('.quickSearchLinkPage').css({'opacity':1,'visibility':'visible'});
+setTimeout(function(){
+	$("#keyword").focus();
+},400);
+});
+$('.quickSearchClose .icon_close').on('click',function(){
+$('.quickSearchLinkPage').css({'opacity': 0,'visibility':'hidden'});
+$('.activeLinkBorder').css({"margin-right":""});
+setTimeout(function(){
+	$('#quickLinksContainer').show();
+	$('#searchResults').hide();
+	$('#searchResults').css({"max-height": "200px"});
+	$('.quickSearchLinkPage').css({"padding-top":"190px"});
+	$('.cartItemsCount').css({"margin-right":""});
+	$('.header').css({"margin-right":""});
+	$('.naver-main').css({"margin-right":""});
+	$('body').attr("style","overflow:auto");
+},300);
+
+});
+
+</script>
+<textarea class="hide" id="ec-binding-phone">
+	<div id="ec-binding-phone-1" class="ec-binding-phone-box hide">
+		<!-- 20141011-绑定安全手机号提示-start -->
+		<div class="safetyPhone-prompt-area">
+			<div class="h">
+				<i></i>
+			</div>
+			<div class="b">
+				<p>In order to provide you with a better service, we recommend that you log on the mailbox account for the phone number binding, Bind bound mail account and mobile phone number can be used as login account,
+				<em style="font-color:red;">Not bound will not submit the order.</em></p>
+			</div>
+		</div>
+		<div class="box-custom-button">
+			<a class="box-button-style-3" href="javascript:;" id="ec-binding-phone-url-1"><span>Bind</span></a></a>
+		</div>
+		<!-- 20141011-绑定安全手机号提示-end -->
+	</div>
+	<div id="ec-binding-phone-2" class="ec-binding-phone-box hide">
+		<!-- 20141424-绑定安全手机号提示-start -->
+		<div class="safetyPhone-prompt-area">
+			<div class="h">
+				<i></i>
+			</div>
+			<div class="b">
+				<p>Please complete the bind security operations in a new phone number to open the page.</p>
+				<p>Depending on your situation, please click the button below after the completion of the binding.</p>
+			</div>
+		</div>
+		<div class="box-custom-button">
+			<a class="box-button-style-3" href="javascript:;" onclick="ec.binding.resetShow()"><span>绑定成功</span></a><a class="box-change box-button-style-3" href="javascript:;" id="ec-binding-phone-url-2"><span>重新绑定</span></a>
+		</div>
+		<!-- 20141424-绑定安全手机号提示-end -->
+	</div>
+	<div id="ec-binding-phone-3" class="ec-binding-phone-box hide">
+		<!-- 20141424-安全手机号绑定提示失败-start -->
+		<div class="box-prompt-error-area">
+			<div class="h">
+				<i></i>
+			</div>
+			<div class="b">
+				<p class="tal f12">对不起，您未成功绑定手机号。</p>
+				<p class="tal f12 black">为了您在商城正常购物、保护您的权益，请您绑定一个手机号码以享受华为商城的所有服务。</p>
+			</div>
+		</div>
+		<div class="box-custom-button">
+			<a href="javascript:;" class="box-button-style-3" onclick="ec.binding.showOk()" id="ec-binding-phone-url-3" ><span>立即绑定</span></a>
+		</div>
+		<!-- 20141424-安全手机号绑定提示失败-end -->
+	</div>
+	<div id="ec-binding-phone-4" class="ec-binding-phone-box hide">
+		<!-- 20150824-手机号绑定未绑定-start -->
+		<div class="safetyPhone-prompt-area">
+			<div class="h">
+				<i></i>
+			</div>
+			<div class="b">
+				<p class="tal f12">In order to provide you with better service, it is recommended that you log on the mailbox account number for mobile phone number binding, after binding the mailbox account number and binding Number, if not binding will not be able to submit orders.</em></p>
+			</div>
+		</div>
+		<div>&nbsp;</div>
+		<div class="box-custom-button">
+			<a class="box-change box-button-style-3" href="javascript:;" id="ec-binding-phone-url-4"><span>立即绑定</span></a>
+			<a class="box-button-style-1" href="javascript:;" onclick="ec.binding.closeState4();"><span>下次再说</span></a>
+		</div>
+		<!-- 20150824-安全手机号绑定提示失败-end -->
+	</div>
+	<div id="ec-binding-phone-5" class="ec-binding-phone-box hide">
+		<!-- 20141424-安全手机号绑定提示失败-start -->
+		<div class="box-prompt-error-area">
+			<div class="h">
+				<i></i>
+			</div>
+			<div class="a">
+				<p class="tal f12">您输入的手机已被注册，您可以选择使用手机号重新登录或者重新绑定手机！</p>
+			</div>
+		</div>
+		<div>&nbsp;</div>
+		<div class="box-custom-button">
+			<a class="box-button-style-3" href="../../account/login" id="ec-binding-phone-reLogin-5"><span>重新登录</span></a>')
+			<a class="box-change box-button-style-3" href="javascript:;" id="ec-binding-phone-url-5"><span>重新绑定</span></a>
+		</div>
+		<!-- 20141424-安全手机号绑定提示失败-end -->
+	</div>
+</textarea>
+
+<script>
+if(ec.util.cookie.get("uid")) {
+	$("#unlogin_status").hide();
+	$("#login_status").show();
+}
+
+function showSelectRegion()
+{
+    var box = new ec.box($("#selectRegion-tips").val(),{
+			boxid : "region-select-box",
+			boxclass : "ol_box_4",
+			title : "Please select your country or region.",
+			width : 940,			
+			showButton : false,
+			autoPosition:false,
+			onopen: function(box){
+			},
+			onok : function(box){
+			},
+			oncancel : function(box){
+				box.close();
+				$(".ol_box_mask").remove();
+			},   
+			onclose : function(box){
+				$(".ol_box_mask").remove();
+			}
+		});	
+								
+		box.open();
+				
+				$(".box-title").css("font-size","28px").css("font-weight","normal");
+				$("#region-select-box").css("height","auto");				
+				$(".ol_box_mask").click(function(){box.close();});
+				
+				$(".box-header").unbind("mousemove");
+				$(".box-header").unbind("mousedown");
+				
+				var divTop=document.getElementById("region-select-box").offsetTop;
+				$("#region-select-box").mousedown(function (e) {
+					var e=e||window.event;
+					var region = document.getElementById("region-select-box");
+										
+					var leftX = e.clientX - region.offsetLeft;
+					var topY = e.clientY - region.offsetTop;
+					$("#region-select-box").mousemove(function (event) {
+					 var e=event||window.event;
+					  var left=	e.clientX - leftX;
+					  var top=e.clientY - topY;
+					   
+					  if(e.clientX - leftX<20-region.offsetWidth){
+					  left=20-region.offsetWidth;
+					  }
+					  if(e.clientY - topY<20-region.offsetHeight){
+					  top=20-region.offsetHeight;
+					  }	
+					 
+					 if(e.clientY - topY+20>=$(window).height()){
+					  top=$(window).height() - 20;
+					  }
+					  if(e.clientX - leftX+20>=$(window).width()){
+					  left=$(window).width() - 20;
+					  }
+					  $("#region-select-box").css({"left": left, "top": top});
+					  divTop=top;
+						
+					});
+				});
+				$("#region-select-box").mouseup(function () {
+				$("#region-select-box").unbind("mousemove");
+				});
+            $(window).scroll(function () {              
+                $("#region-select-box").offset({ top: divTop });
+            });	
+}
+		$("#trackorder-link").click(function() {
+		    var isloggedin = ec.account.isLogin();
+		    if(typeof(isloggedin) != "undefined"){
+		        window.location = $('#trackorder-link-logged').attr('href');
+		    } else {
+		        $.fancybox.open({
+		            'padding'       : 0,
+		            'autoScale'     : false,
+		            'transitionIn'  : 'none',
+		            'transitionOut' : 'none',
+		            'title'         : this.title,
+		            'width'         : 470,
+		            'height'        : 575,
+		            'href'          : "https://store.hihonor.com/it/trackorder/popup/",
+		            'type'          : 'iframe',
+		            'autoSize'      : false,
+		            helpers : {
+		                    title : {
+		                        type: 'inside',
+		                        position : 'top'
+		                    }
+		                    
+		                },
+		
+		            beforeShow : function() {
+		
+		                
+		                $('.fancybox-inner').ready(function() {
+		                    $('.fancybox-inner').css("height", "600px");
+		                }); 
+		
+		            }, 
+		
+		           afterShow : function() {
+		
+		                $('.fancybox-inner').ready(function() {
+		                    $('.fancybox-inner').css("height", "600px");
+		                });     
+		            } 
+		        });
+                 ec.ga.virtualPageViewTracking('track_order');
+		        return false;
+		    }
+		    
+		});
+		$("#selectregion,#footerFg").click(function() {
+			$.fancybox.open("#selectregion-popup .popup-content",{
+				//'content' : $("#selectregion-popup").html(),
+				'padding'		: 0,
+         		'autoScale'		: false,
+         		'transitionIn'	: 'none',
+         		'transitionOut'	: 'none',
+         		'width'			: 989,
+         		'minWidth'   : 989,
+				'height'       : 800,
+				'autoSize'	: false,
+				'closeBtn' : true,
+				beforeShow : function(){
+					var countryId = '#it';
+				       var htmlLang = ec.util.cookie.get("locale_MS").split("_")[0];
+				       $(countryId).find("a[data-type-lang="+htmlLang+"]").addClass('selected');
+				},
+				afterShow: function () {
+				        $('.fancybox-inner').ready(function(){
+				        	$('.fancybox-inner').contents().find(".langs").on("click", function() {
+							$('.langs').removeClass("selected");
+							$(this).addClass("selected").siblings().removeClass("selected");
+
+							});
+
+				        });
+				        $('.fancybox-wrap').ready(function(){				        
+							$('.fancybox-wrap').contents().find(".fancybox-close").css({"background-image":"none", "top":"-40px", "right": "-13px"});	
+							$('.fancybox-wrap').contents().find(".fancybox-close").addClass("icon_close").css({"color": "white" , "font-size": "17pt", "text-decoration": "none"});
+				        });
+				       
+				 }
+			});
+			
+			$(".langs").on("click", function() {
+				$(this).addClass("selected").siblings().removeClass("selected");
+			});
+        });
+		
+		
+</script>
+
+
+<style>
+#fancybox-close {
+	right: -52px;
+}
+</style>
+<!-- 导航 -->
+
+
+<script>
+(function () {
+	//所有分类显示隐藏控制
+	var isIndex =  false,
+		categoryBlock = gid('category-block');
+		
+	if(isIndex) return;
+	
+	$("#category-block").hover(function(){
+		$(this).addClass("category-hover");
+	},function(){
+		$(this).removeClass("category-hover");
+	});
+	
+	/*categoryBlock.onmouseover = function () {
+		categoryBlock.className = 'category category-hover';
+	};
+	categoryBlock.onmouseout = function () {
+		categoryBlock.className = 'category';
+	};*/
+	
+}());
+
+/**
+*功能：给鼠标移动到category-list li上面的时候，记得给他多添加一个hover类样式
+*目的是兼容ie6,以及调整二级分类的弹出框的位置。
+*@author 李峰
+*/
+/**
+$(function(){
+	$(".category-item").hover(function(){
+		$(this).addClass("hover");
+		//1.二级分类的top值
+		var childrenTop = $(this).offset().top;
+		//2.一级分类的top值
+		var parentTop = $(".category-list").offset().top;
+		//3.二级分类到一级分类顶部的距离
+		var top = childrenTop - parentTop;
+		//4.二级分类的弹出层的高度
+		var childrenHeight = $(this).find(".category-panels").innerHeight();
+		//5.一级分类容器的总高度
+		var totalHeight = $(".category-list").height();
+		alert("childrenTop:"+childrenTop+";parentTop:"+parentTop+";top:"+top+";childrenHeight:"+childrenHeight+";totalHeight:"+totalHeight) ;
+
+		//6.如果二级分类.category-panels的内容高度大于总容量totalHeight,那么.category-panels置顶，然后多余的自动往下延续
+		//如果二级分类childrenHeight内容高度(childrenHeight + top )大于totalHeight,那么.category-panels往上移动childrenHeight + top -totalHeight
+		if((top + childrenHeight) > totalHeight)
+		{
+			if(childrenHeight > totalHeight)
+			{
+				$(this).find(".category-panels").css("top",-top);
+			}else{
+				//上移动
+				var topX = (childrenHeight+top) - totalHeight;
+				$(this).find(".category-panels").css("top",-topX);
+				
+			}
+			
+		}
+		
+	},function(){
+		$(this).removeClass("hover");
+	});
+});
+ */
+
+ $(document).ready(function(){
+ 	$(function () {
+ 	var idSelected = ""; 		
+		$('#naver-list li').hover(function () { 
+			
+			var selectedID = '#'+$(this).attr('id')+'_section';
+			$(selectedID).siblings().hide();
+			$(selectedID).parent().parent().removeClass('submenus-container-hover');
+			idSelected = selectedID,
+			maxWidth = 350,
+			noOfELems = $(selectedID).children().length;
+			if(noOfELems > 5){
+				maxWidth = (1280/noOfELems) > 350 ? 350 : (1280/noOfELems);
+				$(selectedID).attr("style","width:1280px;");
+				$(selectedID+' .sub-product-items').attr("style","max-width:"+(maxWidth-20)+'px');
+				$('.sub-product-items div.category-products-label').attr("style","max-width:"+(maxWidth-100)+'px');
+			}
+			else{
+				maxWidth = (1280/noOfELems) > 350 ? 350 : (1280/noOfELems);
+				$(selectedID).attr("style","width:1280px;");
+				$('.sub-product-items div.category-products-label').attr("style","max-width:"+maxWidth+'px');
+			}
+			$(selectedID).show();
+			$(selectedID).parent().addClass('submenus-container-hover');
+		
+			
+		},function () {
+			$('.submenus-container').hover(function () { 
+					$(idSelected).siblings().hide(); 
+					$(idSelected).show();
+					$(idSelected).parent().addClass('submenus-container-hover');
+			},
+			function () {
+				$('.submenus-container').removeClass('submenus-container-hover');	
+			});
+			
+			$('.submenus-container').removeClass('submenus-container-hover');
+		
+		});
+		
+	});	
+	
+	var obj;
+	$('.sub-menus.sub-products')
+	  .mouseover(function() {
+		var id=$(this).attr("id").split("_section")[0];
+		obj=$("#naver-list").find("#"+id);
+		obj.css("background","#00b2e6");
+		obj.find(".icon_sort_down").attr("style","display:none !important")
+		obj.find(".icon_sort_up").attr("style","display:inline-block !important")
+	  })
+	  .mouseout(function() {
+		obj.css("background","inherit");
+		obj.find(".icon_sort_down").removeAttr("style");
+		obj.find(".icon_sort_up").removeAttr("style");
+		
+	  });
+ }); 
+ 
+</script>
+<script>
+var prdMediaPath = 'http://cdnhttpsindia.vmall.com/pms/newProduct';
+</script>
+<!--<link href="https://cdn-itcname.hihonor.com/it/stylus/css/styles.min.css?20112017" rel="stylesheet" type="text/css">-->
+<script src="../../../../cdn-itcname.hihonor.com/it/js/product/buyDetail.min68b3.js?20112017"></script>
+<script>
+$("body").addClass("wide detail e-com");
+</script>
+
+<!--   versa tag data -->
+<script>
+var pageType ="productpage";
+var productid = "008601100001901";
+var productName ="Honor 9 64GB Nero";
+var productinfo ="Honor 9 64GB Nero";
+var brand ="honor";
+var Session = ec.util.cookie.get("_gid");
+          var Value ="399.90";
+</script>
+
+
+    <!--   seo structure data -->
+    <div itemscope itemtype="https://schema.org/Product" style="display:none;">
+      <span itemprop="brand">Honor</span>
+      <span itemprop="name">Honor 9 64GB Nero</span>
+      <img itemprop="image" src="../../../../cdn-itcname.hihonor.com/pms/product/6901443185719/800_800_1509473530555mp.jpg" alt="1509473530555mp.jpg" />
+      <span itemprop="description"></span>
+      <span itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+        <span itemprop="priceCurrency">EUR</span>
+	    	<span itemprop="price">399.90</span>
+        <time itemprop="priceValidUntil" datetime="" /> 
+        <link itemprop="itemCondition" href="https://schema.org/NewCondition"/>
+            <link itemprop="availability" href="https://schema.org/InStock" />
+        <span itemprop="seller" itemscope itemtype="https://schema.org/Organization">
+            <span itemprop="name">Honor</span>
+        </span>
+      </span>
+        <link itemprop="url" href="../../product/639090033.html" />
+    </div>
+    <!--   end seo structure data -->
+
+<div class="hr-10"></div>
+<div class="g">
+	<!--面包屑 -->
+	<div class="breadcrumb-area fcn"><a href="https://store.hihonor.com/it" title="Home">Home</a>&nbsp;>&nbsp;<span id="bread-pro-name">Honor 9 64GB Nero</span></div>
+</div>
+<div class="hr-10"></div>
+<div  class="pro-layout">
+	<div class="wrap">
+		<div class="pro-left" id="main-photo">
+		<a id="product-img" href='../../../../cdn-itcname.hihonor.com/pms/product/6901443185719/800_800_1509473530555mp.jpg' class = 'cloud-zoom'  rel="adjustX: 10, adjustY:0, zoomWidth:400 , zoomHeight:400">
+    		<img class="buy_prod_img" src="../../../../cdn-itcname.hihonor.com/pms/product/6901443185719/800_800_1509473530555mp.jpg" />
+    	</a>
+    	</div>
+   		<div class="pro-right">
+    		<div class="pro-meta-area clearfix">
+        		<h> 
+        			<span class="pro-name" id="pro-name">Honor 9 64GB Nero</span>
+        			&nbsp;
+                    <a class="pro-more" target="" href="../../product/639090033.html" style="color:#666666;text-decoration:none;">Pi&#249; dettagli sul prodotto&gt;</a>
+                <div class="clearfix"></div>
+				</h>
+				
+                    
+				<div class="price-block">
+						<span class="pro-price no-spl-price" id="pro-special-price" style="display:none;">€ 0.00</span>
+				    	<span class="pro-price old-price" id="pro-price">€399.90</span>
+					
+					<div id="pro-promotions-area" class="pro-promotions-area hide" style="padding-top: 15px;padding-bottom: 15px;margin-bottom: 15px; display:none">
+                       <dl class="clearfix">                            
+                            <dd>
+                                </ul>
+                                <ul id="pro-gift-list" class="clear" >
+                                </ul> 
+                            </dd>
+                        </dl>
+                   </div>
+                    <div class="pro-coding"><label>Codice del prodotto</label><span id="pro-sku-code">008601100001901</span></div>
+
+                    <!-- Expected delivery 2016-09-13 start -->
+					
+                        <div class="pro-freight"><p>  <span lang="EN-US" style="font-family:calibri, sans-serif;font-size:15px;line-height:15px;background-color:#ffffff;color:#212121;">Consegna gratis Per gli ordini superiori a €99 (1-2<span class="Apple-converted-space"> </span></span><span lang="IT-IT" style="font-family:calibri, sans-serif;font-size:15px;line-height:15px;background-color:#ffffff;color:#212121;">giorni</span><span lang="IT-IT" style="font-family:calibri, sans-serif;font-size:15px;line-height:15px;background-color:#ffffff;color:#212121;">)</span></p></div>
+				</div>
+				
+    		</div>
+        	<div class="hr-1"></div>
+         	<div  class="pro-slogan"  id="skuPromWord">
+         	</div>
+         	<!--trade in-->
+
+
+	     	<!--商品简介-SKU -->
+            <div id="pro-skus" class="pro-sku-area">Caricamento&#8230;</div>
+             
+	        <!-- 赠品模块-->
+		<!-- Bundle item start -->
+		<div class="bundle-item1">
+		<div class="f"></div>
+		<div id="tab-split" class="hr-20 hide"></div>
+		</div>
+		<!-- Bundle item end -->
+	      
+	        <!--<div class= 'pro-sku-title gift-msg'><label>Omaggio: </label>
+				 <div class="pro-sku-area ec_slider" id="pro-promotions-area" >
+					<ul class="list clearfix" id="pro-gift-list">
+					</ul>
+				</div>
+			 </div>	 -->	
+		    <!-- 2016/19/11 Select The Service -start -->
+			<div class="pro-sku-area pro-ew-area hide" id="J_choosePackage">
+               <h3 class="pro-sku-title" id="prolongLstTitle" style="margin-left:0px;">Seleziona il servizio (opzionale)</h3>
+               <ul class="pro-sku-text2 clearfix" id="service" id="proLongLstId">
+               	    <li class="sku optional" id="extendProtected" title="Terminal extended warranty service one">Servizio di garanzia Extended  I<br><span>€50 INR&nbsp;<a href="#" targrt=" ">Dettagli&gt;</a><span></span></span></li>
+                    <li class="sku optional" id="accidentProtected" title="Terminal extended warranty service II">Servizio di garanzia estesa del terminale II<br><span>€150 INR&nbsp;<a href="#" target=" ">Dettagli&gt;</a><span></span></span></li>
+               </ul>
+	        </div>
+			<!-- 20140710-商品简介-延保-end -->
+			
+			<div id="pro-quantity-area" class="pro-stock-area bundle-item-pro-stock-area " >
+				<dl class="clearfix">
+					<dt>Quantit&#224;：</dt>
+					<dd>
+					 <span class="stock-area">
+				     
+				     <input id="pro-quantity" type="text" class="vam text" value="1" autocomplete="off">
+				     
+				     </span>
+					</dd>
+				</dl>
+			</div>
+			
+			<div class="product-sold-by-label cart-product-sold-by-label">
+				<span class="sold-label">Venduto da</span>
+				<a onclick="ec.product.openSellerPopup();">Ingram Micro Commerce EMEA BV</a>
+			</div>
+
+			<!--弹出层-成功添加到购物车 -->
+			<div id="cart-tips" class="pro-popup-area hide">
+			     <div class="h">
+				<a href="javascript:;" onclick="$('#cart-tips').hide()" class="pro-popup-close" title="Chiudi"><span>Chiudi</span></a>
+			    </div>
+			    <div class="b">
+					<div class="pro-add-success">
+						<dl>
+						<dt><s></s></dt>
+							<dd>
+								<p id="cartSuccessPrdId">Honor 9 64GB Nero</p>
+								<div class="pro-add-success-msg">Aggiunto al carrello con successo!</div>
+								<!--div class="pro-add-success-total">Prezzo&nbsp;<b  id="cart-price">€399.90</b></div-->
+								<div class="pro-add-success-total">
+									Prodotti nel carrello&nbsp;
+									<b id="cart-total">0</b>&nbsp;Totale&nbsp;
+									<b  id="cart-price">INR &nbsp;2699</b>
+								</div>
+								<div class="pro-add-success-button"><a href="javascript:;" class="button-style-1 button-go-cart" title="Vai al carrello" onclick="ec.product.gotoshoppingCart()">Vai al carrello</a><a class="button-style-4 button-walking" href='#' title="Continua" onclick="$('#cart-tips').hide()">Continua&nbsp;>></a></div>									
+							</dd>
+						</dl>					
+					</div>
+			    </div>
+			</div>
+			
+	        <!--商品简介-提交操作 -->
+	        <div class="pro-fixed-action"></div>
+               	<div class="pro-selected">
+                   <span class="msg-tit">Configurazione selezionata&nbsp;：&nbsp;</span>
+                   <span class="msg-bd" id="pro-select-sku">Double 4G version / broken small silver / 32G / value package&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                </div>
+                <div class="pro-backToAvail hide" id="pro-backToAvail">
+	           		Nuovamente disponibile in magazzino <span id="pro-backToAvailDt"><span>
+	           </div>
+	            <div class="pro-action-area buy bundle-item-pro-operation"  id="pro-operation"> 
+	                 <a href="javascript:;" onclick=" " class="button-buy">
+Compra ora	                 </a>
+	            </div>
+	            <div class="prdNaContent hide"  id="prd-na-content">
+	         	 
+	           </div>
+	           	
+	           
+            <!--/pro-right-->
+    	</div></div>
+    <!-- wrap END --> 
+   </div>
+   <!--pro-layout-->
+<!--商品简介end-->
+<div id="group-area3" class="layout">
+	<div class="hr-20"></div>
+	    <!--Bundle Product Starts -->
+
+	    <!--Recommended Product Starts -->
+	    <div id="tab-comb" class="pro-recommend-area">
+			<div class="h">
+	            <h3>Raccomandato con</h3>
+				<div class="h-tab">
+	            </div>
+        	</div>
+		<div class="b clearfix">
+		    <div class="pro-main" id="comb-pro-area">
+
+		    </div>
+		    <div class="pro-sub">
+			<div class="pro-suit-cost-area">
+		            <p>Combo:<b id="comb-count">0</b>&nbsp;Prodotto</p>
+			    <p><b>Prezzo complessivo：€<span id="comb-price"></span></b></p>
+			    <p><a href="javascript:;" class="button-add-cart-2 button-add-cart button-style-1" title='Aggiungi al carrello&#160;' onclick="ec.product.buyComb();return false;"><span>Aggiungi al carrello</span></a></p>
+			</div>
+		    </div>
+		<div class="f"></div>
+	    </div>
+	    <!--Recommended Product ends -->
+
+	</div>
+</div>
+
+<!--商品简介-提交操作 -->
+<form id="order-confirm-form" method="post" class="hide" action="https://store.hihonor.com/it/order/nowConfirmcart"></form>
+<!--延保单独购买提交form -->
+<form id="order-confirm-extend-form" method="post" class="hide" action="https://store.hihonor.com/it/order/extendConfirm"></form>
+<form id="order-shoppingCart-form" method="get" class="hide" action="https://cart-it.hihonor.com/cart/cart.html"></form>
+<!--预付订金form -->
+<form id="order-confirm-deposit-form" method="post" class="hide" action="https://store.hihonor.com/it/order/confirmDeposit"></form>
+<input id="isPriority" name="isPriority" type="hidden" value="0"/>
+
+<div class="hr-40"></div>
+ <!-- Product Slider-->
+<!--悬浮栏start-->
+<div class="" id="center-layout" style="display: none;">
+	<div class="center-layout">
+        <div class="seleted-text">
+        HUAWEI MATE8 glory 6
+        </div>
+        <div class="pro-action">
+            <ul class="operation">
+                <li>
+                    <a href="#" class="btn-buy">Conferma il pagamento</a>
+                </li>
+                <li>
+                    <a href="#" class="btn-addcart">Aggiungi al carrello</a>
+                </li>
+            </ul>
+        </div>   
+    </div>
+  </div>
+    <!--悬浮栏end-->
+
+<!--Notify Me-->
+<textarea id="product-arrival-html" class="hide notification">
+    <div class="arrival-remind-area notify-box">
+        <table border="0" cellpadding="0" cellspacing="0" align="center">
+            <tbody>
+            <tr>
+                <td>
+                <form method="post"> 
+                 <input id="notify" name="notify" type="hidden" />
+                 <input type="hidden" name="notify_random_token" id="notify_random_token" value=""/>
+                 	<input class="text vam span-300 " onkeypress="ec.product.notification(event)" maxlength="50" name="email" id="emailnotify" value="" type="text" placeholder="Indirizzo email">
+                </form>
+                <div class="box-custom-button">
+                    <input type="submit" class="box-ok notify-submit-btn box-button-style-1" value="Avvisami"/>
+                  
+                </div>
+                <div id="msg" class="hide"></div>
+                </td>
+            </tr>
+        </tbody></table>
+    </div>
+</textarea> 
+    
+
+
+<script src="../../product/inventoryd032.html?skuid=784412699&amp;skuid=541375807&amp;skuid=763501270"></script>
+<script>
+(function(){
+var hash = location.hash, skuId = 0, virId = 0,
+	cateList = [];
+
+
+if(hash.length > 1) {
+	var skuInfo = hash.split('#', 2)[1];
+	skuId = (skuInfo.length > 1) ? (parseInt(skuInfo.split(',', 2)[0], 10) || 0) : 0;
+	virId = (skuInfo.length > 1) ? (parseInt(skuInfo.split(',', 2)[1], 10) || 0) : 0;
+} 
+
+if(virId > 0) {
+	$.get('../../category.json', {}, function (json) {
+		if(!json.success) return;
+		var lst = [];
+		for (var i = 0; i < json.virtualList.length; i += 1) {
+			lst = json.virtualList[i];
+			cateList[lst.id] = lst.text;
+		}
+		$('#bread-pro-name').before(cateList[virId]);
+	}, 'json');
+	
+}
+
+ec.context = "https://store.hihonor.com/it"; ec.product.addSkuAttr("784412699" , "" , "Colore", "1" , "Nero"); ec.product.addSkuAttr("784412699" , "" , "Memoria", "2" , "4GB+64GB"); ec.product.addSkuAttr("784412699" , "" , "Tipo d'offerta", "3" , "Solo Telefono"); ec.product.addSkuAttr("784412699" , "" , "Tax Class", "4" , "IT_Product_Tax_Rate"); ec.product.addSkuAttr("541375807" , "" , "Colore", "5" , "Blue"); ec.product.addSkuAttr("541375807" , "" , "Memoria", "6" , "4GB+64GB"); ec.product.addSkuAttr("541375807" , "" , "Tipo d'offerta", "7" , "Solo Telefono"); ec.product.addSkuAttr("541375807" , "" , "Tax Class", "8" , "IT_Product_Tax_Rate"); ec.product.addSkuAttr("541375807" , "" , "Display URL", "9" , "product-html"); ec.product.addSkuAttr("763501270" , "" , "Colore", "10" , "Grigio"); ec.product.addSkuAttr("763501270" , "" , "Memoria", "11" , "4GB+64GB"); ec.product.addSkuAttr("763501270" , "" , "Tipo d'offerta", "12" , "Solo Telefono"); ec.product.addSkuAttr("763501270" , "" , "Tax Class", "13" , "IT_Product_Tax_Rate"); ec.product.setSkuShowType("" , "1"); ec.product.setSkuShowType("" , "2"); ec.product.setSkuShowType("" , "2"); ec.product.setSkuShowType("" , "2"); ec.product.setSkuShowType("" , "1"); ec.product.setSkuShowType("" , "2"); ec.product.setSkuShowType("" , "2"); ec.product.setSkuShowType("" , "2"); ec.product.setSkuShowType("" , "2"); ec.product.setSkuShowType("" , "1"); ec.product.setSkuShowType("" , "2"); ec.product.setSkuShowType("" , "2"); ec.product.setSkuShowType("" , "2"); ec.product.id = "639090033"; ec.product.defaultSku = "784412699"; ec.product.setSkuId = (!ec.product.getSkuInfo(skuId)) ? 0 : skuId; ec.product.status = "2"; ec.product.virId = virId; var _imgName, _giftList, _promotionsList, _prolongLst, _contractList; _imgName = []; _giftList= []; _promotionsList = []; _prolongLst=[]; _contractList = []; ec.product.setSku("784412699" , { code : "008601100001901", skuPromWord : "", skuPromWordLink : "", price : "399.9", originPrice : "399.9", name : "Honor 9 64GB Nero", priceMode : "1", tipsContent : "", buttonMode : "1", gotoUrl : "", startTime : "", countDown : "2", isProm : false, type : "normal", skuPrice : "399.9", integral : "0", photoName : "1509473530555mp.jpg", photoPath : "/product/6901443185719/", imgName : _imgName, giftList : _giftList, promotionLst : _promotionsList, groupType : 0, groupId : 0, prolongLst : _prolongLst, contractList : _contractList, timerPromWord : "", timerPromLink4PC : "", timerPromLink4WAP : "", timerPromLink4APP : "", timerPromStarttime : "", timerPromEndtime : "", endTime : "", isShowReminder : "0" }); _imgName = []; _giftList= []; _promotionsList = []; _prolongLst=[]; _contractList = []; ec.product.setSku("541375807" , { code : "008601100001902", skuPromWord : "", skuPromWordLink : "", price : "399.9", originPrice : "399.9", name : "Honor 9 64GB Blue", priceMode : "1", tipsContent : "", buttonMode : "1", gotoUrl : "", startTime : "", countDown : "2", isProm : false, type : "normal", skuPrice : "399.9", integral : "0", photoName : "1509473518479mp.jpg", photoPath : "/product/6901443185733/", imgName : _imgName, giftList : _giftList, promotionLst : _promotionsList, groupType : 0, groupId : 0, prolongLst : _prolongLst, contractList : _contractList, timerPromWord : "", timerPromLink4PC : "", timerPromLink4WAP : "", timerPromLink4APP : "", timerPromStarttime : "", timerPromEndtime : "", endTime : "", isShowReminder : "0" }); _imgName = []; _giftList= []; _promotionsList = []; _prolongLst=[]; _contractList = []; ec.product.setSku("763501270" , { code : "008601100001903", skuPromWord : "", skuPromWordLink : "", price : "399.9", originPrice : "399.9", name : "Honor 9 64GB Grigio", priceMode : "1", tipsContent : "", buttonMode : "1", gotoUrl : "", startTime : "", countDown : "2", isProm : false, type : "normal", skuPrice : "399.9", integral : "0", photoName : "1509473503263mp.jpg", photoPath : "/product/6901443185726/", imgName : _imgName, giftList : _giftList, promotionLst : _promotionsList, groupType : 0, groupId : 0, prolongLst : _prolongLst, contractList : _contractList, timerPromWord : "", timerPromLink4PC : "", timerPromLink4WAP : "", timerPromLink4APP : "", timerPromStarttime : "", timerPromEndtime : "", endTime : "", isShowReminder : "0" }); })();</script>
+
+<script>
+(function () {
+	//验证是否有库存（实体商品）
+	ec.product.execute("renderInventory", [ec.product.inventory.haveInventory(ec.product.setSkuId || 784412699)]);
+	
+	// 自适配PC和客户端
+	var wapUrl = window.location.href;	
+	wapUrl = wapUrl.replace("www", "m");
+	$("meta[name=mobile-agent]").attr('content', "format=xhtml;url=" + wapUrl);
+})();
+</script>
+
+<form action="#" id="gotourl" method="get"></form>
+<script>
+	/*ec.code.addShare({
+		title : "I @ Huawei Mall found a very good product：Honor 9 64GB Nero Prezzo：€ 399.90. Condividi："
+	});*/
+
+	//去结算
+	ec.product.gotoshoppingCart = function(){
+		//BI统计
+		_paq.push(['trackLink','Add to Cart - Go to pay', 'link', ' ']);
+		setTimeout(function () {
+			//var url = '/order/shoppingCart';
+			var url = 'https://cart-it.hihonor.com/cart/cart.html';
+			$('#gotourl').attr('action', url).submit();
+		}, 500);
+	};
+</script>
+<div id="seller_desc_id" class="hide">
+<style>
+	.seller_details .fr.u-4-5 {
+	  width: 100%;
+	}
+	.seller_details .u-1-5 {
+	  width: 183px;
+	}
+	.seller_details .fl, .seller_details .left, .seller_details .left-area {
+	  float: left;
+	}
+	.seller_details .help-menu-area {
+	  padding: 0 2px;
+	  margin-top: 125px;
+	}
+	.seller_details .help-menu-area .b {
+	  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
+	  border-radius: 2px;
+	  border: 0px solid #c0c0c0;
+	  border-top: 0 none;
+	}
+	.seller_details ol, .seller_details ul {
+	  list-style: none;
+	  padding: 0px;
+	  margin: 0;
+	}
+	.seller_details .help-menu-area h3 {
+	  height: 34px;
+	  line-height: 34px;
+	  color: #525151;
+	  margin: 0px;
+	  font-size: 13px;
+	  font-weight: 700;
+	  padding-left: 10px;
+	  background: #e6e5e5;
+	  background-position: 0 -472px;
+	  background-repeat: repeat-x;
+	  border: 0px solid #c0c0c0;
+	}
+	.seller_details .help-menu-area ol {
+	  padding: 7px 0 14px;
+	  background-color: #f8f8f8;
+	}
+	.seller_details .help-menu-area ol li {
+	  height: 26px;
+	  padding: 4px 0;
+	}
+	.seller_details .help-menu-area ol a {
+	  display: block;
+	  padding: 5px 0 5px 27px;
+	  font-weight: 700;
+	  color: #6f6f6f;
+	  position: relative;
+	  _zoom: 1;
+	  text-decoration: none;
+	}
+	.seller_details .help-menu-area .current a, .seller_details .help-menu-area ol a:hover {
+	  text-decoration: none;
+	  color: #f96209;
+	}
+	.seller_details .help-menu-area ol a:hover {
+	  background-color: #e9e9e9;
+	}
+	.seller_details .u-4-5 {
+	  width: 800px;
+	  margin-bottom: 100px;
+	}
+	.seller_details .fr, .seller_details .right, .seller_details .right-area {
+	  float: right;
+	  width: 100%;
+	}
+	.seller_details .help-detail-area .h {
+	  padding: 24px 0;
+	  margin: 0 26px;
+	  border-bottom: none;
+	}
+	.seller_details .help-detail-area .h h3 {
+	  background: transparent url(../../../../blromstest.vmall.com_8080/it/images/echannel/bg/bg41.jpg) scroll no-repeat;
+	  background-color: #9e9e9e;
+	  background-repeat: repeat-y;
+	  background-position: right 0;
+	  display: inline-block;
+	  padding: 5px 0px 5px 5px;
+	  font-size: 14px;
+	  color: #FFF;
+	  font-weight: 700;
+	  margin-bottom: 15px;
+	  width: 100%;
+	}
+	.seller_details .help-detail-area .b {
+	  padding: 0 0px 0px;
+	  min-height: 100px;
+	  _height: 100px;
+	  margin: 0 0px;
+	  position: relative;
+	  z-index: 2;
+	  color: #666;
+	  line-height: 18px;
+	}
+	.seller_details .help-detail-area .f {
+	  position: relative;
+	  height: 0;
+	  font-size: 0;
+	  line-height: 0;
+	}
+	.seller_details .help-detail-area {
+	  border: 0px solid #d0d0d0;
+	  margin-top: 0px;
+	}
+	.seller_details #head_wrapper {
+	  position: relative;
+	  display: inline-block;
+	  width: 100%;
+	}
+	.seller_details #head_wrapper p {
+	  display: inline-block;
+	  margin-left: 5px;
+	  margin-top: 4px;
+	  margin-bottom: 10px;
+	  color: #1d1d1d;
+	}
+	.seller_details .tou_three ul {
+	  list-style-type: unset;
+	  padding-left: 10px;
+	}
+	.seller_details h3 font {
+	  text-align: center;
+	  padding-left: 15px;
+	}
+</style><div class="seller_details"><div class="fr u-4-5"><!--帮助中心-内容 --><div class="help-detail-area"><div class="h"><div id="head_wrapper"><h3>Termini e Condizioni di Vendita</h3></div><div class="terms_of_use_wrapper"><div class="b"><p class="terms_secction">Questi Termini e Condizioni di Vendita si applicano al tuo acquisto e al contratto che tu concludi con il Venditore. Si prega di leggere i termini e condizioni attentamente in modo da sapere i tuoi diritti e obblighi. Tu puoi salvare o stampare questi Termini e Condizioni affinché possano essere consultati e letti in un momento successivo. Il Venditore deve anche salvare il testo dell&#39;intero Contratto e metterlo a disposizione del Cliente su richiesta del Cliente.</p><p><strong>NOTA: I Prodotti offerti sul Sito web HiHonor sono venduti da Ingram Micro Commerce EMEA BV, con sede legale in Energieweg 2, 5145 NW Waalwijk, Paesi Bassi e registrata presso la Camera di Commercio con il numero di registro 17230750 in qualità di venditore ufficiale e ai fini dei presenti Termini e Condizioni di Vendita è il &quot;Venditore&quot;.</strong></p><p>Questi Termini e Condizioni si applicano a partire dal 1 ° settembre 2017.</p><div class="body_tou_wrapper"><div class="tou_one"><h3>Definizioni</h3><p><strong>1.1. </strong>Contratto: Il contratto disciplinato da questi Termini derivante da un&#39;offerta da parte del Cliente per l&#39;acquisto di Prodotti da parte del Venditore e dall’accettazione da parte del Venditore dell’offerta del Cliente. Il contratto sarà concluso in lingua [personalizza].</p><p><strong>1.2.</strong>Cliente: tu, la persona fisica che abbia effettuato un ordine con il Venditore.</p><p><strong>1.3.  </strong>Prodotto/i: i prodotti hardware offerti per la vendita sul Sito web che richiedono il trasporto e la consegna fisica al Cliente. </p><p><strong>1.4.   </strong>Venditore: Ingram Micro Commerce EMEA B.V., con sede in Energieweg 2, 5145 NW Waalwijk, Paesi Bassi e registrata presso la Camera di Commercio con il numero di registro 17230750.</p><p><strong>1.5.  </strong>Termini: i presenti Termini e Condizioni di Vendita del Venditore.</p><p><strong>1.6.  </strong>. Sito web: <a href="http://www.hihonor.com/global/index.html">http://www.hihonor.com/global/index.html</a>e tutti i sottodomini pertinenti.</p></div><div class="tou_two"><h3>Applicabilità</h3><p><strong>2.1 </strong>Questi Termini si applicano a tutte le offerte, i contratti e le consegne del Venditore sul Sito web, salvo diverso accordo.</p></div><div class="tou_three"><h3>3. Prezzi</h3><p><strong>3.1. </strong>I prezzi di vendita del Venditore sono elencati sul Sito web e includono tutti i dazi, tasse e altri oneri applicati alle vendite dal Venditore, incluso. I.V.A. (se applicabile).</p><p><strong>3.2. </strong>Tutti i prezzi e le informazioni sul Sito web sono destinati ad essere precisi e completi; tuttavia, in talube situazioni errori di prezzi e altri errori possono verificarsi. Il Cliente non ha alcun diritto di contare su un prezzo ovviamente o sostanzialmente inferiore al prezzo al dettagio prevalente per quel Prodotto. Nel caso in cui il prezzo pubblicato del Venditore per un Prodotto sia ovviamente o sostanzialmente inferiore al prezzo al dettagio prevalente a causa dell&#39;errore di prezzo del Venditore, il Venditore non ha alcun obbligo di vendere a tale prezzo e ha il diritto di annullare il Contratto con il Cliente prima della spedizione e consegna. Corrispondentemente, se il Venditore ha offerto un Prodotto a un prezzo sostanzialmente o ovviamente superiore al prezzo al dettaglio prevalente per quel Prodotto ed ha accettato l&#39;ordine del Cliente a tale prezzo, il Venditore permetterà al Cliente di disdire il Contratto e / o rimborserà al Cliente la differenza tra il prezzo più elevato e il prezzo vero.</p><p><strong>3.3. </strong>Salvo diversa convenzione sul Sito web e nella procedura d’ordinazione, le spese di spedizione e di amministrazione del Venditore sono incluse nel prezzo finale da pagare per i Prodotti. Tutte le spese o le commissioni che verranno aggiunte al prezzo del Prodotto saranno visibili al Cliente durante la procedura d’ordinazione e prima che il Cliente metta l&#39;ordine.</p><p><strong>3.4. </strong>I costi di spedizione per i Prodotti sono specificati nella pagina del costo di spedizione del Sito web e specificati nella procedura d’ordinazione.</p><p><strong>3.5. </strong>Il pagamento sarà effettuato tramite carta di debito o di credito o tramite qualsiasi altro metodo di pagamento offerto sul Sito web. Eventuali rimborsi al Cliente saranno effettuati sulla stessa carta o altro metodo di pagamento.</p></div><div class="tou_four"><h3>4. Il Contratto</h3><p><strong>4.1. </strong>Contratti saranno stipulati solamente sul Sito web ed all’accettazione da parte del Cliente di questi Termini. </p><p><strong>4.2. </strong>Se il Cliente ha effettuato un ordine sul Sito web, il Venditore confermerà la ricezione dell&#39;ordine e la sua successiva accettazione dell&#39;ordine sul Sito web, tramite messaggio testuale o posta elettronica. Finché l&#39;accettazione del Venditore non sia stata confermata al Cliente, il Cliente ha il diritto di annullare l&#39;ordine e di risolvere il Contratto.</p><p><strong>4.3. </strong>Ogni contratto deve essere pagato prima della consegna tramite carta di credito o di debito o con qualsiasi altro mezzo offerto sul Sito web. I Prodotti saranno spediti solo dopo la verifica del pagamento effettuato dal Cliente da parte del Venditore.</p><p><strong>4.4.</strong>Il Cliente è solamente responsabile per il pagamento di eventuali onorari addebitati dalla propria banca, società di carte o altro fornitore dell&#39;opzione di pagamento selezionata del Cliente.</p></div><div class="tou_five"><h3>5. Esecuzione del contratto </h3><p><strong>5.1.</strong>L&#39;ordine del Cliente ed il Contratto verranno elaborati ed eseguiti non appena il Venditore ha ricevuto il pagamento del Cliente. Il Venditore non è obbligato a spedire alcun Prodotto prima che abbia ricevuto il pagamento a saldo del prezzo per il Prodotto rilevante</p><p><strong>5.2.</strong>Il Venditore può rifiutare qualsiasi ordine per più Prodotti con diversi orari di consegna o indirizzi di consegna diversi.</p><p><strong>5.3.</strong>Se non è possibile per il Venditore da spedire i Prodotti entro il periodo di consegna menzionato sul Sito web o la conferma d&#39;ordine, il Venditore informerà il Cliente in merito e consentirà al Cliente di risolvere il Contratto, nel quale caso un ogni pagamento effettuato al Venditore verrà rimborsato. Altri diritti e rimedi del Cliente (vedere la Sezione 12 dei Termini) rimangono inalterati. Questi includono l&#39;opzione per chiedere prestazione e / o indennizzo.</p><p><strong>5.4.</strong>Il rischio di perdita e danneggiamento dei Prodotti rimarrà con il Venditore fino alla consegna all&#39;indirizzo di consegna nominato dal Cliente, al momento in cui il rischio passerà al Cliente.</p></div><div class="tou_six"><h3>6. Diritto di recesso</h3><p><strong>6.1.</strong>Il Cliente (essendo il consumatore) può recedere dal Contratto senza dover fornire alcuna motivazione.</p><p><strong>6.2.</strong>Il periodo di recesso scadrà dopo 14 giorni dal giorno in cui il Cliente acquisisce il possesso fisico del Prodotto.</p><p><strong>6.3.</strong>Per esercitare il diritto di recesso, il Cliente deve informare il Venditore all&#39;indirizzo sottostante della decisione di recedere dal Contratto con una dichiarazione inequivocabile (ad esempio una lettera inviata per posta o e-mail).</p><p><strong>6.4.</strong>Il Cliente può anche utilizzare il modulo tipo di recesso sul Sito web del Venditore, ma ciò non è obbligatorio. Se il Cliente sceglie di utilizzare tale forma, il Cliente può anche compilare e presentare elettronicamente il modulo tipo di recesso o qualsiasi altra dichiarazione inequivocabile sul Sito web. Se il Cliente utilizza questa opzione, il Venditore comunicherà al Cliente una conferma di ricevimento del recesso senza indugio su un supporto durevole (ad esempio via e-mail). </p><p><strong>6.5.</strong>Per soddisfare la scadenza del recesso, è sufficiente che il Cliente invii la comunicazione relativa all&#39;esercizio del diritto di recesso prima che sia scaduto il periodo di recesso.</p></div><div class="tou_seven"><h3>7. Obblighi del Cliente durante il periodo di recesso.</h3><p><strong>7.1.</strong>Durante il periodo di recesso, il Cliente deve gestire con attenzione i Prodotti ricevuti e l&#39;imballaggio. Il Cliente deve sballare o utilizzare il Prodotto nella misura necessaria per determinare la natura, le caratteristiche e il funzionamento del Prodotto. Come guida, il Cliente può sballare, utilizzare e ispezionare il Prodotto nella misura in cui ciò fosse consentito se il Cliente avesse acquistato il Prodotto presso da locali fisici come un negozio o un outlet.</p><p><strong>7.2.</strong>Il Cliente sarà responsabile solo per una diminuzione del valore del Prodotto se il Cliente ha utilizzato, danneggiato o altrimenti smaltito il Prodotto in modo non conforme a quanto consentito dalla clausola 7.1.</p><p><strong>7.3.</strong>Il Cliente non sarà responsabile per qualsiasi diminuzione del valore del Prodotto se il Venditore non ha fornito al Cliente tutte le informazioni sul diritto di recesso che il Venditore è tenuto a fornire secondo la legge prima di concludere il Contratto.</p></div><div class="tou_eight"><h3>8. Esercizio e Costi del Recesso</h3><p><strong>8.1.</strong>Se il Cliente recede dal Contratto, il Venditore rimborserà al Cliente tutti i pagamenti ricevuti dal Cliente, compresi i costi di consegna (ad eccezione dei costi supplementari derivanti dalla scelta del Cliente di un tipo di spedizione diverso dal tipo di consegna standard meno costoso offerto dal Venditore) senza alcun indugio e comunque non oltre 14 giorni dal giorno in cui il Venditore è stato informato sulla decisione di recedere dal Contratto.</p><p><strong>8.2.</strong>Il Venditore effettuerera&#39; tale rimborso utilizzando gli stessi mezzi di pagamento utilizzati dal Cliente per la transazione iniziale,  fatto salvo ove espressamente stabilito diversamente  da parte dal Cliente; in ogni caso, il Cliente non dovrà sostenere alcun costo quale conseguenza del rimborso.</p><p><strong>8.3.</strong>Il Venditore può trattenere il rimborso fino a quando il Venditore non abbia riecuperato i Prodotti o il Cliente abbia fornito prove di aver rispedito i Prodotti, qualunque sia il più presto.</p><p><strong>8.4.</strong>Il Cliente dovrà rispedire i Prodotti senza indugio e comunque non oltre 14 giorni dal giorno in cui il Cliente ha comunicato il recesso dal Contratto al Venditore. Il termine è rispettato se il Cliente rispedisce i Prodotti prima della scadenza del periodo di 14 giorni.</p><p><strong>8.5.</strong>Il Cliente sostiene solo il costo diretto della restituzione dei Prodotti per posta. Se il Prodotto per sua natura non può normalmente essere restituito per posta, il Cliente dovrà sostenere il costo diretto di restituzione dei Prodotti. Il costo è stimato ad un massimo di circa 20 EUR (o il valore equivalente in altre valute).</p><p><strong>8.6.</strong>Il Cliente è responsabile unicamente della diminuzione del valore dei Prodotti risultante da una manipolazione oltre a quella necessaria per accertare la natura, le caratteristiche e il funzionamento dei Prodotti.</p></div><div class="tou_nine"><h3>9. Eccezioni al Diritto di Recesso</h3><p><strong>9.1.</strong> Il Venditore non è obbligato ad accettare il recesso e rimborsare il prezzo di acquisto in caso di:</p><p><strong>9.1.1. </strong>Prodotti rapidamente deperibili o Prodotti aventi durata limitata;</p><p><strong>9.1.2. </strong>software sigillato, memoria (ad esempio, memoria SD o USB), registrazioni audio o video se tali Prodotti sono stati aperti dopo la consegna al Cliente;</p><p><strong>9.1.3. </strong>il Prodotto è stato personalizzato o confezionato su misura del Cliente;</p></div><div class="tou_ten"><h3>10. Forza maggiore</h3><p><strong>10.1.</strong>In caso di forza maggiore (ad esempio scioperi, condizioni atmosferiche estreme), gli obblighi del Venditore ai sensi del Contratto sono sospesi durante il periodo della situazione di forza maggiore. </p></div><div class="tou_eleven"><h3>11. Garanzie sul Prodotto</h3><p><strong>11.1. </strong>Le garanzie  del produttore offerte al Cliente non limitano o incidono negativamente sui diritti e sui rimedi del Cliente in base alle leggi sulla protezione dei consumatori.</p><p><strong>11.2. </strong>Le garanzie del produttore sono disponibili sul Sito web o sul sito web rispettivo del produttore.</p></div><div class="tou_twelve"><h3>12. Difetti e Rimedi</h3><p><strong>12.1. </strong>Un Prodotto è difettoso o non conforme se non è conforme alla descrizione del produttore o del Venditore o se non può essere utilizzato per scopi normali. Il Prodotto è anche difettoso se non è di qualità normale e non funziona come si può ragionevolmente prevedere.</p><p><strong>12.2. </strong>Se un Prodotto risulta difettoso all&#39;installazione o all&#39;utilizzo o se il Prodotto non è conforme al Contratto, il Cliente dovrà informare il Venditore entro 2 mesi dal momento in cui il Cliente ha rilevato o individuato il difetto o la non conformità ma non oltre 1 anno dalla data di consegna.</p><p><strong>12.3. </strong>Se Il Cliente è un consumatore qualsiasi difetto o non conformità dev’essere riportata al Venditore non oltre 2 mesi dalla rilevazione o dall&#39;identificazione del difetto o della non conformità, ma non oltre 2 anni dalla data di acquisto.</p><p><strong>12.4.</strong>Se il Prodotto è difettoso o non conforme, il Cliente può richiedere al Venditore di risolvere il difetto. Il Venditore avrà il diritto di determinare se il Prodotto verrà riparato o rimborsato. Qualora il Venditore rifiuti di risolvere il difetto o, entro un termine ragionevole, tale rimedio fallisse, il Cliente avrà diritto, a discrezione del Cliente, di restituire il Prodotto e richiedere un rimborso, o richiedere una ragionevole riduzione di prezzo se il Cliente decide di mantenere il Prodotto difettoso. Il diritto del Cliente di chiedere danni secondo la legge legge rimane inalterato.</p><p><strong>12.5. </strong>I reclami relativi a difetti o non conformità non possono essere sollevati contro il Venditore e il Venditore non sarà responsabile al Cliente se e nella misura in cui:</p><p><strong>12.5.1. </strong>il difetto sorge o è dovuto al abuso o l&#39;uso improprio del Prodotto da parte del Cliente, a fuoco, contatto liquido e cause simili ed esterne al Prodotto;</p><p><strong>12.5.2. </strong>il difetto è causato dall&#39;utilizzo del Prodotto da parte del Cliente per scopi non destinati o contrari alle istruzioni, ai manuali o alle linee guida del produttore o del Venditore;</p><p><strong>12.5.3. </strong>Il difetto deriva dalla riparazione propria o non autorizzatata del Cliente o dall&#39;utilizzo di parti di ricambio o componenti non originali.</p></div><div class="tou_thirteen"><h3>13. Reclami e Risoluzione di Controversie</h3><p><strong>13.1 </strong>Se il Cliente ha una denuncia circa la gestione del Contratto o la prestazione di servizi del Venditore in relazione all&#39;acquisto dei Prodotti da parte del Cliente, il Cliente può contattare il Venditore attraverso i numeri di telefono, l&#39;indirizzo email, i link web o gli indirizzi postali indicati sul Sito web. Per consentire al Venditore di gestire la denuncia via telefono o e-mail, si prega di fornire:</p><p><strong>13.1.1. </strong>numero dell&#39;ordine, </p><p><strong>13.1.2. </strong>nome e indirizzo del Cliente;</p><p><strong>13.1.3. </strong>indirizzo e-mail, </p><p><strong>13.1.4. </strong>descrizione della base del reclamo e </p><p><strong>13.1.5. </strong>quali rimedi o azioni sono richiesti dal Venditore.</p><p><strong>13.2. </strong>Il Venditore non dovrà affrontare né rispondere a eventuali reclami sollevati attraverso l&#39;utilizzo di mezzi di comunicazione sociali (ad esempio, Facebook, Twitter) a meno che questa opzione non venga offerta sul Sito web.</p><p><strong>13.3. </strong>Il Cliente riceverà una risposta al reclamo entro 14 giorni.</p><p><strong>13.4. </strong>Il Cliente (essendo un consumatore) può anche segnalare e presentare una denuncia agli organismi locali di Online Dispute Resolution identificati sulla piattaforma ODR della Commissione Europea all&#39;indirizzo <a href="http://ec.europa.eu/odr">http://ec.europa.eu/odr</a> </p></div><div class="tou_fourteen"><h3>14. LIMITATION OF LIABILITY</h3><p><strong>14.1. </strong>I Prodotti sono fabbricati secondo le specifiche e destinati ad essere utilizzati nei paesi dello Spazio economico europeo o della Svizzera (SEE).  Garanzie e rimedi concessi ai clienti situati in questa regione non possono essere applicati a qualsiasi Cliente che acquista Prodotti da fuori di questa regione.</p><p><strong>14.2. </strong>Il Contratto e tutti i Prodotti sono soggetti alle leggi vigenti per il controllo delle esportazioni, incluse le leggi sul controllo delle esportazioni degli Stati Uniti. Il Cliente non può esportare alcun Prodotto acquistato dal Venditore in qualsiasi paese al di fuori dello SEE, se vietato dalle leggi sul controllo delle esportazioni. Se il Cliente intende esportare qualsiasi Prodotto acquistato dal Venditore in un altro paese, il Cliente deve ottenere le licenze di esportazione richieste (o altre approvazioni del governo) prima di farlo.</p></div><div class="tou_fifteen"><h3>15. Generale</h3><p><strong>15.1.</strong>Questi Termini e qualsiasi Contratto e controversia tra il Venditore e il Cliente sono soggetti alle leggi dei Paesi Bassi e le parti le parti convengono nel sottoporre qualsiasi disputa alla giurisdizione esclusiva dei tribunali competenti di Breda, Paesi Bassi. </p><p><strong>15.2.</strong>Se il Cliente è un consumatore, la sezione 15.1 non funge da restrizione nei confronti dei diritti del Cliente in materia di tutela dei consumatori per applicare le leggi e presentare qualsiasi reclamo, controversia o conflitto ai tribunali competenti del paese SEE in cui è situato il Cliente o il paese SEE da cui è stato effettuato l&#39;acquisto. Nulla nel presente Contratto restringerebbe l&#39;uso del ODR da parte del Cliente in base alla clausola 13..</p><p><strong>15.3.</strong>Se una disposizione delle presenti Termini non è valida o non è applicabile, ciò non pregiudica la validità delle altre disposizioni di questi Termini.</p></div><div class="tou_sixteen"><h3>Le coordinate di contatto</h3><p>Qualora il Cliente abbia delle domande, reclami o commenti dopo aver letto i presenti Termini e Condizioni, contatta il Venditore tramite il Sito web o tramite e-mail o all&#39;indirizzo del Venditore:</p><p>Ingram Micro Commerce EMEA B.V.<br />Re.: <a href="http://www.hihonor.com/global/index.html">http://www.hihonor.com/global/index.html</a><br />Energieweg 2<br />Paesi Bassi<br />Email: <br />Telefono: </p><p>KvK no. 17230750<br />VAT no. NL819763603B01</p></div></div></div></div></div></div></div></div>
+</div>
+
+
+<script>
+$("document").ready(function(){
+	ec.notification.load();
+	ec.notification.trackorderpopup();
+});
+
+</script>
+<style>
+#whoson_chat_link {
+   display:none !important;   
+} 
+#wo_online {
+   display:none !important;   
+  
+  }
+  #wo_online_image {
+      display:none !important;   
+  }
+</style><!-- Embedded WhosOn: Insert the script below at the point on your page where you want the Click To Chat link to appear --><script type="text/javascript" src="../../../../honor.whoson.com/include077c.js?domain=www.hihonor.com-it"></script><script type="text/javascript">
+if(typeof sWOTrackPage=='function')sWOTrackPage();
+
+function openchat(){
+  sWOStartChat();
+}
+</script>
+<footer>
+<div class="wrap_details"><div class="footer_details_wrapper"><div class="delivery"><div class="icon-delivery"></div><div class="delivery-title">CONSEGNA GRATUITA</div><div class="delivery-desc">PER ORDINI OLTRE €99</div></div><div class="days"><div class="icon-timeline"></div><div class="days-title">14 GIORNI</div><div class="days-desc">RESO GRATUITO</div></div><div class="payment"><div class="icon-secure"></div><div class="payment-title">PAGAMENTO SICURO</div><div class="payment-desc">STORE UFFICIALE HONOR</div></div><div class="year"><div class="icon-shield"></div><div class="year-title">2 ANNI</div><div class="year-desc">DI GARANZIA</div></div></div></div>
+<!--need to remove below text once cms content <div class="wrap_details"><div class="footer_details_wrapper"><div class="delivery"><div class="icon-delivery"></div><div class="delivery-title">CONSEGNA GRATUITA</div><div class="delivery-desc">PER ORDINI OLTRE €99</div></div><div class="days"><div class="icon-timeline"></div><div class="days-title">14 GIORNI</div><div class="days-desc">RESO GRATUITO</div></div><div class="payment"><div class="icon-secure"></div><div class="payment-title">PAGAMENTO SICURO</div><div class="payment-desc">STORE UFFICIALE HONOR</div></div><div class="year"><div class="icon-shield"></div><div class="year-title">2 ANNI</div><div class="year-desc">DI GARANZIA</div></div></div></div> start reflects -->
+<!--<div class="wrap_details"><div class="footer_details_wrapper"><div class="delivery"><div class="icon-delivery"></div><div class="delivery-title">Free delivery</div><div class="delivery-desc">On orders above �99</div></div><div class="days"><div class="icon-timeline"></div><div class="days-title">14 day</div><div class="days-desc">No-hassle returns</div></div><div class="payment"><div class="icon-secure"></div><div class="payment-title">100% secure payment</div><div class="payment-desc">huawei & Honor online store</div></div><div class="year"><div class="icon-shield"></div><div class="year-title">2 year</div><div class="year-desc">manufacture warranty</div></div></div></div>-->
+
+<div class="footer-primary">
+	<div class="subscription-block">
+		<form data-action="#" method="post" id="subscribe-form" class="subscribe-form">
+        <div class="form-group">
+			<div class="info-block">
+				<div class="info-txt">Resta sempre aggiornato</div>
+				<div class="info-txt-smaller">Registrati per aggiornamenti,  offerte e molto altro</div>
+			</div>
+            <div class="txtbox-btn">
+				<input type="hidden" name="random_token" id="random_token" value="">
+				<input name="newsletter" type="hidden" id="newsletter">
+				<div class="subscribe-error-msg-alert"> 
+                    <span class="subscribe-input-validate-email">
+                       <input type="email"  onkeypress="ec.notification.newslettersubscribe(event, false)" id="email" name="email" placeholder="Inserisci il tuo indirizzo Email" maxlength=50 class="subscribe-input" autocomplete="off" >
+                    </span>
+                     <span onclick="ec.notification.newslettersubscribe(event, true)" class="subscribe-icon icon_next_page"></span>
+                </div>
+            </div>
+			<div class="error-msg" id="error_msg"></div>
+        </div>
+    </form>
+    
+<!-- Confirm popup message -->
+<div id="ec_ui_confirm" class="popup-area popup-define-area hide">
+   <div class="b">
+      <p id="ec_ui_confirm_msg"><br /></p>
+      <div class="popup-button-area"><a id="ec_ui_confirm_yes" href="javascript:;" class="button-action-yes btn_blue_primary" title='S&#236;'><span>S&#236;</span></a><a id="ec_ui_confirm_no" href="javascript:;" class="button-action-no btn_black_secondary" title='No'><span>No</span></a></div>
+   </div>
+   <div class="f"><s class="icon-arrow-down"></s></div>
+</div>
+<!-- New Confirm popup message -->
+<div id="ec_ui_confirm_new" class="popup-area-new hide">
+    <div class="b">
+       <p id="ec_ui_confirm_new_msg"><br /></p>
+       <div class="popup-button-area"><a id="ec_ui_confirm_new_yes" href="javascript:;" class="box-button-style-1" title='S&#236;'><span>S&#236;</span></a><a id="ec_ui_confirm_new_no" href="javascript:;" class="box-button-style-1" title='No'><span>No</span></a></div>
+    </div>
+</div>
+
+<!-- UI tips popup -->
+<div id="ec_ui_tips" class="popup-area popup-define-area hide">
+    <div class="b">
+        <p id="ec_ui_tips_msg" class="tac">
+            <br />
+        </p>
+        <div class="popup-button-area tac">
+            <a id="ec_ui_tips_yes" href="javascript:;" class="button-action-yes btn_blue_primary" title='OK'>
+                <span>Yes</span>
+            </a>
+        </div>
+    </div>
+</div>    
+	<div class="social-block"><div class="info-block"><div class="info-txt">SEGUI HONOR</div><div class="info-txt-smaller">Condividi la tua passione.</div></div><div class="icon-block"><a class="icon_facebook" href="https://www.facebook.com/HonorIT" target="_blank"></a><a class="icon_instagram" href="https://www.instagram.com/honor_italia" target="_blank"></a><a class="icon_twitter" href="https://twitter.com/Honor_IT" target="_blank"></a><a class="icon_Youtube" href="https://www.youtube.com/channel/UCF75JbYhaYRJw1_44gRtfmQ" target="_blank"></a></div></div>
+</div></div>
+<script>
+
+  $(window).load(function(){
+
+        $("#index_slider .ec-slider-item, #index_slider .ec-slider-list,  #index_slider a, #index_slider").css("height","600px");
+
+
+  });
+
+
+</script><style>
+
+.wide .ec-slider-nav-1 {
+    margin-left: 0px;
+    left: 49%;
+    width: auto;
+}
+
+	.naver ul{
+	    display:block;
+	  }
+	  .wide .naver li, .wide .naver li:hover{
+	           margin-top: 0px; 
+	  }
+
+	  .order-header .progress-area{
+	        padding-top: 22px;
+	  }
+		.pro-feature-area {
+		   text-align:center;
+		   }
+		   .accessory .temp-two-prod-detail-width .pro-feature-area img{
+		   width: auto;
+		   }
+		   .honor-wall .tabs,  .honor-wall .nav-bar{
+		   display:none;
+		   }
+
+
+		   footer .footer-secondary .footer-secondary-one .item-parent .item-block:nth-last-child(1){
+		       padding: 0 94px 0 0;
+		   }
+		   footer .footer-secondary .footer-secondary-one .country-block .country{
+			border-top:0px;
+		   }
+		   footer .footer-secondary .footer-secondary-one .country-block{
+		   width: 110px;
+		   }
+		   label#footerCountry{
+		       position: relative;
+		    top: 2px;
+		   }
+		   footer .footer-secondary .footer-secondary-one .country-block .icon_next_page{
+		       top: 80px; 
+		   }
+	  .footer-secondary .partner-icon{
+	        margin-left: -9px;
+	  }
+  footer .footer-secondary .footer-secondary-one .item-parent .item-block{padding: 0px 84px 0 0px;}
+  footer .footer-secondary .footer-secondary-one .item-parent .item-block:nth-last-child(2) {padding: 0 85px 0 0;}
+  footer .footer-secondary .footer-secondary-one .call-us-block .call-us{padding: 15px 0 12px 0;}
+  a.chat_us_btn.btn_black_secondary {
+    background-color: #00b2e6;
+    border:none;
+}
+  a.chat_us_btn.btn_black_secondary:hover {
+    background-color: #1b9fd6;
+}
+.pro-gallery-area .pro-gallery-nav{
+  bottom: 10px!important;
+}
+.pro-property-area .pro-meta-area .price-block-com{
+  padding-top: 10px;
+}
+#pro-skus dt{
+  width: auto;
+}
+#pro-quantity-area dt{
+  float: none;
+}
+.pro-summary-area .pro-property-area{
+  padding-top: 20px;
+}
+
+
+</style><div class="footer-secondary"><div class="footer-secondary-one"><div class="item-parent"><div class="item-block"><div class="info-title">INFORMAZIONI SU HONOR</div><ul><li><a href="../../cmsContentba69.html?key=web_cms_brands" target="_self" textvalue="Honor Brand">Honor Brand</a></li><li><a href="../../cmsContente6c2.html?key=web_cms_events" target="_self" title="Honor Attività">Honor Attività</a></li></ul></div><div class="item-block"><div class="info-title">PRODOTTI &amp; SERVIZI</div><ul><li><a href="index.html" target="_self" textvalue="Honor 9">Honor 9</a></li><li><a href="../775214205/index.html" target="_self" textvalue="Honor 8 Pro">Honor 8 Pro</a></li><li><a href="../805154013/index.html" target="_self" textvalue="Honor 8">Honor 8</a></li><li><a href="../205715997/index.html" target="_self" textvalue="Honor 6X">Honor 6X</a></li><li><a href="https://store.hihonor.com/it" target="_self" textvalue="Honor 6A">Honor 6A</a></li><li><a href="http://www.hihonor.com/it/tradein/index.html" target="_blank" textvalue="Trade-In Smartphone Usati">Trade-In Smartphone Usati</a></li><li><a href="https://honor.simplesurance.eu/" target="_blank" textvalue="Assicurazione Smartphone">Assicurazione Smartphone</a></li></ul></div><div class="item-block"><div class="info-title">SUPPORTO</div><ul><li><a href="http://www.hihonor.com/it/support/service-center/index.html" target="_blank" textvalue="x-Centro Servizi">Centro Servizi</a></li><li><a href="http://www.hihonor.com/it/support/warranty-notice/index.html" target="_blank" textvalue="x-Informativa sulla garanzia">Informativa sulla garanzia</a></li><li><a href="../../cmsContent62ad.html?key=web_cms_return_agreement" target="_self" textvalue="Informativa sui resi">Informativa sui resi</a></li><li><a href="../../cmsContentdef5.html?key=web_cms_shipping_policy" target="_self" textvalue="Spedizioni">Spedizioni</a></li><li><a href="../../cmsContentec8f.html?key=web_cms_faq" target="_self" textvalue="FAQ">FAQ</a></li><li><p><a href="http://www.hihonor.com/it/support/service-center/index.html" target="_blank" textvalue="Prodotti Manuali">Manuali di prodotto</a></p></li><li><p><a href="https://store.hihonor.com/it" target="_blank" textvalue="Prodotti Manuali"></a><a href="http://www.hihonor.com/it/support/service-center/index.html" target="_blank" textvalue="Aggiornamento Software">Aggiornamento Software</a></p></li></ul></div></div><div class="call-us-block"><div class="info-text"><div class="info-title">Contattaci</div><div>Lunedì - Venerdì 8:00-21:00</div><div><span style="padding-right:3px;">Sabato:</span>9:00-14:00 </div><div>(Eccetto giorni festivi)</div></div><div class="call-us"><span class="icon_phone"></span><span>800 646 667</span></div><div class="call-us-email"><a href="mailTo:italy.support@hihonor.com" target="_self" textvalue="italy.support@hihonor.com">italy.support@hihonor.com</a></div><div class="chat-us-sec"><a href="javascript:openchat();" class="chat_us_btn btn_black_secondary"><span class="icon_chat chat_icon_footer"></span> LIVE CHAT </a></div><div style="font-family:&#39;proximanovalight&#39;;font-size:11px;font-weight:normal;line-height:20px;color:#666;letter-spacing:.22px;margin-top:9px;margin-left:38px;"><div style="line-height:9px;">Lunedì - Venerdì 8:00-21:00 </div><div>(Eccetto giorni festivi)</div></div></div><div class="country-block"><div class="country"><span class="icon_next_page" id="footerFgArrow"></span><img id="footerFg" src="../../../../cdn-itcname.hihonor.com/pms/template/content/2017/20170913180451794.jpg" width="22" height="16" /><label id="footerCountry">ITALY</label></div><div class="language" id="footerLang">Italiano</div></div></div><div class="footer-secondary-two"><div class="item-block"><div class="partner-block"><div class="info-title">Metodi di pagamento</div><div class="partner-icon"><img src="../../../../cdn-escname.hihonor.com/pms/template/content/2017/20171121164721549.jpg" style="float:none;width:466px;height:38px;" width="466" height="38" border="0" hspace="0" vspace="0" /></div></div><div class="partner-block"><div class="info-title">Partner di consegna</div><div class="partner-icon"><img src="../../../../cdn-itcname.hihonor.com/pms/template/content/2017/20171025170922314.png" title="20170729180232243.png" style="float:none;" /></div></div></div><div class="item-block"><ul class="menu-item"><li><a href="../../cmsContent0416.html?key=web_cms_privacy" target="_self" textvalue="Informativa sulla privacy">Informativa sulla privacy</a><span>|</span></li><li><a href="../../cmsContent9430.html?key=web_cms_terms" target="_self" textvalue="Termini d’uso">Termini e condizioni</a><span>|</span></li><li><a href="../../cmsContent3ae3.html?key=web_cms_limited" target="_self" textvalue="Dichiarazione dei cookie">Avviso Legale</a></li><li><br /></li></ul><div class="copyright-block"><span>COPYRIGHT ©HUAWEI HONOR 1998-2017.TUTTI I DIRITTI RISERVATI.</span></div></div></div></div>
+</footer>
+<script type="text/javascript">
+                         
+ var config = ["9.0",
+                   "3.6", 
+                   "5.1",
+                   "2.0"]; //ie,firefox,safari,chorme
+				   
+    if (checkBrowserDeprecated(config) && getBadBrowser('browserWarning') != 'seen') {
+		
+		
+        jQuery(document).ready(function() {
+			jQuery("#check-browser1").show();
+			jQuery("#browser-support-overlay").show();
+			
+			jQuery('#custom-noThanks').click(function(){
+				jQuery("#check-browser1").hide();	
+				jQuery("#browser-support-overlay").hide();
+				create_cookie('browserWarning', 'seen', 15, 'https://store.hihonor.com/');
+			});
+        });
+		
+    }
+     //Based on document.referer check if register or login
+     var uri = location.href;
+     var referer = document.referrer;
+    if(uri.indexOf("ANONYMITY_LOGIN_NAME") >= 0 && referer){
+        if(referer.indexOf("userRegister") >=0){
+            ec.ga.eventTracking('Account','Register Success', "Header");
+        } else {
+            ec.ga.eventTracking('Account','Login Success', "Header");
+        }
+   }
+	function hideCustomModal(){
+		create_cookie('browserWarning', 'seen', 15, 'https://store.hihonor.com/');
+		jQuery('#custom-alert').fadeOut( "slow" );
+	}
+    function checkBrowserDeprecated(versionArray){
+    //jQuery.browser.device = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|symbian|palm|opera mini/i.test(navigator.userAgent.toLowerCase()));
+    //if(!jQuery.browser.device){
+         if(checkIsIEBrowser1()){
+			 var IEV = parseInt(getIEBrowserVersion());
+			 if(IEV <= 8){
+				 if(parseInt(getIEBrowserVersion()) < versionArray[0]){
+					return true;
+				}
+				else{
+					return false;
+				}
+			 }
+			 else{
+				 if(getBadBrowser('browserWarning') != 'seen'){
+					 jQuery('#custom-alert').css('display','block');
+				 }
+			 }
+            
+        }
+        else if(jQuery.browser.mozilla && parseFloat(jQuery.browser.version) < versionArray[1]){ 
+        return true;
+        }
+        else if((jQuery.browser.chrome = /chrome/.test(navigator.userAgent.toLowerCase()))){ 
+            var userAgent = navigator.userAgent.toLowerCase();
+            userAgent = userAgent.substring(userAgent.indexOf('chrome/index.html') +7);
+            userAgent = userAgent.substring(0,userAgent.indexOf('.'));
+            jQuery.browser.version = userAgent;
+            jQuery.browser.safari = false;
+            if(parseFloat(jQuery.browser.version) < versionArray[3]){
+            return true;
+            }
+        }
+        else if(jQuery.browser.safari){ 
+            var userAgent = navigator.userAgent.toLowerCase();
+            userAgent = userAgent.substring(userAgent.indexOf('version/index.html') +8);
+            userAgent = userAgent.substring(0,userAgent.indexOf('.'));
+            jQuery.browser.version = userAgent;
+            if(parseFloat(jQuery.browser.version) < versionArray[2]){
+            return true;
+            }
+        }
+        else {
+        return false;
+        }
+    //}
+}
+
+
+function checkIsIEBrowser1(){
+    var ua= navigator.userAgent, tem, 
+    M= ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+    if(/trident/i.test(M[1])){
+        tem=  /\brv[ :]+(\d+)/g.exec(ua) || [];
+        tem= 'MSIE '+(tem[1] || '');
+
+        if(tem.indexOf("MSIE") != -1)
+            return true;
+        else    
+            return false;
+    }
+    
+    M= M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?'];
+    if((tem= ua.match(/version\/(\d+)/i))!= null) M.splice(1, 1, tem[1]);
+    if(M.join(' ').indexOf("MSIE") != -1)
+        return true;
+    else
+        return false;
+
+}
+
+
+function getIEBrowserVersion(){
+    var ua= navigator.userAgent, tem, 
+    M= ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+    if(/trident/i.test(M[1])){
+        tem=  /\brv[ :]+(\d+)/g.exec(ua) || [];
+        return (tem[1] || '');
+    }
+    
+    M= M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?'];
+    if((tem= ua.match(/version\/(\d+)/i))!= null) M.splice(1, 1, tem[1]);
+    
+    if(M.join(' ').indexOf("MSIE") != -1)
+        return M[1];
+
+}
+
+function getBadBrowser(c_name)
+{
+    if (document.cookie.length>0)
+    {
+    c_start=document.cookie.indexOf(c_name + "=");
+    if (c_start!=-1)
+        { 
+        c_start=c_start + c_name.length+1; 
+        c_end=document.cookie.indexOf(";",c_start);
+        if (c_end==-1) c_end=document.cookie.length;
+        return unescape(document.cookie.substring(c_start,c_end));
+        } 
+    }
+    return "";
+}   
+
+function create_cookie(name, value, days2expire, path) {
+  var date = new Date();
+  var secure="";
+  if(checkSslCert==="true") {
+    secure="secure";
+  }
+  date.setTime(date.getTime() + (days2expire * 24 * 60 * 60 * 1000));
+  var expires = date.toUTCString();
+  document.cookie = name + '=' + value + '; ' +
+                   'expires=' + expires + '; ' +
+                   'path=' + path + '; ' +
+                   secure;
+}
+						 
+                        </script>
+						
+<div id="check-browser1" style="display: none;z-index:9999;">						
+<div>
+    <div class=top-backcrossbrowser>
+        <p class=out-date>Did you know your browser is out of date?</p>
+    </div>
+    <div class=content-maincheckbrowser>
+        <p>For an optimized experience, upgrade your browser or install the latest version of any other new generation browser.</p>
+        <p class=click-hereicon>Click on the icon to download</p>
+    </div>
+    <div class=browsers>
+        <ul>
+            <li>
+                <a href="https://www.microsoft.com/windows/Internet-explorer/" target=_blank><SpaN class="browser-icon ie" title="Internet Explorer"></SpaN><BR><SpaN>Internet Explorer 10+</SpaN></a> </li>
+            <li>
+                <a href="https://www.mozilla.org/en-US/firefox/new/" target=_blank><SpaN class="browser-icon ff" title="Firefox "></SpaN><BR><SpaN>Firefox 3.6+</SpaN></a> </li>
+            <li>
+                <a href="https://www.google.com/chrome/browser/desktop/" target=_blank><SpaN class="browser-icon chrome" title="Chrome  "></SpaN><BR><SpaN>Chrome 2.0+</SpaN></a> </li>
+            <li>
+                <a href="https://www.apple.com/safari/download/" target=_blank><SpaN class="browser-icon safari" title=Safari></SpaN><BR><SpaN>Safari 5.1+</SpaN></a> </li>
+        </ul>
+    </div>
+    <div class=maincheckbrowser>
+        <a id=custom-noThanks class=custom-noThanks onclick=hideCustomModal()>No Thanks</a>
+    </div>
+</div>
+</div>
+<div class="hungBar" id="tools-nav" style="bottom:100px;"><a href="#" class="hungBar-top" title="Torna su" id="hungBar-top" style="display:block;"><i><font><font>Back to top</font></font></i></a></div>
+<div id="browser-support-overlay" style="display: none;
+    background: grey;
+    right: 0px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+"></div>
+
+</body>
+
+<!-- Mirrored from store.hihonor.com/it/item/639090033/buy by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Nov 2017 08:43:09 GMT -->
+</html>

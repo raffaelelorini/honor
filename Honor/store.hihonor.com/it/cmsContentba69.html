@@ -1,0 +1,2563 @@
+<!--  -->
+<!-- to show or hide back to availabilty date at Product CMS/ECOMM pages -->
+<!---->
+<!---->
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from store.hihonor.com/it/cmsContent?key=web_cms_brands by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Nov 2017 08:37:45 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script>
+var domainMain = 'https://store.hihonor.com/it';
+var countrycode = '39';
+var countrynamecode = 'it';
+var scriptPath ='https://cdn-itcname.hihonor.com/it/js';
+var isGuestEnabled = '1';
+var domainWap = 'https://m.hihonor.com/it';
+var domainCart = 'https://cart-it.hihonor.com/';
+var mediaPath = 'https://cdn-itcname.hihonor.com/pms';
+var domainRemark = 'https://remark-it.hihonor.com/';
+var domainShoppingConfig = 'https://address-it.hihonor.com/';
+var imagePath = 'https://cdn-itcname.hihonor.com/it/images';
+var domainAccount = 'https://store.hihonor.com/it';
+var isUseAccount = 'false';
+var upBindPhoneAddr = 'https://hwid7.vmall.com/CAS/portal/userCenter/index.html';
+var dominWapRecycle ='http://mobile.huishoubao.com/?pid=1056';
+var currencySymbol='€';
+var gtmId='GTM-5M9QNMX';
+var cookiedomain='.hihonor.com';
+var fbappId='1966003213633967';
+var checkSslCert='true';
+var freeShippingTxt = '<p>  <span lang="EN-US" style="font-family:calibri, sans-serif;font-size:15px;line-height:15px;background-color:#ffffff;color:#212121;">Consegna gratis Per gli ordini superiori a €99 (1-2<span class="Apple-converted-space"> </span></span><span lang="IT-IT" style="font-family:calibri, sans-serif;font-size:15px;line-height:15px;background-color:#ffffff;color:#212121;">giorni</span><span lang="IT-IT" style="font-family:calibri, sans-serif;font-size:15px;line-height:15px;background-color:#ffffff;color:#212121;">)</span></p>';
+
+var currencyCode='EUR';
+var isGaPushEnabled='1';
+var gaDefaultList = 'All';
+
+// 修改原因: 原B2C的异步加载规格参数，需要调用PMS提供的接口来获取。
+// 修改说明: 需要将 data-skulist中的数据设置为sbomCode
+// 修改日期：2015/11/18
+// 版本号：BR_VMALL_V100R001C01XB2C1510001_EDP
+// 修改人： cWX320570
+// Add by 陈稳 at 2015/11/18 start
+var pmsHttpDomain = 'https://product-it.hihonor.com/';
+var pmsHttpCdnDomain = 'https://cdn-itcname.hihonor.com/pms';
+var hideNotifyMe = 'false';
+var isBackInStockDispl = 'false';
+var dummyGboms = 'Tax Class,Home Url,Notify Button,Display URL,Back to availability,Specifications Main';
+// Add by 陈稳 at 2015/11/18 end
+</script>
+<script>
+(function(){
+    try
+    {
+        cookieGet=function(a){var f=null;if(document.cookie&&document.cookie!=""){var d=document.cookie.split(";");for(var c=0;c<d.length;c++){var b=(d[c]||"").replace(/^(\s|\u00A0)+|(\s|\u00A0)+$/g,"");if(b.substring(0,a.length+1)==(a+"=")){var e=function(i){i=i.replace(/\+/g," ");var h='()<>@,;:\\"/[]?={}';for(var g=0;g<h.length;g++){if(i.indexOf(h.charAt(g))!=-1){if(i.startWith('"')){i=i.substring(1)}if(i.endWith('"')){i=i.substring(0,i.length-1)}break}}return decodeURIComponent(i)};f=e(b.substring(a.length+1));break}}}return f};
+        var uri = location.href;
+            //增加产品详情页判断 
+
+            var emailRedirectUrl = /\w*[\/]*\w*(\/notification\/unsubscribe\/param)+\w*[\/]*\w*/;
+            var isEmailRedirectUrl = emailRedirectUrl.test(uri);
+            var prodReg = /\/\d+\.html/;
+            var isProDetail = prodReg.test(uri);
+            // item/{digit}/(index || buy)
+            var prodTempA = /(\/item\/)(\d+)(\/buy|\/index)/;
+            var isProdTempA = prodTempA.test(uri);
+            var isHonor = uri.indexOf(".com/honor") >0;
+            var isHuawei = uri.indexOf(".com/huawei")>0;
+            var isRecyle = uri.indexOf(".com/recycle")>0;
+			var catReg = /\list-/;
+            var isCategoryList = catReg.test(uri);	
+            if (uri == domainMain || uri == (domainMain + "/")
+                    || uri == (domainMain + "/") || isProDetail || isProdTempA || isCategoryList  || isHonor
+                    || isHuawei || isRecyle || isEmailRedirectUrl) {
+                if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i
+                        .test(navigator.userAgent)) {
+                    var redirectWap = cookieGet("redirectWap");
+
+                    if (!redirectWap == "1" && !isProDetail && !isProdTempA && !isCategoryList && !isEmailRedirectUrl) {
+                        if (isHonor) {
+                            window.location.href = domainWap + "/honor";
+                        } else if (isHuawei) {
+                            window.location.href = domainWap + "/huawei";
+                        } else if (isRecyle) {
+                            window.location.href = dominWapRecycle;
+                        } else {
+                            window.location.href = domainWap;
+                        }
+                    } else if (!redirectWap == "1" && isProDetail) {
+                        var wapUri = domainWap
+                                + uri.substring(uri.indexOf("/product"));
+                        window.location.href = wapUri;
+                    } else if (!redirectWap == "1" && isProdTempA) {
+                        var typeIndex = -1;
+                        if (uri.lastIndexOf("/index") != -1) {
+                            typeIndex = uri.lastIndexOf("/index");
+                        } else if (uri.lastIndexOf("/buy") != -1) {
+                            typeIndex = uri.lastIndexOf("/buy");
+                        }
+                        if (typeIndex != -1) {
+                        	// +6 denotes the index value of "/item" plus 6 digits
+                            // Eg: /item/111/index => 0+6 = 6
+                        	var productId=uri.substring(uri.lastIndexOf("/item")+6, typeIndex);
+                            var wapUri = domainWap
+                                + "/product/" + productId + ".html";
+                            window.location.href = wapUri;
+                        } else {
+                        	window.location.href = domainWap;
+                        }
+                    } else if (!redirectWap == "1" && isEmailRedirectUrl) {
+
+                        var isUnsubscribe = uri.indexOf("notification/unsubscribe/param") >0;
+
+                        if(isUnsubscribe){
+                            var wapUri = domainWap
+                            + uri.substring(uri.indexOf("/notification"));
+                             window.location.href = wapUri;
+                        }
+                    } else if (!redirectWap == "1" && isCategoryList) {
+                    	var listId= uri.substring(uri.indexOf("/list"));
+                        if(listId){
+                            var wapUri = domainWap
+                            + listId;
+                             window.location.href = wapUri;
+                        } else {
+                        	window.location.href = domainWap;
+                        }
+                    }
+                }
+
+            }
+    }catch (err){}
+})();
+</script>
+<title>Honor Official Site（Italy）</title>
+<meta name="description" content="Honor Official Site（ITALY）" />  
+<meta name="keywords" content="" />
+<meta name="mobile-agent" content="format=xhtml;url=https://m.hihonor.com/it">
+<link rel="alternate" href="https://m.hihonor.com/it" hreflang="it-IT" />
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link href="../../cdn-itcname.hihonor.com/it/stylus/css/styles.mincc33.css?21112017" rel="stylesheet" type="text/css">
+
+
+
+
+<script src="../../cdn-itcname.hihonor.com/it/js/common/jsapi.mincc33.js?21112017" namespace="ec"></script>
+<script src="../../cdn-itcname.hihonor.com/it/js/home-all.mincc33.js?21112017" ></script>
+
+<script src="../../cdn-itcname.hihonor.com/it/js/echannel/ga-ecommerce.mincc33.js?21112017"></script>
+
+<!--[if lt IE 9]><script src="https://cdn-itcname.hihonor.com/it/js/common/html5shiv.js"></script> <![endif]-->
+
+<script>
+if(!jQuery.isEmptyObject()){
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push();
+}
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'../../www.googletagmanager.com/gtm5445.html?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer', 'GTM-5M9QNMX');</script>
+<!-- End Google Tag Manager -->
+
+
+
+<script>
+$(document).ready(function() {
+  	 $('body').addClass('wide');
+});
+</script>
+</head>
+
+
+
+
+<body class="wide ctry_it">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5M9QNMX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="top-banner" id="top-banner-block"></div>
+<!-- 20130605-qq-彩贝-start -->
+<!--<div class="qq-caibei-bar hide" id="caibeiMsg">
+	<div class="layout">
+		<div class="qq-caibei-bar-tips" id="HeadShow"></div>
+		<div class="qq-caibei-bar-userInfo" id="ShowMsg"></div>
+	</div>
+</div>-->
+<!-- 20130605-qq-彩贝-end -->
+<script>
+var redirecturl;
+if(window.location.href.indexOf("guest/order") > -1) {
+	redirecturl=domainMain;
+} else {
+	redirecturl=window.location.href;
+}
+</script>
+
+
+<textarea id="selectRegion-tips" style="display: none;">
+<!-- 20151105-全球语言弹出框-width:910px-start -->
+<div class="popup-content" style="display:none;"><div class="width-container"><div class="country-selector-popup"><div class="cs-title"><div class="description-black"><h1>SELECT YOUR COUNTRY</h1></div><div class="online-shopping-text"><span class="icon_cart title-icon"></span><span class="text"> Online shopping available </span></div></div><div class="content"><div class="continent-content"><div class="continent-title">GLOBAL</div><div class="countries global"><div class="rows"><div class="global country-common"><div class="countries-top"><div class="countries-title"><span class="country-img icon_globe"></span><span class="country-name">GLOBAL</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/">English</a></div></div></div></div></div><div class="continent-content"><div class="continent-title">ASIA PACIFIC</div><div class="countries asia-pacific"><div class="rows"><div class="china country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/cn.jpg" /></span><span class="country-name">china</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="cn"><a class="langs" data-type-lang="en" href="http://www.honor.cn/">简体中文</a></div></div><div class="india country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/in.jpg" /></span><span class="country-name">india</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="in"><a class="langs" data-type-lang="en" href="http://store.hihonor.com/in">English</a></div></div><div class="malaysia country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/my.jpg" /></span><span class="country-name">malaysia</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="my"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/my/index.html">English</a></div></div></div><div class="rows"><div class="vietnam country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/vi.jpg" /></span><span class="country-name">vietnam</span></div></div><div class="countries-lang" id="vi"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/vn">Tiếng Việt</a></div></div></div></div></div><div class="continent-content"><div class="continent-title">EUROPE</div><div class="countries"><div class="rows"><div class="belgium country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/be.jpg" /></span><span class="country-name">belgium</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="be"><a class="langs" data-type-lang="en" href="https://www.vmall.eu/be">België</a></div></div><div class="bulgaria country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/Flag_bulgaria.jpg" /></span><span class="country-name">bulgaria</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/bg/index.html">Български</a></div></div><div class="czech country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/cz.jpg" /></span><span class="country-name">czech</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang" id="cz"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/cz/index.html">Čeština</a></div></div></div><div class="rows"><div class="finland country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/fi.jpg" /></span><span class="country-name">finland</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang" id="fi"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/fi">Suomi</a></div></div><div class="france country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/fr.jpg" /></span><span class="country-name">france</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="fr"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/fr/index.html">Français</a></div></div><div class="germany country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/de.jpg" /></span><span class="country-name">germany</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="de"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/de/index.html">Deutsch</a></div></div></div><div class="rows"><div class="greece country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/gr.jpg" /></span><span class="country-name">greece</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang" id="gr"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/gr">γλώσσα</a></div></div><div class="hungary country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/Flag_hungary.jpg" /></span><span class="country-name">hungary</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/hu/">Magyar Nyelv</a></div></div><div class="italy country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/pms/template/content/2017/20170913180451794.jpg" /></span><span class="country-name">italy</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="it"><a class="langs" data-type-lang="en" href="index.html">Italiano</a></div></div></div><div class="rows"><div class="netherland country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/nl.jpg" /></span><span class="country-name">netherland</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="nl"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/nl">Dutch</a></div></div><div class="norway country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/Flag_norway.jpg" /></span><span class="country-name">norway</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/no/">Norsk språk</a></div></div><div class="poland country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/Flag_poland.jpg" /></span><span class="country-name">poland</span></div></div><div class="countries-lang"><a class="langs" data-type-lang="lang2" href="http://www.hihonor.com/pl/">polski</a></div></div></div><div class="rows"><div class="portugal country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/pt.jpg" /></span><span class="country-name">portugal</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="pt"><a class="langs" data-type-lang="en" href="https://www.vmall.eu/pt/">Portugues</a></div></div><div class="russia country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/ru.jpg" /></span><span class="country-name">russia</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="ru"><a class="langs" data-type-lang="en" href="http://www.honor.ru/">русский</a></div></div><div class="serbia country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/Flag_serbia.jpg" /></span><span class="country-name">serbia</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/rs">Cрпски jезик</a></div></div></div><div class="rows"><div class="spain country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/es.jpg" /></span><span class="country-name">spain</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="es"><a class="langs" data-type-lang="lang2" href="http://www.hihonor.com/es">Español</a></div></div><div class="switzerland country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/ch.jpg" /></span><span class="country-name">switzerland</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="ch"><a class="langs" data-type-lang="lang2" href="https://www.vmall.eu/ch/">Schweiz</a></div></div><div class="united kingdom country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/uk.jpg" /></span><span class="country-name">united kingdom</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="uk"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/uk/index.html">English</a></div></div></div></div></div><div class="continent-content"><div class="continent-title">LATIN AMERICA</div><div class="countries latin-america"><div class="rows"><div class="colombia country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/Flag_colombia.jpg" /></span><span class="country-name">columbia</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/co/">Español</a></div></div></div></div></div><div class="continent-content"><div class="continent-title">MIDDLE EAST</div><div class="countries latin-america"><div class="rows"><div class="saudi-arabia country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/ksa.jpg" /></span><span class="country-name">saudi arabia</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="ksa"><a class="langs" data-type-lang="en" href="https://store.hihonor.com/sa/">English</a><a class="langs" data-type-lang="lang2" href="https://store.hihonor.com/sa/?___store=sa_ar_sa">العربية</a></div></div><div class="uae country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/uae.jpg" /></span><span class="country-name">uae</span></div></div><div class="countries-lang" id="uae"><a class="langs" data-type-lang="en" href="https://store.hihonor.com/ae/">English</a><a class="langs" data-type-lang="lang2" href="https://store.hihonor.com/ae/?___store=sa_ar_sa">العربية</a></div></div></div></div></div><div class="continent-content"><div class="continent-title">NORTH AMERICA</div><div class="countries latin-america"><div class="rows"><div class="united-states country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/us.jpg" /></span><span class="country-name">united states</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="us"><a class="langs" data-type-lang="en" href="https://store.hihonor.com/us/">English</a></div></div></div></div></div></div></div></div></div>
+<!-- 20151105-全球语言弹出框-width:910px-end -->					
+</textarea>
+
+<input type="hidden" value="" id="domainUc"/>
+
+<script src="../../cdn-itcname.hihonor.com/it/js/echannel/base.mincc33.js?21112017"></script>
+<script>
+ec.mediaPath = "https://cdn-itcname.hihonor.com/pms";
+//document.write('<script src="/it/account/status?'+(new Date()).getTime()+'"></s' + 'cript>');
+
+
+function urlChange(site) {
+    document.getElementById('trackorder-iframe').src = site;
+}
+
+
+</script>
+<script>
+ec.load("ec.box" , {loadType : "lazy"});
+/**
+*功能：给鼠标移动到s-dropdown上面的时候，记得给他多添加一个hover类样式
+*目的是兼容ie6
+*@author 李峰
+*/
+$(function(){
+	$(".s-dropdown").hover(function(){
+		$(this).addClass("hover");
+	},function(){
+		$(this).removeClass("hover");
+	});
+	var maxcolor=$('.top-banner-max').find('p').children('a').css("background-color");
+	var mincolor=$('.top-banner-min').find('p').children('a').css("background-color");
+	
+	$('.top-banner-max').css({"background-color":maxcolor,overflow:"hidden"});
+	$('.top-banner-min').css({"background-color":mincolor,overflow:"hidden"});
+});
+
+//显示全球导航选择层
+</script>
+   
+
+<div id="cookieid" class="cookies hide"><div class="cookieDetails"><div class="cookies-left">Questo sito usa i cookie per migliorare il nostro sito e la tua esperienza. Utilizzando il nostro sito web dichiari di accettare e acconsentire all’utilizzo dei cookies in conformità con i termini della nostra policy.<a href="cmsContent0416.html?key=web_cms_privacy" target="_blank" textvalue="Informazioni aggiuntive">&nbspInformazioni aggiuntive</a></div><div class="cookies-right"><button class="btn_blue_primary" id="btn_blue_primary_id">accetto</button></div></div></div>
+<div class = "headerSection">	
+	<header class="header">
+		<div class="layout">
+			<!-- 21030909-logo-start -->
+			<div class = "selectRegion_support">
+				<div id="selectregion">
+				    <a class="" href="javascript:void(0)">
+				    	<span class = "flagSection" id = "flagImageId">
+				    		<img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/it.jpg" alt="" width="22" height="12"></img>
+				    	</span>
+				    </a>
+				    <a id="selectregion-link" title="" class="selectregion-link mdl-navigation__header-link mdl-links-color" href="#selectregion-popup">
+				    	<span id = "selectLanguage">
+				    		IT (IT)
+				    	</span>
+				    </a>
+				    <div id="selectregion-popup" style="display:none">
+				        <div class="selectregion-popup">
+				            <h3>Per favore, seleziona il tuo paese o regione</h3>
+				            <div class="popup-content" style="display:none;"><div class="width-container"><div class="country-selector-popup"><div class="cs-title"><div class="description-black"><h1>SELECT YOUR COUNTRY</h1></div><div class="online-shopping-text"><span class="icon_cart title-icon"></span><span class="text"> Online shopping available </span></div></div><div class="content"><div class="continent-content"><div class="continent-title">GLOBAL</div><div class="countries global"><div class="rows"><div class="global country-common"><div class="countries-top"><div class="countries-title"><span class="country-img icon_globe"></span><span class="country-name">GLOBAL</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/">English</a></div></div></div></div></div><div class="continent-content"><div class="continent-title">ASIA PACIFIC</div><div class="countries asia-pacific"><div class="rows"><div class="china country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/cn.jpg" /></span><span class="country-name">china</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="cn"><a class="langs" data-type-lang="en" href="http://www.honor.cn/">简体中文</a></div></div><div class="india country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/in.jpg" /></span><span class="country-name">india</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="in"><a class="langs" data-type-lang="en" href="http://store.hihonor.com/in">English</a></div></div><div class="malaysia country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/my.jpg" /></span><span class="country-name">malaysia</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="my"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/my/index.html">English</a></div></div></div><div class="rows"><div class="vietnam country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/vi.jpg" /></span><span class="country-name">vietnam</span></div></div><div class="countries-lang" id="vi"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/vn">Tiếng Việt</a></div></div></div></div></div><div class="continent-content"><div class="continent-title">EUROPE</div><div class="countries"><div class="rows"><div class="belgium country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/be.jpg" /></span><span class="country-name">belgium</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="be"><a class="langs" data-type-lang="en" href="https://www.vmall.eu/be">België</a></div></div><div class="bulgaria country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/Flag_bulgaria.jpg" /></span><span class="country-name">bulgaria</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/bg/index.html">Български</a></div></div><div class="czech country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/cz.jpg" /></span><span class="country-name">czech</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang" id="cz"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/cz/index.html">Čeština</a></div></div></div><div class="rows"><div class="finland country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/fi.jpg" /></span><span class="country-name">finland</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang" id="fi"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/fi">Suomi</a></div></div><div class="france country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/fr.jpg" /></span><span class="country-name">france</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="fr"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/fr/index.html">Français</a></div></div><div class="germany country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/de.jpg" /></span><span class="country-name">germany</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="de"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/de/index.html">Deutsch</a></div></div></div><div class="rows"><div class="greece country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/gr.jpg" /></span><span class="country-name">greece</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang" id="gr"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/gr">γλώσσα</a></div></div><div class="hungary country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/Flag_hungary.jpg" /></span><span class="country-name">hungary</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/hu/">Magyar Nyelv</a></div></div><div class="italy country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/pms/template/content/2017/20170913180451794.jpg" /></span><span class="country-name">italy</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="it"><a class="langs" data-type-lang="en" href="index.html">Italiano</a></div></div></div><div class="rows"><div class="netherland country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/nl.jpg" /></span><span class="country-name">netherland</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="nl"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/nl">Dutch</a></div></div><div class="norway country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/Flag_norway.jpg" /></span><span class="country-name">norway</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/no/">Norsk språk</a></div></div><div class="poland country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/Flag_poland.jpg" /></span><span class="country-name">poland</span></div></div><div class="countries-lang"><a class="langs" data-type-lang="lang2" href="http://www.hihonor.com/pl/">polski</a></div></div></div><div class="rows"><div class="portugal country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/pt.jpg" /></span><span class="country-name">portugal</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="pt"><a class="langs" data-type-lang="en" href="https://www.vmall.eu/pt/">Portugues</a></div></div><div class="russia country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/ru.jpg" /></span><span class="country-name">russia</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="ru"><a class="langs" data-type-lang="en" href="http://www.honor.ru/">русский</a></div></div><div class="serbia country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/Flag_serbia.jpg" /></span><span class="country-name">serbia</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/rs">Cрпски jезик</a></div></div></div><div class="rows"><div class="spain country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/es.jpg" /></span><span class="country-name">spain</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="es"><a class="langs" data-type-lang="lang2" href="http://www.hihonor.com/es">Español</a></div></div><div class="switzerland country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/ch.jpg" /></span><span class="country-name">switzerland</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="ch"><a class="langs" data-type-lang="lang2" href="https://www.vmall.eu/ch/">Schweiz</a></div></div><div class="united kingdom country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/uk.jpg" /></span><span class="country-name">united kingdom</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="uk"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/uk/index.html">English</a></div></div></div></div></div><div class="continent-content"><div class="continent-title">LATIN AMERICA</div><div class="countries latin-america"><div class="rows"><div class="colombia country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/Flag_colombia.jpg" /></span><span class="country-name">columbia</span></div><!--<div class = "icon_cart cart-symbol"></div>--></div><div class="countries-lang"><a class="langs" data-type-lang="en" href="http://www.hihonor.com/co/">Español</a></div></div></div></div></div><div class="continent-content"><div class="continent-title">MIDDLE EAST</div><div class="countries latin-america"><div class="rows"><div class="saudi-arabia country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/ksa.jpg" /></span><span class="country-name">saudi arabia</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="ksa"><a class="langs" data-type-lang="en" href="https://store.hihonor.com/sa/">English</a><a class="langs" data-type-lang="lang2" href="https://store.hihonor.com/sa/?___store=sa_ar_sa">العربية</a></div></div><div class="uae country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/uae.jpg" /></span><span class="country-name">uae</span></div></div><div class="countries-lang" id="uae"><a class="langs" data-type-lang="en" href="https://store.hihonor.com/ae/">English</a><a class="langs" data-type-lang="lang2" href="https://store.hihonor.com/ae/?___store=sa_ar_sa">العربية</a></div></div></div></div></div><div class="continent-content"><div class="continent-title">NORTH AMERICA</div><div class="countries latin-america"><div class="rows"><div class="united-states country-common"><div class="countries-top"><div class="countries-title"><span class="country-img"><img src="../../cdn-itcname.hihonor.com/it/images/honor4/country_flags/us.jpg" /></span><span class="country-name">united states</span></div><div class="icon_cart cart-symbol"></div></div><div class="countries-lang" id="us"><a class="langs" data-type-lang="en" href="https://store.hihonor.com/us/">English</a></div></div></div></div></div></div></div></div></div>
+				        </div>
+				    </div>
+				</div>
+				<div class= 'supportLink'>
+					<a class="" href="http://www.hihonor.com/it/support/" target="_blank">	Supporto</a>
+				</div>
+			</div>
+			<div class="logo logo-index">
+				<div class = "logoUrlSection">
+					<a href="index.html" title="Huawei Honor">
+						<img src="../../cdn-itcname.hihonor.com/pimages/common/config/logo/logo20170608163900.png" alt="Huawei Honor" width="84" height="24"/>
+					</a>
+				</div>
+			</div><!-- 21030909-logo-start -->		
+			<!-- 21030910-头部-工具栏-start -->
+			<div class="header-toolbar hide">
+				<!-- 21030910-头部-工具栏-焦点为header-toolbar-item增加ClassName:hover -->
+				<div class="header-toolbar-item" id="header-toolbar-imall">
+					<!-- 21030909-我的商城-start 
+					<div class="i-mall">
+						<div class="h"><a href="https://store.hihonor.com/it/member/home?t=1511425817844timestamp" rel="nofollow" timeType="timestamp">My Member</a>
+						<i></i><s></s><u></u></div>
+						<div class="b" id="header-toolbar-imall-content">
+							<div class="i-mall-prompt" id="cart_unlogin_info">
+								<p>&nbsp;&nbsp;<script>document.write('<a href="https://store.hihonor.com/it/account/login?url='+encodeURIComponent(window.location.pathname)+'"  rel="nofollow">登录</a>');</script> | <a href="https://store.hihonor.com/it/account/registedr" rel="nofollow"></a></p>
+							</div>
+							<div class="i-mall-uc " id="cart_login_info">
+								<ul>
+									<li><a href="https://store.hihonor.com/it/member/order?t=1511425817844timestamp" rel="nofollow" timeType="timestamp">My Order</li>
+									<li><a href="https://store.hihonor.com/it/member/order?t=1511425817844timestamp&tab=unpaid" timeType="timestamp">Unpaid Order</a><span id="toolbar-orderWaitingHandleCount" class="hide">0</span></li>
+									<li><a href="https://store.hihonor.com/it/member/order?t=1511425817844timestamp&tab=nocomment" timeType="timestamp"></a><span id="toolbar-notRemarkCount" class="hide">0</span></li>
+									<li><a href="https://store.hihonor.com/it/member/coupon?t=1511425817844timestamp" timeType="timestamp">My Coupon</a><span id="toolbar-couponCount" class="hide">0</span></li>
+									<li><a href="https://store.hihonor.com/it/member/msg?t=1511425817844timestamp" timeType="timestamp">My Messages</a><span id="toolbar-newMsgCount" class="hide">0</span></li>
+								</ul>
+							</div>
+							<div class="i-mall-event " >
+								<p><a href="/member/petal"><img src="http://res.vmallres.com/20150923/images/echannel/misc/icon_privilege_vip_large_light.png" alt="特权频道" /></a></p>
+							</div>
+						</div>
+					</div><!-- 21030909-我的商城-end -->
+				</div>
+				<!--<div class="header-toolbar-item" id="header-toolbar-minicart">-->
+					<!-- 21030909-迷你购物车-start -->
+				 <!--<div class="minicart">
+						<div class="h" id="header-toolbar-minicart-h"><a href="https://cart-it.hihonor.com/cart/cart.html?t=1511425817844timestamp" rel="nofollow" timeType="timestamp">My Cart<span><em id="header-cart-total">0</em><b></b></span></a><i></i><s></s><u></u></div>
+						<div class="b" id="header-toolbar-minicart-content">
+							<div class="minicart-pro-empty" id="minicart-pro-empty">
+								<span class="icon-minicart">Your cart is empty!</span>
+							</div>
+							<div id="minicart-pro-list-block">
+							<ul class="minicart-pro-list" id="minicart-pro-list">
+															
+							</ul>
+							</div>
+							<div class="minicart-pro-settleup" id="minicart-pro-settleup">
+								<p>Total<em id="micro-cart-total">0</em>Items, total amount<b id="micro-cart-totalPrice">€0</b></p>
+								<a class="button-minicart-settleup" href="https://cart-it.hihonor.com/cart/cart.html">Buy</a>
+							</div>
+						</div>
+					</div>--> 
+					<!-- 21030909-迷你购物车-end -->
+				<!--</div>-->		
+			</div> 
+			<!-- 21030910-头部-工具栏-end -->
+	        <!-- 20130909-搜索条-焦点为search-form增加className:hover -start -->
+			<!--<div class="searchBar relative">-->
+				<!-- 页头热门搜索 -->
+				<!--<div class="searchBar-form" id="searchBar-area">
+					<form method="get" onsubmit="return search(this)">					
+						<input type="text" class="text" maxlength="128" id="search-kw" /><input type="submit" class="button" value="search for" />
+						<input type="hidden" id="default-search" value="荣耀6"/>
+					</form>
+				</div>
+					<div class="searchBar-key">
+		<a href="/it/search?keyword=Honor" target="_blank">Honor</a>
+		<a href="/it/search?keyword=Honor+9" target="_blank">Honor 9</a>
+		<a href="/it/search?keyword=Honor+8" target="_blank">Honor 8</a>
+		<a href="/it/search?keyword=honor+6x" target="_blank">honor 6x</a>
+		<a href="/it/search?keyword=Honor+6A" target="_blank">Honor 6A</a>
+		<a href="/it/search?keyword=Honor+8+Pro" target="_blank">Honor 8 Pro</a>
+</div>
+				
+			</div>--><!-- 20130909-搜索条-end -->
+			<div class = "headerRightIconSection">
+				<div class = "trackOrderLink">
+					<a id="trackorder-link" title="" class="trackorder-link mdl-navigation__header-link mdl-links-color" href="#trackorder-popup">
+						<label>Traccia Ordine</label>
+					</a>
+					<a id="trackorder-link-logged" title="" class="trackorder-link mdl-navigation__header-link mdl-links-color" href="https://hwid7.vmall.com/CAS/remoteLogin?service=https%3A%2F%2Fstore.hihonor.com%2Fit%2Faccount%2Facaslogin%3Furl%3Dhttps%253A%252F%252Fstore.hihonor.com%252Fit%252Fmember%252Forder%253Ft%253D1511425817844&amp;loginChannel=26000701&amp;reqClientType=26&amp;countryCode=it&amp;lang=it-IT&amp;loginUrl=https%3A%2F%2Fhwid7.vmall.com%2FCAS%2Fportal%2Flogin.html">
+						<label>Traccia Ordine</label>
+					</a>
+				</div>
+				<span></span>
+				<div title = "Ricerca" class = "searchIcon icon_search_1"></div>
+				<span></span>
+				<div id= "unlogin_status" title = "Accedi" class = "userIcon icon_user_2">
+					<div class="guest-login-head" id="guestlogin_status" style="display:none;">
+						<a id="guest-user" style="pointer-events:none;">Guest User</a>
+					</div>
+	               		<script>document.write('<a href="https://hwid7.vmall.com/CAS/remoteLogin?loginChannel=26000701&reqClientType=26&countryCode=it&lang=it-IT&loginUrl=https%3A%2F%2Fhwid7.vmall.com%2FCAS%2Fportal%2Flogin.html&service=https%3A%2F%2Fstore.hihonor.com%2Fit%2Faccount%2Facaslogin%3Furl%3D'+encodeURIComponent(encodeURIComponent(redirecturl))+'" class="sign-in" rel="nofollow" id="login"></a>');</script>
+				</div>
+				
+				<div id= "login_status" title = "Membro" class = "userIcon icon_male_2" style="display:none">
+					<a href="https://hwid7.vmall.com/CAS/remoteLogin?service=https%3A%2F%2Fstore.hihonor.com%2Fit%2Faccount%2Facaslogin%3Furl%3Dhttps%253A%252F%252Fstore.hihonor.com%252Fit%252Fmember%252FmyInformation%253Ft%253D1511425817844timestamp&amp;loginChannel=26000701&amp;reqClientType=26&amp;countryCode=it&amp;lang=it-IT&amp;loginUrl=https%3A%2F%2Fhwid7.vmall.com%2FCAS%2Fportal%2Flogin.html" rel="nofollow" timeType="timestamp"></a>
+				</div>
+				<span></span>
+				<div title = "Il mio carrello" class = "cartIcon icon_cart" onclick="location.href='https://cart-it.hihonor.com/cart/cart.html';">
+					<span class="cartItemsCount" id = "header-cart-total" style="display: none;">0</span>
+				</div>	
+			</div>
+		</div>			
+	</header><!-- 21030909-头部-end -->
+	
+	
+	<div class = "activeLinkBorder">
+	</div>
+	<div id="cart-container" class="cart-container">
+		<div class = "empty-cart-container hide" id="empty-cart-container">
+			<div class="myCartHeader">
+				<label>Il mio carrello</label>
+			</div>
+			<div class="myCartHeaderSeparatorLine">
+			</div>
+			<div class = "productListInMyCart"><label>Il tuo carrello &#232; vuoto</label></div>
+		</div>
+		<div class = "cart-details-container hide" id="cart-details-container">
+			<div class="myCartHeader">
+				<label>Il mio carrello (</label>
+				<label id="myCartLabelnoOfItems">0</label>
+				<label>)</label>
+			</div>
+			<div class="myCartHeaderSeparatorLine">
+			</div>
+			<div id="minicart-pro-list-block">
+				<div class = "productListInMyCart" id="productListInMyCart">
+				
+				</div>
+			</div>
+			<div class = "subTotalCartSection">
+				<div class="products_subtotal">
+					<div class = "noOfSubTotalItems">
+						<label id="micro-cart-total">0</label>
+						<label>Prodotti nel tuo carrello</label>
+					</div>
+					<div class = "subTotalItemsPriceSection">
+						<div class = "subTotalLabel"><label>Totale Parziale</label></div>
+						<div class = "subTotalPrice"><label id="micro-cart-totalPrice">€0</label></div>
+					</div>
+				</div>
+				<div class="goToCartButton">
+					<input type="button" class="btn_blue_primary" value="Vai al carrello">
+						<a href="https://cart-it.hihonor.com/cart/cart.html"></a>
+					</input>
+				</div>
+				<!--  <div class="orderInfosection">
+					<div class="orderInfoIcon icon_info"></div>
+					<div class = "orderInfoMessage"><label>Il tuo ordine ha diritto alla consegna gratuita</label></div>
+				</div> -->
+			</div>
+		</div>
+	</div>
+	
+	<div class="myAccountContainer">	
+		<div class = "myAccountListing">
+			<a class="myProfileLabel" href='https://hwid7.vmall.com/CAS/portal/userCenter/index.html?&amp;lang=it-IT' target="_blank">
+				<label>Il mio profilo</label>
+			</a>
+			<div class="myCartHeaderSeparatorLine">
+			</div>
+			<a href='https://hwid7.vmall.com/CAS/remoteLogin?service=https%3A%2F%2Fstore.hihonor.com%2Fit%2Faccount%2Facaslogin%3Furl%3Dhttps%253A%252F%252Fstore.hihonor.com%252Fit%252Fmember%253Ft%253D1511425817844&amp;loginChannel=26000701&amp;reqClientType=26&amp;countryCode=it&amp;lang=it-IT&amp;loginUrl=https%3A%2F%2Fhwid7.vmall.com%2FCAS%2Fportal%2Flogin.html' >
+			<div class="myAccountLabel">
+				<label>Il mio account</label>
+			</div></a>
+			<div class="myCartHeaderSeparatorLine">
+			</div>
+			<div class="myOrdersLabel" onclick="location.href='https://hwid7.vmall.com/CAS/remoteLogin?service=https%3A%2F%2Fstore.hihonor.com%2Fit%2Faccount%2Facaslogin%3Furl%3Dhttps%253A%252F%252Fstore.hihonor.com%252Fit%252Fmember%252Forder%253Ft%253D1511425817844&amp;loginChannel=26000701&amp;reqClientType=26&amp;countryCode=it&amp;lang=it-IT&amp;loginUrl=https%3A%2F%2Fhwid7.vmall.com%2FCAS%2Fportal%2Flogin.html';">
+				<label>I miei ordini</label>
+			</div>
+			<div class="myCartHeaderSeparatorLine" style="border-top:0px;">
+			</div>
+			<!--
+			<a href='https://store.hihonor.com/it/' target="_blank">
+			<div class="myCommunityLabel">
+				<label>Community</label>
+			</div>
+			</a>
+			-->
+			<div class="logInorOutButtonSection">
+					<input type="button" class="btn_blue_primary" value="ESCI"><a href="account/logout"></a></input>
+			</div>
+		</div>
+	</div>
+	
+	<div class = "quickSearchLinkPage">
+		<div class="quickSearchLinkSection">
+			<div class="quickSearchClose" title="Close Search Form">
+				<span class="icon_close"></span>
+			</div>
+			<div class="quickSearchInputBoxSection">
+				<div id = "quickSearchForm" >
+					<div id = "quickSearchFormIcon" class = "quickSearchIcon icon_search_1">
+						<a href = "javascript:void()"></a>
+					</div>
+					<input type= "text" maxlength="128" id="keyword" onfocus="inputSearch(event);"
+						onkeyup="inputSearch(event);" autocomplete="off" 
+						onafterpaste="inputSearch(event);" placeholder = "Inserisci la ricerca" class = "quickSearchInput"></input>
+				</div>
+			</div>
+			
+			<div class="quickSearchSeparatorLine">
+			</div>
+			<div id="quickLinksContainer">
+				<div class="quickLinksHeader" id="quickLinksHeader">
+					<label>Link veloci</label>
+				</div>
+				<div class="quickLinksContentSection" id="quickLinks">
+				</div>
+				<div class ="hide">
+					<div class="searchBar-key">
+		<a href="searchca92.html?keyword=Honor" target="_blank">Honor</a>
+		<a href="searchcbef.html?keyword=Honor+9" target="_blank">Honor 9</a>
+		<a href="search27ad.html?keyword=Honor+8" target="_blank">Honor 8</a>
+		<a href="searchd75f.html?keyword=honor+6x" target="_blank">honor 6x</a>
+		<a href="searchb1c4.html?keyword=Honor+6A" target="_blank">Honor 6A</a>
+		<a href="searcha79a.html?keyword=Honor+8+Pro" target="_blank">Honor 8 Pro</a>
+</div>
+				</div>
+			</div>
+			<div class="quickLinksContentSection hide" id="searchResults">
+			</div>
+			<div class="quickLinksContentSection hide" id="noSearchResults">
+				<label>Nessun risultato trovato</label>
+			</div>
+		</div>
+	</div>
+	<div class="naver-main">
+		<div class="layout header-shift">
+			<!-- 20140823-分类-start 
+			<div class="category" id="category-block">
+			 20130909-导航-start -->
+			<nav class="naver">
+				<ul id="naver-list">
+						<li class="" id = "">
+								<a href="product/639090033.html#784412699"  class=""><span>Honor 9<s><img src='images/echannel/icon/hot_menu.png' alt='hot' /></s></span></a>
+							
+						</li>
+						<li class="" id = "">
+								<a href="item/217766903/index.html"  class=""><span>Honor 6C Pro<s><img src='images/echannel/icon/new_menu.png'alt='new' /></s></span></a>
+							
+						</li>
+						<li class="has-child" id = "subproductList_1">
+								<a href="javascript:void(0)"  class=""><span>Smartphone</span><span class ='submenuChangeIcon icon_sort_down'></span><span class ='submenuChangeIcon icon_sort_up'></span></a>
+							<ul class="sub-menus">
+									<li><a href="product/639090033.html#784412699" >Honor 9</a></li>
+									<li><a href="product/775214205.html#814773769" >Honor 8 pro</a></li>
+									<li><a href="product/805154013.html#482464994" >Honor 8</a></li>
+									<li><a href="product/205715997.html#376934738" >Honor 6X</a></li>
+									<li><a href="product/211451478.html#238437241" >Honor 6A</a></li>
+									<li><a href="product/672559893.html#651861151" >Honor 5C</a></li>
+							</ul>
+							
+						</li>
+						<li class="has-child" id = "subproductList_2">
+								<a href="javascript:void(0)" target="_blank" class=""><span>Accessori</span><span class ='submenuChangeIcon icon_sort_down'></span><span class ='submenuChangeIcon icon_sort_up'></span></a>
+							<ul class="sub-menus">
+									<li><a href="product/593171207.html#636912576" >Honor Band 3</a></li>
+									<li><a href="product/626249527.html#261357235" >Honor Sport Bluetooth Earphones</a></li>
+									<li><a href="product/277341071.html#681067692" >Honor Monster Headphones</a></li>
+									<li><a href="product/154619901.html#165675002" >Honor 8 PC Case</a></li>
+							</ul>
+							
+						</li>
+						<li class="has-child" id = "subproductList_3">
+								<a href="javascript:void(0)"  class=""><span>INIZIATIVE</span><span class ='submenuChangeIcon icon_sort_down'></span><span class ='submenuChangeIcon icon_sort_up'></span></a>
+							<ul class="sub-menus">
+									<li><a href="cmsContentfb19.html?key=wap_cms_events" target="_blank">EVENT</a></li>
+							</ul>
+							
+						</li>
+				</ul>
+				
+			</nav><!-- 20130909-导航-end -->
+			<!--</div>-->
+		</div>
+	</div>
+	<div id="submenus-container-parent" class = "submenus-container-parent">
+			<div class = "submenus-container">
+						<div class="sub-menus sub-products" id="subproductList_1_section">
+									<div class="sub-product-items">
+										<div class="category-products-image">
+											<a href="product/639090033.html#784412699">
+												<img src="../../cdn-itcname.hihonor.com/pms/product/6901443185719/428_428_1509473530555mp.jpg" width="98" height="98">
+											</a>
+										</div>
+										<div class="category-products-label">
+											<a href="product/639090033.html#784412699">Honor 9
+											</a>
+										</div>
+									</div>
+									<div class="sub-product-items">
+										<div class="category-products-image">
+											<a href="product/775214205.html#814773769">
+												<img src="../../cdn-itcname.hihonor.com/pms/product/6901443170173/428_428_1499765543078mp.jpg" width="98" height="98">
+											</a>
+										</div>
+										<div class="category-products-label">
+											<a href="product/775214205.html#814773769">Honor 8 pro
+											</a>
+										</div>
+									</div>
+									<div class="sub-product-items">
+										<div class="category-products-image">
+											<a href="product/805154013.html#482464994">
+												<img src="../../cdn-itcname.hihonor.com/pms/product/6901443131747/428_428_1499762467997mp.jpg" width="98" height="98">
+											</a>
+										</div>
+										<div class="category-products-label">
+											<a href="product/805154013.html#482464994">Honor 8
+											</a>
+										</div>
+									</div>
+									<div class="sub-product-items">
+										<div class="category-products-image">
+											<a href="product/205715997.html#376934738">
+												<img src="../../cdn-itcname.hihonor.com/pms/product/6901443154296/428_428_1499759403525mp.jpg" width="98" height="98">
+											</a>
+										</div>
+										<div class="category-products-label">
+											<a href="product/205715997.html#376934738">Honor 6X
+											</a>
+										</div>
+									</div>
+									<div class="sub-product-items">
+										<div class="category-products-image">
+											<a href="product/211451478.html#238437241">
+												<img src="../../cdn-itcname.hihonor.com/pms/product/6901443184507/428_428_1500452822920mp.jpg" width="98" height="98">
+											</a>
+										</div>
+										<div class="category-products-label">
+											<a href="product/211451478.html#238437241">Honor 6A
+											</a>
+										</div>
+									</div>
+						  
+								<div class="sub-product-items viewMoreOption">
+									<a href="list-157.html" target="_blank">
+										<span>Scopri di pi&#249;</span>
+										<span class = "viewMoreIcon icon_next_page"></span>
+									</a>
+								</div>
+						 
+						</div>
+						<div class="sub-menus sub-products" id="subproductList_2_section">
+									<div class="sub-product-items">
+										<div class="category-products-image">
+											<a href="product/593171207.html#636912576">
+												<img src="../../cdn-itcname.hihonor.com/pms/product/008601110000401/428_428_1507899259014mp.jpg" width="98" height="98">
+											</a>
+										</div>
+										<div class="category-products-label">
+											<a href="product/593171207.html#636912576">Honor Band 3
+											</a>
+										</div>
+									</div>
+									<div class="sub-product-items">
+										<div class="category-products-image">
+											<a href="product/626249527.html#261357235">
+												<img src="../../cdn-itcname.hihonor.com/pms/product/6901443189113/428_428_1502090717262mp.jpg" width="98" height="98">
+											</a>
+										</div>
+										<div class="category-products-label">
+											<a href="product/626249527.html#261357235">Honor Sport Bluetooth Earphones
+											</a>
+										</div>
+									</div>
+									<div class="sub-product-items">
+										<div class="category-products-image">
+											<a href="product/277341071.html#681067692">
+												<img src="../../cdn-itcname.hihonor.com/pms/product/6901443191390/428_428_1502095245793mp.jpg" width="98" height="98">
+											</a>
+										</div>
+										<div class="category-products-label">
+											<a href="product/277341071.html#681067692">Honor Monster Headphones
+											</a>
+										</div>
+									</div>
+									<div class="sub-product-items">
+										<div class="category-products-image">
+											<a href="product/154619901.html#165675002">
+												<img src="../../cdn-itcname.hihonor.com/pms/product/69014431123346/428_428_1507892983002mp.jpg" width="98" height="98">
+											</a>
+										</div>
+										<div class="category-products-label">
+											<a href="product/154619901.html#165675002">Honor 8 PC Case
+											</a>
+										</div>
+									</div>
+						  
+								<div class="sub-product-items viewMoreOption">
+									<a href="list-162.html" target="_blank">
+										<span>Scopri di pi&#249;</span>
+										<span class = "viewMoreIcon icon_next_page"></span>
+									</a>
+								</div>
+						 
+						</div>
+						<div class="sub-menus sub-products" id="subproductList_3_section">
+									<div class="sub-product-items sub-event-items sub-event-desktop-view"><div class="category-event-image ">        <a href="http://www.hihonor.com/it/honorzalandosummer/index.html" target="_blank"><img src="../../cdn-itcname.hihonor.com/pms/template/content/2017/20171016193708798.jpg" title="20170907142351552.jpg" style="float:none;" /> </a></div></div><div class="sub-product-items sub-event-items sub-event-desktop-view"><div class="category-event-image ">        <a href="http://www.hihonor.com/it/nightvision/index.html" target="_blank"><img src="../../cdn-itcname.hihonor.com/pms/template/content/2017/20171016193724995.jpg" title="2017090714235129.jpg" style="float:none;" /> </a></div></div><div class="sub-product-items sub-event-items sub-event-desktop-view"><div class="category-event-image ">        <a href="http://www.hihonor.com/it/honor8pro_testers/index.html" target="_blank"><img src="../../cdn-itcname.hihonor.com/pms/template/content/2017/20171016193736381.jpg" title="20170907142350811.jpg" style="float:none;" /> </a></div></div>
+						  
+								<div class="sub-product-items viewMoreOption">
+									<a href="cmsContente6c2.html?key=web_cms_events" target="_blank">
+										<span>Scopri di pi&#249;</span>
+										<span class = "viewMoreIcon icon_next_page"></span>
+									</a>
+								</div>
+						 
+						</div>
+			</div>
+		</div>
+</div>
+
+<div class="trackorder-popup" style="display:none">
+	<div id="trackorder-popup">
+	     <iframe id="trackorder-iframe" src="trackorder/popup/index.html" frameborder="0" height="100%" width="100%"></iframe>
+	     <div class="loader"></div>
+	</div>
+</div>
+
+
+<textarea id="micro-cart-tpl" class="hide">
+<!--#macro microCartList data-->
+	<!--#list data.bundlerList as b-->
+		<!--#if (b.skuList && b.skuList.length > 0) -->
+		<!--#var lst = b.skuList[0];-->
+		<!--#var skuId='#'+lst.skuId;-->
+		<div class="productDetailsInCart">
+			<div class="productItemsImage">
+				<a href="product/display/%7b#lst.id}.html" title="" >
+					<img src="https://cdn-itcname.hihonor.com/pms{#lst.photoPath}78_78_{#lst.photoName}" alt="{#lst.prdSkuName}" width="80" height="60"/>
+				</a>
+			</div>
+			<div class="productDetailsSection">
+				<div class="productDetails_label">
+					<label>
+						<a href="product/display/%7b#lst.id}.html" title="{#lst.prdSkuName}" >{#lst.prdSkuName}</a>
+					</label>
+				</div>
+				<div class="productDetails_config">
+					<label>
+						<a href="product/display/%7b#lst.id}.html" title="{#lst.prdSkuName}" ></a>
+						</label>
+				</div>
+				<div class="productDetails_amount_price">
+					<span class= "noOfItemsSelected"><label>{#lst.quantity}</label></span>
+					<span class= "itemsMultiplySign icon_close"></span>
+					<span class= "priceForOneItem"><label>€{#parseFloat(lst.skuPrice).toFixed(2)}</label></span>
+				</div>
+			</div>
+			<!--#if (lst.productType && lst.productType== 2 ) -->
+				<div title = 'Cancella' class="deleteFromCartOperation icon_delete" onclick="ec.minicart.del(this , {#lst.bundleId}, {#lst.productType})">
+			<!--#else-->
+				<div title = 'Cancella' class="deleteFromCartOperation icon_delete" onclick="ec.minicart.del(this , {#lst.skuId}, {#lst.productType})">
+			<!--/#if-->
+			</div>
+		</div>
+		<!--/#if-->
+	<!--/#list-->
+	<!--#list data.productList as lst-->
+	<!--#var skuId='#'+lst.skuId;-->
+	<div class="productDetailsInCart">
+		<div class="productItemsImage">
+			<a href="product/display/%7b#lst.id}.html" title="" >
+				<img src="https://cdn-itcname.hihonor.com/pms{#lst.photoPath}78_78_{#lst.photoName}" alt="{#lst.prdSkuName}" width="80" height="60"/>
+			</a>
+		</div>
+		<div class="productDetailsSection">
+			<div class="productDetails_label">
+				<label>
+					<a href="product/display/%7b#lst.id}.html" title="{#lst.prdSkuName}" >{#lst.prdSkuName}</a>
+				</label>
+			</div>
+			<div class="productDetails_config">
+				<label></label>
+			</div>
+			<div class="productDetails_amount_price">
+				<span class= "noOfItemsSelected"><label>{#lst.quantity}</label></span>
+				<span class= "itemsMultiplySign icon_close"></span>
+				<span class= "priceForOneItem"><label>€{#parseFloat(lst.skuPrice).toFixed(2)}</label></span>
+			</div>
+		</div>
+		<div title = 'Cancella' class="deleteFromCartOperation icon_delete" onclick="ec.minicart.del(this , {#lst.skuId}, {#lst.productType})">
+		</div>
+	</div>
+	<!--/#list-->
+<!--/#macro-->
+</textarea>
+
+<script>
+ var deliveryFee = "{#data.deliveryFee}";
+ if(deliveryFee=="0") {
+	$(".orderInfosection").hide();
+ }
+ec.load("ec.slider", {
+   loadType : "lazy", 
+   callback : function() {
+		$("#ec-erweima").slider({
+				 width:     91, //必须
+				 height:     96, //必须
+				 style : 1,                    //1显示分页，2只显示左右箭头,3两者都显示
+				 pause : 120000,           //间隔时间
+				 auto : true
+
+		});
+   }
+});
+ec.ready(function(){
+	//ec.form.input.label("#search-kw" , "荣耀6");
+	$("#search-kw").bind(
+		{
+			focus:function(){
+				$(".searchBar-key").css("display","none");
+				$(".wide .autocomplete-w1 .autocomplete").attr("style","display:none;width:"+$(".quickSearchInputBoxSection").width()+'px !important');
+			}
+		});
+	$("#search-kw").bind(	
+		{	blur:function(){
+				if ($("#search-kw").val().trim() == '') {
+					$(".searchBar-key").css("display","block");
+				} else {
+					$(".searchBar-key").css("display","none");
+				}
+			}
+		}
+	);
+	ec.ui.hover("#searchBar-area" , { captureInput : true });
+});
+ec.code.addService({showService : true , showTools : true});
+
+ec.ready(function () {
+	ec.cart.getTotal();
+	//微型购物车hover效果
+	ec.minicart.microCartTpl = new ec.template($('#micro-cart-tpl').val());
+	var $imall = $('#header-toolbar-imall-content'),
+		$miniCart = $("#cart-container");//$('#header-toolbar-minicart-content');
+	$('#header-toolbar-imall').hover(function (){
+		$.ajax({
+			url : "https://remark-it.hihonor.com/remark/queryNotRemarkCount.json?t=" + new Date().getTime(),
+			dataType:"jsonp",
+			success : function(json){
+				$('#toolbar-notRemarkCount').html(+json.notRemarkCount).attr('class',(json.notRemarkCount <= 0) ? 'hide' : '');
+				$('#member-notRemarkCount').text(json.notRemarkCount);
+			}
+		});
+		//
+		//ec.cart.getTotal();
+		
+		$imall.show();
+	}, function () {
+		$imall.hide();
+	});
+});
+
+$("#getPetal").click(function()
+{
+	window.location.href="member/petal";
+});
+
+ec.ready(function(){
+	try
+	{	
+			new ec.ajax().get({		
+			url:"https://store.hihonor.com/it/account/getPetalValid.json",
+			successFunction:function(json){		
+				//如果没有签到
+				if(!json.success)
+				{
+					//判断用户是否已签到
+					new ec.ajax().get({		
+						url:"https://store.hihonor.com/it/account/signinValid.json",
+						successFunction:function(json){		
+							//如果没有签到
+							if(!json.success)
+							{
+								$("#dfn").show();
+							}
+							else//如果已经签到
+							{
+								$("#dfn").hide();
+							}
+					},
+						errorFunction : function(json) {
+							// alert(json);
+						}
+					});
+				
+				}
+				else
+				{
+					$("#dfn").hide();
+				}
+			},
+			errorFunction : function(json) {
+				//alert(json);
+			}
+		});
+		
+	}
+	catch (err)
+	{
+		// console.log(err);
+	}
+
+	
+});
+
+var scrollWidth = $("body").width();
+var counterForScrollWidth = 0;
+$('.searchIcon.icon_search_1').on('click',function(){
+$("#keyword").val("");
+var searchQuickLinks = $('.searchBar-key a'),
+	newQuickLink = '';
+	$('#quickLinks').empty();
+for(var i = 0;i<searchQuickLinks.length;i++){
+	var searchItem = searchQuickLinks[i];
+	newQuickLink = newQuickLink +
+						'<li class="quickLinksContent">'+
+							'<label>'+
+								'<a href="'+$(searchItem).attr('href')+'" target="_blank">'+$(searchItem).text().trim()+'</a>'+
+							'</label>'+
+						'</li>';
+}
+$('#quickLinks').append('<ul class = "quickLinksContentSectionBlock">'+newQuickLink+'</ul>');
+	var delay=0.1;
+	$("#quickLinks li").each(function(index){
+			$(this).addClass("animated")
+						.attr('style','-webkit-animation-delay:'+delay+'s;animation-delay:'+delay+'s')
+						.addClass("fadeInUpBig");
+			delay+=0.1;
+	});	
+
+if(counterForScrollWidth<1){
+	scrollWidth = (scrollWidth - $("body").width());
+}
+counterForScrollWidth = counterForScrollWidth +1;
+
+setTimeout(function(){
+	$('.activeLinkBorder').css({"margin-right":scrollWidth+"px"});
+	$('.cartItemsCount').css({"margin-right":scrollWidth+"px"});
+	$('.header').css({"margin-right":scrollWidth+"px"});
+	$('.naver-main').css({"margin-right":scrollWidth+"px"});
+	$('body').attr("style","overflow:hidden;"+"padding-right:"+scrollWidth+"px");
+	$('.wide .autocomplete-w1 .autocomplete').width($('#search-kw').width()+'px !important');
+	
+},50);
+$('.quickSearchLinkPage').css({'opacity':1,'visibility':'visible'});
+setTimeout(function(){
+	$("#keyword").focus();
+},400);
+});
+$('.quickSearchClose .icon_close').on('click',function(){
+$('.quickSearchLinkPage').css({'opacity': 0,'visibility':'hidden'});
+$('.activeLinkBorder').css({"margin-right":""});
+setTimeout(function(){
+	$('#quickLinksContainer').show();
+	$('#searchResults').hide();
+	$('#searchResults').css({"max-height": "200px"});
+	$('.quickSearchLinkPage').css({"padding-top":"190px"});
+	$('.cartItemsCount').css({"margin-right":""});
+	$('.header').css({"margin-right":""});
+	$('.naver-main').css({"margin-right":""});
+	$('body').attr("style","overflow:auto");
+},300);
+
+});
+
+</script>
+<textarea class="hide" id="ec-binding-phone">
+	<div id="ec-binding-phone-1" class="ec-binding-phone-box hide">
+		<!-- 20141011-绑定安全手机号提示-start -->
+		<div class="safetyPhone-prompt-area">
+			<div class="h">
+				<i></i>
+			</div>
+			<div class="b">
+				<p>In order to provide you with a better service, we recommend that you log on the mailbox account for the phone number binding, Bind bound mail account and mobile phone number can be used as login account,
+				<em style="font-color:red;">Not bound will not submit the order.</em></p>
+			</div>
+		</div>
+		<div class="box-custom-button">
+			<a class="box-button-style-3" href="javascript:;" id="ec-binding-phone-url-1"><span>Bind</span></a></a>
+		</div>
+		<!-- 20141011-绑定安全手机号提示-end -->
+	</div>
+	<div id="ec-binding-phone-2" class="ec-binding-phone-box hide">
+		<!-- 20141424-绑定安全手机号提示-start -->
+		<div class="safetyPhone-prompt-area">
+			<div class="h">
+				<i></i>
+			</div>
+			<div class="b">
+				<p>Please complete the bind security operations in a new phone number to open the page.</p>
+				<p>Depending on your situation, please click the button below after the completion of the binding.</p>
+			</div>
+		</div>
+		<div class="box-custom-button">
+			<a class="box-button-style-3" href="javascript:;" onclick="ec.binding.resetShow()"><span>绑定成功</span></a><a class="box-change box-button-style-3" href="javascript:;" id="ec-binding-phone-url-2"><span>重新绑定</span></a>
+		</div>
+		<!-- 20141424-绑定安全手机号提示-end -->
+	</div>
+	<div id="ec-binding-phone-3" class="ec-binding-phone-box hide">
+		<!-- 20141424-安全手机号绑定提示失败-start -->
+		<div class="box-prompt-error-area">
+			<div class="h">
+				<i></i>
+			</div>
+			<div class="b">
+				<p class="tal f12">对不起，您未成功绑定手机号。</p>
+				<p class="tal f12 black">为了您在商城正常购物、保护您的权益，请您绑定一个手机号码以享受华为商城的所有服务。</p>
+			</div>
+		</div>
+		<div class="box-custom-button">
+			<a href="javascript:;" class="box-button-style-3" onclick="ec.binding.showOk()" id="ec-binding-phone-url-3" ><span>立即绑定</span></a>
+		</div>
+		<!-- 20141424-安全手机号绑定提示失败-end -->
+	</div>
+	<div id="ec-binding-phone-4" class="ec-binding-phone-box hide">
+		<!-- 20150824-手机号绑定未绑定-start -->
+		<div class="safetyPhone-prompt-area">
+			<div class="h">
+				<i></i>
+			</div>
+			<div class="b">
+				<p class="tal f12">In order to provide you with better service, it is recommended that you log on the mailbox account number for mobile phone number binding, after binding the mailbox account number and binding Number, if not binding will not be able to submit orders.</em></p>
+			</div>
+		</div>
+		<div>&nbsp;</div>
+		<div class="box-custom-button">
+			<a class="box-change box-button-style-3" href="javascript:;" id="ec-binding-phone-url-4"><span>立即绑定</span></a>
+			<a class="box-button-style-1" href="javascript:;" onclick="ec.binding.closeState4();"><span>下次再说</span></a>
+		</div>
+		<!-- 20150824-安全手机号绑定提示失败-end -->
+	</div>
+	<div id="ec-binding-phone-5" class="ec-binding-phone-box hide">
+		<!-- 20141424-安全手机号绑定提示失败-start -->
+		<div class="box-prompt-error-area">
+			<div class="h">
+				<i></i>
+			</div>
+			<div class="a">
+				<p class="tal f12">您输入的手机已被注册，您可以选择使用手机号重新登录或者重新绑定手机！</p>
+			</div>
+		</div>
+		<div>&nbsp;</div>
+		<div class="box-custom-button">
+			<a class="box-button-style-3" href="account/login" id="ec-binding-phone-reLogin-5"><span>重新登录</span></a>')
+			<a class="box-change box-button-style-3" href="javascript:;" id="ec-binding-phone-url-5"><span>重新绑定</span></a>
+		</div>
+		<!-- 20141424-安全手机号绑定提示失败-end -->
+	</div>
+</textarea>
+
+<script>
+if(ec.util.cookie.get("uid")) {
+	$("#unlogin_status").hide();
+	$("#login_status").show();
+}
+
+function showSelectRegion()
+{
+    var box = new ec.box($("#selectRegion-tips").val(),{
+			boxid : "region-select-box",
+			boxclass : "ol_box_4",
+			title : "Please select your country or region.",
+			width : 940,			
+			showButton : false,
+			autoPosition:false,
+			onopen: function(box){
+			},
+			onok : function(box){
+			},
+			oncancel : function(box){
+				box.close();
+				$(".ol_box_mask").remove();
+			},   
+			onclose : function(box){
+				$(".ol_box_mask").remove();
+			}
+		});	
+								
+		box.open();
+				
+				$(".box-title").css("font-size","28px").css("font-weight","normal");
+				$("#region-select-box").css("height","auto");				
+				$(".ol_box_mask").click(function(){box.close();});
+				
+				$(".box-header").unbind("mousemove");
+				$(".box-header").unbind("mousedown");
+				
+				var divTop=document.getElementById("region-select-box").offsetTop;
+				$("#region-select-box").mousedown(function (e) {
+					var e=e||window.event;
+					var region = document.getElementById("region-select-box");
+										
+					var leftX = e.clientX - region.offsetLeft;
+					var topY = e.clientY - region.offsetTop;
+					$("#region-select-box").mousemove(function (event) {
+					 var e=event||window.event;
+					  var left=	e.clientX - leftX;
+					  var top=e.clientY - topY;
+					   
+					  if(e.clientX - leftX<20-region.offsetWidth){
+					  left=20-region.offsetWidth;
+					  }
+					  if(e.clientY - topY<20-region.offsetHeight){
+					  top=20-region.offsetHeight;
+					  }	
+					 
+					 if(e.clientY - topY+20>=$(window).height()){
+					  top=$(window).height() - 20;
+					  }
+					  if(e.clientX - leftX+20>=$(window).width()){
+					  left=$(window).width() - 20;
+					  }
+					  $("#region-select-box").css({"left": left, "top": top});
+					  divTop=top;
+						
+					});
+				});
+				$("#region-select-box").mouseup(function () {
+				$("#region-select-box").unbind("mousemove");
+				});
+            $(window).scroll(function () {              
+                $("#region-select-box").offset({ top: divTop });
+            });	
+}
+		$("#trackorder-link").click(function() {
+		    var isloggedin = ec.account.isLogin();
+		    if(typeof(isloggedin) != "undefined"){
+		        window.location = $('#trackorder-link-logged').attr('href');
+		    } else {
+		        $.fancybox.open({
+		            'padding'       : 0,
+		            'autoScale'     : false,
+		            'transitionIn'  : 'none',
+		            'transitionOut' : 'none',
+		            'title'         : this.title,
+		            'width'         : 470,
+		            'height'        : 575,
+		            'href'          : "https://store.hihonor.com/it/trackorder/popup/",
+		            'type'          : 'iframe',
+		            'autoSize'      : false,
+		            helpers : {
+		                    title : {
+		                        type: 'inside',
+		                        position : 'top'
+		                    }
+		                    
+		                },
+		
+		            beforeShow : function() {
+		
+		                
+		                $('.fancybox-inner').ready(function() {
+		                    $('.fancybox-inner').css("height", "600px");
+		                }); 
+		
+		            }, 
+		
+		           afterShow : function() {
+		
+		                $('.fancybox-inner').ready(function() {
+		                    $('.fancybox-inner').css("height", "600px");
+		                });     
+		            } 
+		        });
+                 ec.ga.virtualPageViewTracking('track_order');
+		        return false;
+		    }
+		    
+		});
+		$("#selectregion,#footerFg").click(function() {
+			$.fancybox.open("#selectregion-popup .popup-content",{
+				//'content' : $("#selectregion-popup").html(),
+				'padding'		: 0,
+         		'autoScale'		: false,
+         		'transitionIn'	: 'none',
+         		'transitionOut'	: 'none',
+         		'width'			: 989,
+         		'minWidth'   : 989,
+				'height'       : 800,
+				'autoSize'	: false,
+				'closeBtn' : true,
+				beforeShow : function(){
+					var countryId = '#it';
+				       var htmlLang = ec.util.cookie.get("locale_MS").split("_")[0];
+				       $(countryId).find("a[data-type-lang="+htmlLang+"]").addClass('selected');
+				},
+				afterShow: function () {
+				        $('.fancybox-inner').ready(function(){
+				        	$('.fancybox-inner').contents().find(".langs").on("click", function() {
+							$('.langs').removeClass("selected");
+							$(this).addClass("selected").siblings().removeClass("selected");
+
+							});
+
+				        });
+				        $('.fancybox-wrap').ready(function(){				        
+							$('.fancybox-wrap').contents().find(".fancybox-close").css({"background-image":"none", "top":"-40px", "right": "-13px"});	
+							$('.fancybox-wrap').contents().find(".fancybox-close").addClass("icon_close").css({"color": "white" , "font-size": "17pt", "text-decoration": "none"});
+				        });
+				       
+				 }
+			});
+			
+			$(".langs").on("click", function() {
+				$(this).addClass("selected").siblings().removeClass("selected");
+			});
+        });
+		
+		
+</script>
+
+
+<style>
+#fancybox-close {
+	right: -52px;
+}
+</style>
+<!-- 导航 -->
+
+
+<script>
+(function () {
+	//所有分类显示隐藏控制
+	var isIndex =  false,
+		categoryBlock = gid('category-block');
+		
+	if(isIndex) return;
+	
+	$("#category-block").hover(function(){
+		$(this).addClass("category-hover");
+	},function(){
+		$(this).removeClass("category-hover");
+	});
+	
+	/*categoryBlock.onmouseover = function () {
+		categoryBlock.className = 'category category-hover';
+	};
+	categoryBlock.onmouseout = function () {
+		categoryBlock.className = 'category';
+	};*/
+	
+}());
+
+/**
+*功能：给鼠标移动到category-list li上面的时候，记得给他多添加一个hover类样式
+*目的是兼容ie6,以及调整二级分类的弹出框的位置。
+*@author 李峰
+*/
+/**
+$(function(){
+	$(".category-item").hover(function(){
+		$(this).addClass("hover");
+		//1.二级分类的top值
+		var childrenTop = $(this).offset().top;
+		//2.一级分类的top值
+		var parentTop = $(".category-list").offset().top;
+		//3.二级分类到一级分类顶部的距离
+		var top = childrenTop - parentTop;
+		//4.二级分类的弹出层的高度
+		var childrenHeight = $(this).find(".category-panels").innerHeight();
+		//5.一级分类容器的总高度
+		var totalHeight = $(".category-list").height();
+		alert("childrenTop:"+childrenTop+";parentTop:"+parentTop+";top:"+top+";childrenHeight:"+childrenHeight+";totalHeight:"+totalHeight) ;
+
+		//6.如果二级分类.category-panels的内容高度大于总容量totalHeight,那么.category-panels置顶，然后多余的自动往下延续
+		//如果二级分类childrenHeight内容高度(childrenHeight + top )大于totalHeight,那么.category-panels往上移动childrenHeight + top -totalHeight
+		if((top + childrenHeight) > totalHeight)
+		{
+			if(childrenHeight > totalHeight)
+			{
+				$(this).find(".category-panels").css("top",-top);
+			}else{
+				//上移动
+				var topX = (childrenHeight+top) - totalHeight;
+				$(this).find(".category-panels").css("top",-topX);
+				
+			}
+			
+		}
+		
+	},function(){
+		$(this).removeClass("hover");
+	});
+});
+ */
+
+ $(document).ready(function(){
+ 	$(function () {
+ 	var idSelected = ""; 		
+		$('#naver-list li').hover(function () { 
+			
+			var selectedID = '#'+$(this).attr('id')+'_section';
+			$(selectedID).siblings().hide();
+			$(selectedID).parent().parent().removeClass('submenus-container-hover');
+			idSelected = selectedID,
+			maxWidth = 350,
+			noOfELems = $(selectedID).children().length;
+			if(noOfELems > 5){
+				maxWidth = (1280/noOfELems) > 350 ? 350 : (1280/noOfELems);
+				$(selectedID).attr("style","width:1280px;");
+				$(selectedID+' .sub-product-items').attr("style","max-width:"+(maxWidth-20)+'px');
+				$('.sub-product-items div.category-products-label').attr("style","max-width:"+(maxWidth-100)+'px');
+			}
+			else{
+				maxWidth = (1280/noOfELems) > 350 ? 350 : (1280/noOfELems);
+				$(selectedID).attr("style","width:1280px;");
+				$('.sub-product-items div.category-products-label').attr("style","max-width:"+maxWidth+'px');
+			}
+			$(selectedID).show();
+			$(selectedID).parent().addClass('submenus-container-hover');
+		
+			
+		},function () {
+			$('.submenus-container').hover(function () { 
+					$(idSelected).siblings().hide(); 
+					$(idSelected).show();
+					$(idSelected).parent().addClass('submenus-container-hover');
+			},
+			function () {
+				$('.submenus-container').removeClass('submenus-container-hover');	
+			});
+			
+			$('.submenus-container').removeClass('submenus-container-hover');
+		
+		});
+		
+	});	
+	
+	var obj;
+	$('.sub-menus.sub-products')
+	  .mouseover(function() {
+		var id=$(this).attr("id").split("_section")[0];
+		obj=$("#naver-list").find("#"+id);
+		obj.css("background","#00b2e6");
+		obj.find(".icon_sort_down").attr("style","display:none !important")
+		obj.find(".icon_sort_up").attr("style","display:inline-block !important")
+	  })
+	  .mouseout(function() {
+		obj.css("background","inherit");
+		obj.find(".icon_sort_down").removeAttr("style");
+		obj.find(".icon_sort_up").removeAttr("style");
+		
+	  });
+ }); 
+ 
+</script>
+<style>.brand_landing_page.main-breadcrum-container {
+        padding: 18px 0 25px 0;
+    }
+    .brand-page .brand-container .content .banner-text-top h1 {
+        width: 1120px;
+        text-align: center;
+        font-family: 'BigNoodleTitling';
+        font-size: 64px;
+        line-height: normal;
+        color: #00bce8;
+    }
+    .block-content-new {
+        text-align: center;
+        font-family: 'ProximaNova';
+        font-size: 16px;
+        line-height: 1.2rem;
+        color: #666;
+        background-color: white;
+        width: 100%;
+    }
+    .block-content-new-child1 {
+        margin-bottom: 14px;
+    }
+    .brand-page .brand-container .content .banner-text-bottom {
+        position: absolute;
+        bottom: 62px;
+        text-align: center;
+        width: 100%;
+        padding-left: 0;
+    }
+    .brand-page .brand-container .content .banner-text-bottom .bottom-parent {
+        width: 1120px;
+        margin: 0 auto 0 auto;
+    }
+    .block-content-new-child1 {
+        width: 1120px;
+        margin: 0 auto;
+        padding: 40px 0 20px 0;
+    }
+    .block-content-new-child {
+        width: 1120px;
+        margin: 0 auto;
+        padding: 0px 0 40px 0;
+    }
+.brand-page .brand-container .content .banner-text-bottom .bottom-parent .inner-block {
+    float: left;
+    width: 33%;
+    margin: 0;
+}
+</style><div class="brand-fixed-header"><div class="brand-header-block"><ul class="tabs"><li class="active"><a class="tabs-link" link="about-us" href="#about-us">Su di noi</a>            </li><li><a class="tabs-link" link="honor_stories_cont" href="#honor_stories_cont">le nostre storie</a>            </li></ul><div class="nav-bar"></div></div></div><div class="sub-container-brand brand-page" id="about-us"><div class="brand-container"><div class="about" id="about-slide-wrapper"><div class="content"><img class="inside_image" width="1280px" src="../../cdn-itcname.hihonor.com/pms/template/content/2017/20170908184156574.jpg" /><div class="banner-text-top"><div class="brand_landing_page main-breadcrum-container"><ul class="breadcrums"><li class="navigator-text"><a href="%24%7bdomainMain%7d/index.html">Home</a>&gt;</li><li class="navigator-text  selected">Brand</li></ul></div><h1>L’audacia è ciò che hai nel cuore, il resto è nelle tue mani.</h1></div><div class="banner-text-bottom"><div class="bottom-parent"><div class="inner-block"><h1>74</h1><div class="inner-text">Paesi</div></div><div class="inner-block"><h1>100+</h1><div class="inner-text">Milioni di Fan </div></div><div class="inner-block"><h1>6</h1><div class="inner-text">Centri di ricerca e <br />  sviluppo</div></div></div></div></div></div><div class="block-content-new"><div class="block-content-new-child1">Soluzioni high-tech, l’inconfondibile design giovane e trendy fanno di Honor uno dei maggiori e-brand del momento. Il dispositivo in sé non è tutto, Honor ha creato un vero e proprio lifestyle, uno spirito ribelle nel settore.</div><div class="block-content-new-child">Noi crediamo che il coraggio si misuri con un battito. I tuoi ideali, le tue passioni irrefrenabili, le tue speranze ed i tuoi sogni sono uniti in un’unica realtà. Segui il tuo cuore e dai un nome alle tue ambizioni. Honor scopre l’audacia che è in te, il resto è nelle tue mani.</div></div></div></div>
+<!-- latest news section comment start
+<div class="latest-news brand-page" id="latest-news">
+		<div class="news-card-container">
+			<div id="scroll-content" class="news-card-pile">
+				<div class="news-card">
+						<div class="card-img"><img src="../../it/images/honor4/latest_news/news_image1.jpg" /></div><div class="content-container"><div class="date">April 02, 2016</div><h3 class="content-title">KIRIN -650 RELEASE</h3><div class="news-content">In April 2016,Huawei released its latest smartphone SoC, the Kirin650 April2016,Huawei released itslatest smartphone </div><a class="icon_next_page icon-style" href="../../it/cmsContent?key=press_release_template_1_web&amp;flow=newsDetail"></a></div><div class="soc-icon"><a class="ban1-share-icon2 icon_share" type="btn"><div class="ban1-share-text" id="share_count0"></div></a><div class="share-container icon_sort_down"><a class="icon_facebook" onclick="javsacript:shareonfb(&#39;Honor Whistlist Touch Control&#39;,&#39;Honor Whistlist Touch Control&#39;,&#39;Honor Whistlist Touch Control Message&#39;,&#39;https://www.vmall.com/product/3087.html&#39;,&#39;0&#39;);"></a><a class="icon_twitter" onclick="javsacript:shareontwitter(&#39;https://twitter.com/intent/tweet?hashtags=hastegtesting&amp;text=textcontent111&amp;url=https://www.vmall.com/product/3087.html&#39;,&#39;0&#39;);"></a><a class="icon_instagram" href="javsacript:shareoninsta();"></a><script>  
+					   $(document).on('ready', function() {
+						  var twitter0=0;
+						  var facebook0=0;
+						  $.ajax({
+							url: 'https://graph.facebook.com/',
+							dataType: 'jsonp',
+							type: 'GET',
+							async : false,
+							data: {id: 'https://www.vmall.com/product/3087.html'},
+							success: function(data){
+								facebook0=parseInt(data.share.share_count);
+								var tweet  = "https://share.yandex.ru/gpp.xml?url=https://www.vmall.com/product/3087.html";
+								   $.ajax(tweet, { "dataType" :"jsonp",async : false }).done(function(json){
+									twitter0=parseInt(json); 
+									var total0 = twitter0+facebook0;
+									  console.log('--------------------'+facebook0);
+									  $('#share_count0').html(total0);
+									  });
+								}
+						  });
+						  console.log('--------'+facebook0);
+						  // twitter
+						}) 
+					</script>      </div></div>
+				</div>
+				<div class="news-card">
+						<div class="card-img"><img src="../../it/images/honor4/latest_news/news_image2.jpg" /></div><div class="content-container"><div class="date">April 02, 2016</div><h3 class="content-title">KIRIN -650 RELEASE</h3><div class="news-content">In April 2016,Huawei released its latest smartphone SoC, the Kirin650 April2016,Huawei released itslatest smartphone </div><a class="icon_next_page icon-style" href="../../it/cmsContent?key=software_announcement_1_web&amp;flow=newsDetail"></a></div><div class="soc-icon"><a class="ban1-share-icon2 icon_share" type="btn"><div class="ban1-share-text" id="share_count16"></div></a><div class="share-container icon_sort_down"><a class="icon_facebook" onclick="javsacript:shareonfb(&#39;Honor Whistlist Touch Control&#39;,&#39;Honor Whistlist Touch Control&#39;,&#39;Honor Whistlist Touch Control Message&#39;,&#39;https://www.vmall.com/product/3087.html&#39;,&#39;16&#39;);"></a><a class="icon_twitter" onclick="javsacript:shareontwitter(&#39;https://twitter.com/intent/tweet?hashtags=hastegtesting&amp;text=textcontent111&amp;url=https://www.vmall.com/product/3087.html&#39;,&#39;16&#39;);"></a><a class="icon_instagram" href="javsacript:shareoninsta();"></a><script>  
+					   $(document).on('ready', function() {
+						  var twitter16=0;
+						  var facebook16=0;
+						  $.ajax({
+							url: 'https://graph.facebook.com/',
+							dataType: 'jsonp',
+							type: 'GET',
+							async : false,
+							data: {id: 'https://www.vmall.com/product/3087.html'},
+							success: function(data){
+								facebook16=parseInt(data.share.share_count);
+								var tweet  = "https://share.yandex.ru/gpp.xml?url=https://www.vmall.com/product/3087.html";
+								   $.ajax(tweet, { "dataType" :"jsonp",async : false }).done(function(json){
+									twitter16=parseInt(json); 
+									var total16 = twitter16+facebook16;
+									  console.log('--------------------'+facebook16);
+									  $('#share_count16').html(total16);
+									  });
+								}
+						  });
+						  console.log('--------'+facebook16);
+						  // twitter
+						}) 
+					</script>      </div></div>
+				</div>
+				<div class="news-card">
+						<div class="card-img"><img src="../../it/images/honor4/latest_news/news_image3.jpg" /></div><div class="content-container"><div class="date">April 02, 2016</div><h3 class="content-title">KIRIN -650 RELEASE</h3><div class="news-content">In April 2016,Huawei released its latest smartphone SoC, the Kirin650 April2016,Huawei released itslatest smartphone </div><a class="icon_next_page icon-style" href="../../it/cmsContent?key=products_announcement_1_web&amp;flow=newsDetail"></a></div><div class="soc-icon"><a class="ban1-share-icon2 icon_share" type="btn"><div class="ban1-share-text" id="share_count8"></div></a><div class="share-container icon_sort_down"><a class="icon_facebook" onclick="javsacript:shareonfb(&#39;Honor Whistlist Touch Control&#39;,&#39;Honor Whistlist Touch Control&#39;,&#39;Honor Whistlist Touch Control Message&#39;,&#39;https://www.vmall.com/product/3087.html&#39;,&#39;8&#39;);"></a><a class="icon_twitter" onclick="javsacript:shareontwitter(&#39;https://twitter.com/intent/tweet?hashtags=hastegtesting&amp;text=textcontent111&amp;url=https://www.vmall.com/product/3087.html&#39;,&#39;8&#39;);"></a><a class="icon_instagram" href="javsacript:shareoninsta();"></a><script>  
+					   $(document).on('ready', function() {
+						  var twitter8=0;
+						  var facebook8=0;
+						  $.ajax({
+							url: 'https://graph.facebook.com/',
+							dataType: 'jsonp',
+							type: 'GET',
+							async : false,
+							data: {id: 'https://www.vmall.com/product/3087.html'},
+							success: function(data){
+								facebook8=parseInt(data.share.share_count);
+								var tweet  = "https://share.yandex.ru/gpp.xml?url=https://www.vmall.com/product/3087.html";
+								   $.ajax(tweet, { "dataType" :"jsonp",async : false }).done(function(json){
+									twitter8=parseInt(json); 
+									var total8 = twitter8+facebook8;
+									  console.log('--------------------'+facebook8);
+									  $('#share_count8').html(total8);
+									  });
+								}
+						  });
+						  console.log('--------'+facebook8);
+						  // twitter
+						}) 
+					</script>      </div></div>
+				</div>
+				<div class="news-card">
+						<div class="card-img"><img src="../../it/images/honor4/latest_news/news_image2.jpg" /></div><div class="content-container"><div class="date">April 02, 2016</div><h3 class="content-title">KIRIN -650 RELEASE</h3><div class="news-content">In April 2016,Huawei released its latest smartphone SoC, the Kirin650 April2016,Huawei released itslatest smartphone </div><a class="icon_next_page icon-style" href="../../it/cmsContent?key=news_template_3_web&amp;flow=newsDetail"></a></div><div class="soc-icon"><a class="ban1-share-icon2 icon_share" type="btn"><div class="ban1-share-text" id="share_count7"></div></a><div class="share-container icon_sort_down"><a class="icon_facebook" onclick="javsacript:shareonfb(&#39;Honor Whistlist Touch Control&#39;,&#39;Honor Whistlist Touch Control&#39;,&#39;Honor Whistlist Touch Control Message&#39;,&#39;https://www.vmall.com/product/3087.html&#39;,&#39;7&#39;);"></a><a class="icon_twitter" onclick="javsacript:shareontwitter(&#39;https://twitter.com/intent/tweet?hashtags=hastegtesting&amp;text=textcontent111&amp;url=https://www.vmall.com/product/3087.html&#39;,&#39;7&#39;);"></a><a class="icon_instagram" href="javsacript:shareoninsta();"></a><script>  
+					   $(document).on('ready', function() {
+						  var twitter7=0;
+						  var facebook7=0;
+						  $.ajax({
+							url: 'https://graph.facebook.com/',
+							dataType: 'jsonp',
+							type: 'GET',
+							async : false,
+							data: {id: 'https://www.vmall.com/product/3087.html'},
+							success: function(data){
+								facebook7=parseInt(data.share.share_count);
+								var tweet  = "https://share.yandex.ru/gpp.xml?url=https://www.vmall.com/product/3087.html";
+								   $.ajax(tweet, { "dataType" :"jsonp",async : false }).done(function(json){
+									twitter7=parseInt(json); 
+									var total7 = twitter7+facebook7;
+									  console.log('--------------------'+facebook7);
+									  $('#share_count7').html(total7);
+									  });
+								}
+						  });
+						  console.log('--------'+facebook7);
+						  // twitter
+						}) 
+					</script>      </div></div>
+				</div>
+				<div class="news-card">
+						<div class="card-img"><img src="../../it/images/honor4/latest_news/news_image1.jpg" /></div><div class="content-container"><div class="date">April 02, 2016</div><h3 class="content-title">KIRIN -650 RELEASE</h3><div class="news-content">In April 2016,Huawei released its latest smartphone SoC, the Kirin650 April2016,Huawei released itslatest smartphone </div><a class="icon_next_page icon-style" href="../../it/cmsContent?key=news_template_2_web&amp;flow=newsDetail"></a></div><div class="soc-icon"><a class="ban1-share-icon2 icon_share" type="btn"><div class="ban1-share-text" id="share_count6"></div></a><div class="share-container icon_sort_down"><a class="icon_facebook" onclick="javsacript:shareonfb(&#39;Honor Whistlist Touch Control&#39;,&#39;Honor Whistlist Touch Control&#39;,&#39;Honor Whistlist Touch Control Message&#39;,&#39;https://www.vmall.com/product/3087.html&#39;,&#39;6&#39;);"></a><a class="icon_twitter" onclick="javsacript:shareontwitter(&#39;https://twitter.com/intent/tweet?hashtags=hastegtesting&amp;text=textcontent111&amp;url=https://www.vmall.com/product/3087.html&#39;,&#39;6&#39;);"></a><a class="icon_instagram" href="javsacript:shareoninsta();"></a><script>  
+					   $(document).on('ready', function() {
+						  var twitter6=0;
+						  var facebook6=0;
+						  $.ajax({
+							url: 'https://graph.facebook.com/',
+							dataType: 'jsonp',
+							type: 'GET',
+							async : false,
+							data: {id: 'https://www.vmall.com/product/3087.html'},
+							success: function(data){
+								facebook6=parseInt(data.share.share_count);
+								var tweet  = "https://share.yandex.ru/gpp.xml?url=https://www.vmall.com/product/3087.html";
+								   $.ajax(tweet, { "dataType" :"jsonp",async : false }).done(function(json){
+									twitter6=parseInt(json); 
+									var total6 = twitter6+facebook6;
+									  console.log('--------------------'+facebook6);
+									  $('#share_count6').html(total6);
+									  });
+								}
+						  });
+						  console.log('--------'+facebook6);
+						  // twitter
+						}) 
+					</script>      </div></div>
+				</div>
+				<div class="news-card">
+						<div class="card-img"><img src="../../it/images/honor4/latest_news/news_image3.jpg" /></div><div class="content-container"><div class="date">April 02, 2016</div><h3 class="content-title">KIRIN -650 RELEASE</h3><div class="news-content">In April 2016,Huawei released its latest smartphone SoC, the Kirin650 April2016,Huawei released itslatest smartphone </div><a class="icon_next_page icon-style" href="../../it/cmsContent?key=news_template_1_web&amp;flow=newsDetail"></a></div><div class="soc-icon"><a class="ban1-share-icon2 icon_share" type="btn"><div class="ban1-share-text" id="share_count5"></div></a><div class="share-container icon_sort_down"><a class="icon_facebook" onclick="javsacript:shareonfb(&#39;Honor Whistlist Touch Control&#39;,&#39;Honor Whistlist Touch Control&#39;,&#39;Honor Whistlist Touch Control Message&#39;,&#39;https://www.vmall.com/product/3087.html&#39;,&#39;5&#39;);"></a><a class="icon_twitter" onclick="javsacript:shareontwitter(&#39;https://twitter.com/intent/tweet?hashtags=hastegtesting&amp;text=textcontent111&amp;url=https://www.vmall.com/product/3087.html&#39;,&#39;5&#39;);"></a><a class="icon_instagram" href="javsacript:shareoninsta();"></a><script>  
+					   $(document).on('ready', function() {
+						  var twitter5=0;
+						  var facebook5=0;
+						  $.ajax({
+							url: 'https://graph.facebook.com/',
+							dataType: 'jsonp',
+							type: 'GET',
+							async : false,
+							data: {id: 'https://www.vmall.com/product/3087.html'},
+							success: function(data){
+								facebook5=parseInt(data.share.share_count);
+								var tweet  = "https://share.yandex.ru/gpp.xml?url=https://www.vmall.com/product/3087.html";
+								   $.ajax(tweet, { "dataType" :"jsonp",async : false }).done(function(json){
+									twitter5=parseInt(json); 
+									var total5 = twitter5+facebook5;
+									  console.log('--------------------'+facebook5);
+									  $('#share_count5').html(total5);
+									  });
+								}
+						  });
+						  console.log('--------'+facebook5);
+						  // twitter
+						}) 
+					</script>      </div></div>
+				</div>
+				<div class="news-card">
+						<div class="card-img"><img src="../../it/images/honor4/latest_news/news_image1.jpg" /></div><div class="content-container"><div class="date">April 02, 2016</div><h3 class="content-title">KIRIN -650 RELEASE</h3><div class="news-content">In April 2016,Huawei released its latest smartphone SoC, the Kirin650 April2016,Huawei released itslatest smartphone </div><a class="icon_next_page icon-style" href="../../it/cmsContent?key=events_template_1_web&amp;flow=newsDetail"></a></div><div class="soc-icon"><a class="ban1-share-icon2 icon_share" type="btn"><div class="ban1-share-text" id="share_count3"></div></a><div class="share-container icon_sort_down"><a class="icon_facebook" onclick="javsacript:shareonfb(&#39;Honor Whistlist Touch Control&#39;,&#39;Honor Whistlist Touch Control&#39;,&#39;Honor Whistlist Touch Control Message&#39;,&#39;https://www.vmall.com/product/3087.html&#39;,&#39;3&#39;);"></a><a class="icon_twitter" onclick="javsacript:shareontwitter(&#39;https://twitter.com/intent/tweet?hashtags=hastegtesting&amp;text=textcontent111&amp;url=https://www.vmall.com/product/3087.html&#39;,&#39;3&#39;);"></a><a class="icon_instagram" href="javsacript:shareoninsta();"></a><script>  
+					   $(document).on('ready', function() {
+						  var twitter3=0;
+						  var facebook3=0;
+						  $.ajax({
+							url: 'https://graph.facebook.com/',
+							dataType: 'jsonp',
+							type: 'GET',
+							async : false,
+							data: {id: 'https://www.vmall.com/product/3087.html'},
+							success: function(data){
+								facebook3=parseInt(data.share.share_count);
+								var tweet  = "https://share.yandex.ru/gpp.xml?url=https://www.vmall.com/product/3087.html";
+								   $.ajax(tweet, { "dataType" :"jsonp",async : false }).done(function(json){
+									twitter3=parseInt(json); 
+									var total3 = twitter3+facebook3;
+									  console.log('--------------------'+facebook3);
+									  $('#share_count3').html(total3);
+									  });
+								}
+						  });
+						  console.log('--------'+facebook3);
+						  // twitter
+						}) 
+					</script>      </div></div>
+				</div>
+				<div class="news-card">
+						<div class="card-img"><img src="../../it/images/honor4/latest_news/news_image3.jpg" /></div><div class="content-container"><div class="date">April 02, 2016</div><h3 class="content-title">KIRIN -650 RELEASE</h3><div class="news-content">In April 2016,Huawei released its latest smartphone SoC, the Kirin650 April2016,Huawei released itslatest smartphone </div><a class="icon_next_page icon-style" href="../../it/cmsContent?key=press_release_template_3_web&amp;flow=newsDetail"></a></div><div class="soc-icon"><a class="ban1-share-icon2 icon_share" type="btn"><div class="ban1-share-text" id="share_count2"></div></a><div class="share-container icon_sort_down"><a class="icon_facebook" onclick="javsacript:shareonfb(&#39;Honor Whistlist Touch Control&#39;,&#39;Honor Whistlist Touch Control&#39;,&#39;Honor Whistlist Touch Control Message&#39;,&#39;https://www.vmall.com/product/3087.html&#39;,&#39;2&#39;);"></a><a class="icon_twitter" onclick="javsacript:shareontwitter(&#39;https://twitter.com/intent/tweet?hashtags=hastegtesting&amp;text=textcontent111&amp;url=https://www.vmall.com/product/3087.html&#39;,&#39;2&#39;);"></a><a class="icon_instagram" href="javsacript:shareoninsta();"></a><script>  
+					   $(document).on('ready', function() {
+						  var twitter2=0;
+						  var facebook2=0;
+						  $.ajax({
+							url: 'https://graph.facebook.com/',
+							dataType: 'jsonp',
+							type: 'GET',
+							async : false,
+							data: {id: 'https://www.vmall.com/product/3087.html'},
+							success: function(data){
+								facebook2=parseInt(data.share.share_count);
+								var tweet  = "https://share.yandex.ru/gpp.xml?url=https://www.vmall.com/product/3087.html";
+								   $.ajax(tweet, { "dataType" :"jsonp",async : false }).done(function(json){
+									twitter2=parseInt(json); 
+									var total2 = twitter2+facebook2;
+									  console.log('--------------------'+facebook2);
+									  $('#share_count2').html(total2);
+									  });
+								}
+						  });
+						  console.log('--------'+facebook2);
+						  // twitter
+						}) 
+					</script>      </div></div>
+				</div>
+				<div class="news-card">
+						<div class="card-img"><img src="../../it/images/honor4/latest_news/news_image2.jpg" /></div><div class="content-container"><div class="date">April 02, 2016</div><h3 class="content-title">KIRIN -650 RELEASE</h3><div class="news-content">In April 2016,Huawei released its latest smartphone SoC, the Kirin650 April2016,Huawei released itslatest smartphone </div><a class="icon_next_page icon-style" href="../../it/cmsContent?key=press_release_template_2_web&amp;flow=newsDetail"></a></div><div class="soc-icon"><a class="ban1-share-icon2 icon_share" type="btn"><div class="ban1-share-text" id="share_count1"></div></a><div class="share-container icon_sort_down"><a class="icon_facebook" onclick="javsacript:shareonfb(&#39;Honor Whistlist Touch Control&#39;,&#39;Honor Whistlist Touch Control&#39;,&#39;Honor Whistlist Touch Control Message&#39;,&#39;https://www.vmall.com/product/3087.html&#39;,&#39;1&#39;);"></a><a class="icon_twitter" onclick="javsacript:shareontwitter(&#39;https://twitter.com/intent/tweet?hashtags=hastegtesting&amp;text=textcontent111&amp;url=https://www.vmall.com/product/3087.html&#39;,&#39;1&#39;);"></a><a class="icon_instagram" href="javsacript:shareoninsta();"></a><script>  
+					   $(document).on('ready', function() {
+						  var twitter1=0;
+						  var facebook1=0;
+						  $.ajax({
+							url: 'https://graph.facebook.com/',
+							dataType: 'jsonp',
+							type: 'GET',
+							async : false,
+							data: {id: 'https://www.vmall.com/product/3087.html'},
+							success: function(data){
+								facebook1=parseInt(data.share.share_count);
+								var tweet  = "https://share.yandex.ru/gpp.xml?url=https://www.vmall.com/product/3087.html";
+								   $.ajax(tweet, { "dataType" :"jsonp",async : false }).done(function(json){
+									twitter1=parseInt(json); 
+									var total1 = twitter1+facebook1;
+									  console.log('--------------------'+facebook1);
+									  $('#share_count1').html(total1);
+									  });
+								}
+						  });
+						  console.log('--------'+facebook1);
+						  // twitter
+						}) 
+					</script>      </div></div>
+				</div>
+			</div>	
+			<div class="view-all-button">
+					<button id="latest_news-button" type="button" class="btn_black_secondary" onclick="location.href='https://store.hihonor.com/it/newsRoom';">
+						VIEW ALL
+					</button>
+				</div>
+		</div>
+</div>
+
+<script src="https://cdn-itcname.hihonor.com/it/js/honor4/jquery.youtubeplay.min.js"></script>
+<!--history comment start  history comment end-->
+<div class="honor_stories_cont brand-page" id="honor_stories_cont"><div class="stories_content_container" id="stories-slide-wrapper"><div class="stories_content_section"><div class="stories_play_icon_big"><img class="tab1" id="homevideo1" src="../../cdn-itcname.hihonor.com/pms/template/content/2017/20170901185804701.jpg" title="tab1.jpg" alt="Video 1" width="680" height="440" /><iframe id="ytvideo1" style="display:none;" width="680" height="440" frameborder="0"></iframe></div><div class="text_content_section text_content_section1"><div class="stories_video_name">Double or Nothing</div><div class="stories_video_desc">Double Your Experience With New Honor Smartphone</div><div class="icon_play2" id="test_click1"></div></div><div class="stories_share_container"><div class="soc-icon1">            <a class="icon_blank_heart" type="btn" href="#" tabindex="-1"><div class="ban4-like-text">290</div>            </a>            <a class="icon_share" type="btn" tabindex="-1">               <div class="ban4-share-text" id="share_count61"></div>            </a>            <div class="share-container icon_sort_down">               <a class="icon_facebook" onclick="javsacript:shareonfb(&#39;Honor Whistlist&#39;,&#39;Honor Whistlist &#39;,&#39;Honor Whistlist Message&#39;,&#39;https://www.vmall.com/product/938665621.html&#39;,&#39;61&#39;);" tabindex="-1"></a><a class="icon_twitter" onclick="javsacript:shareontwitter(&#39;https://twitter.com/intent/tweet?hashtags=hastegtesting&amp;text=textcontent111&amp;url=https://www.vmall.com/product/938665621.html&#39;,&#39;61&#39;);" tabindex="-1"></a><a class="icon_instagram" href="javsacript:shareoninsta();" tabindex="-1"></a><script>  
+                  $(document).on('ready', function() {
+                  var twitter61=0;
+                  var facebook61=0;
+                  $.ajax({
+                  url: 'https://graph.facebook.com/',
+                  dataType: 'jsonp',
+                  type: 'GET',
+                  async : false,
+                  data: {id: 'https://www.vmall.com/product/938665621.html'},
+                  success: function(data){
+                  facebook61=parseInt(data.share.share_count);
+                  var tweet  = "https://share.yandex.ru/gpp.xml?url=https://www.vmall.com/product/938665621.html";
+                  $.ajax(tweet, { "dataType" :"jsonp",async : false }).done(function(json){
+                  twitter61=parseInt(json); 
+                  var total61 = twitter61+facebook61;
+                  console.log('--------------------'+facebook61);
+                  $('#share_count61').html(total61); 
+                  });
+                  }
+                  });
+                  console.log('--------'+facebook61);
+                  }) 
+               </script>                                                         </div></div></div></div><div class="stories_content_section"><div class="stories_play_icon_big"><img class="tab1" id="homevideo2" src="../../cdn-itcname.hihonor.com/pms/template/content/2017/20170901185804902.jpg" title="tab1.jpg" alt="Video 2" width="680" height="440" /><iframe id="ytvideo2" style="display:none;" width="680" height="440" frameborder="0"></iframe></div><div class="text_content_section text_content_section2"><div class="stories_video_name">BROOKLYN BECKHAM</div><div class="stories_video_desc">We’re excited to announce our new partnership with Brooklyn Beckham.</div><div class="icon_play2" id="test_click2"></div></div><div class="stories_share_container"><div class="soc-icon1">            <a class="icon_blank_heart" type="btn" href="#" tabindex="0"><div class="ban4-like-text">290</div>            </a>            <a class="icon_share" type="btn" tabindex="0">               <div class="ban4-share-text" id="share_count62"></div>            </a>            <div class="share-container icon_sort_down">               <a class="icon_facebook" onclick="javsacript:shareonfb(&#39;HUAWEI WATCH&#39;,&#39;HUAWEI WATCH &#39;,&#39;HUAWEI WATCH Message&#39;,&#39;https://www.vmall.com/product/658947392.html&#39;,&#39;62&#39;);" tabindex="0"></a><a class="icon_twitter" onclick="javsacript:shareontwitter(&#39;https://twitter.com/intent/tweet?hashtags=hastegtesting&amp;text=textcontent111&amp;url=https://www.vmall.com/product/658947392.html&#39;,&#39;62&#39;);" tabindex="0"></a><a class="icon_instagram" href="javsacript:shareoninsta();" tabindex="0"></a><script>  
+                  $(document).on('ready', function() {
+                  var twitter62=0;
+                  var facebook62=0;
+                  $.ajax({
+                  url: 'https://graph.facebook.com/',
+                  dataType: 'jsonp',
+                  type: 'GET',
+                  async : false,
+                  data: {id: 'https://www.vmall.com/product/658947392.html'},
+                  success: function(data){
+                  facebook62=parseInt(data.share.share_count);
+                  var tweet  = "https://share.yandex.ru/gpp.xml?url=https://www.vmall.com/product/658947392.html";
+                  $.ajax(tweet, { "dataType" :"jsonp",async : false }).done(function(json){
+                  twitter62=parseInt(json); 
+                  var total62 = twitter62+facebook62;
+                  console.log('--------------------'+facebook62);
+                  $('#share_count62').html(total62); 
+                  });
+                  }
+                  });
+                  console.log('--------'+facebook62);
+                  }) 
+               </script>                                                         </div></div></div></div><div class="stories_content_section"><div class="stories_play_icon_big"><img class="tab1" id="homevideo3" src="../../cdn-itcname.hihonor.com/pms/template/content/2017/20170901185805132.jpg" title="tab1.jpg" alt="Video 3" width="680" height="440" /><iframe id="ytvideo3" style="display:none;" width="680" height="440" frameborder="0"></iframe></div><div class="text_content_section text_content_section3"><div class="stories_video_name">Honor 8</div><div class="stories_video_desc">Record every valuable moment with Honor 8.</div><div class="icon_play2" id="test_click3"></div></div><div class="stories_share_container"><div class="soc-icon1">            <a class="icon_blank_heart" type="btn" href="#" tabindex="-2"><div class="ban4-like-text">290</div>            </a>            <a class="icon_share" type="btn" tabindex="-2">               <div class="ban4-share-text" id="share_count63"></div>            </a>            <div class="share-container icon_sort_down">               <a class="icon_facebook" onclick="javsacript:shareonfb(&#39;HUAWEI MateBook&#39;,&#39;HUAWEI MateBook&#39;,&#39;HUAWEI MateBook Message&#39;,&#39;https://www.vmall.com/product/965498680.html&#39;,&#39;63&#39;);" tabindex="-2"></a><a class="icon_twitter" onclick="javsacript:shareontwitter(&#39;https://twitter.com/intent/tweet?hashtags=hastegtesting&amp;text=textcontent111&amp;url=https://www.vmall.com/product/965498680.html&#39;,&#39;63&#39;);" tabindex="-2"></a><a class="icon_instagram" href="javsacript:shareoninsta();" tabindex="-2"></a><script>  
+                  $(document).on('ready', function() {
+                  var twitter63=0;
+                  var facebook63=0;
+                  $.ajax({
+                  url: 'https://graph.facebook.com/',
+                  dataType: 'jsonp',
+                  type: 'GET',
+                  async : false,
+                  data: {id: 'https://www.vmall.com/product/965498680.html'},
+                  success: function(data){
+                  facebook63=parseInt(data.share.share_count);
+                  var tweet  = "https://share.yandex.ru/gpp.xml?url=https://www.vmall.com/product/965498680.html";
+                  $.ajax(tweet, { "dataType" :"jsonp",async : false }).done(function(json){
+                  twitter63=parseInt(json); 
+                  var total63 = twitter63+facebook63;
+                  console.log('--------------------'+facebook63);
+                  $('#share_count63').html(total63); 
+                  });
+                  }
+                  });
+                  console.log('--------'+facebook63);
+                  }) 
+               </script>                                                         </div></div></div></div><div class="stories_content_section"><div class="stories_play_icon_big"><img class="tab1" id="homevideo4" src="../../cdn-itcname.hihonor.com/pms/template/content/2017/20170901185805388.jpg" title="tab1.jpg" alt="Video 4" width="680" height="440" /><iframe id="ytvideo4" style="display:none;" width="680" height="440" frameborder="0"></iframe></div><div class="text_content_section text_content_section4"><div class="stories_video_name">honor 7</div><div class="stories_video_desc">Lifestyle for the brave.</div><div class="icon_play2" id="test_click4"></div></div><div class="stories_share_container"><div class="soc-icon1">            <a class="icon_blank_heart" type="btn" href="#" tabindex="-3"><div class="ban4-like-text">290</div>            </a>            <a class="icon_share" type="btn" tabindex="-3">               <div class="ban4-share-text" id="share_count64"></div>            </a>            <div class="share-container icon_sort_down">               <a class="icon_facebook" onclick="javsacript:shareonfb(&#39;Honor Selfie Stick&#39;,&#39;Honor Selfie Stick&#39;,&#39;Honor Selfie Stick Message&#39;,&#39;https://www.vmall.com/product/430223039.html&#39;,&#39;64&#39;);" tabindex="-3"></a><a class="icon_twitter" onclick="javsacript:shareontwitter(&#39;https://twitter.com/intent/tweet?hashtags=hastegtesting&amp;text=textcontent111&amp;url=https://www.vmall.com/product/430223039.html&#39;,&#39;64&#39;);" tabindex="-3"></a><a class="icon_instagram" href="javsacript:shareoninsta();" tabindex="-3"></a><script>  
+                  $(document).on('ready', function() {
+                  var twitter64=0;
+                  var facebook64=0;
+                  $.ajax({
+                  url: 'https://graph.facebook.com/',
+                  dataType: 'jsonp',
+                  type: 'GET',
+                  async : false,
+                  data: {id: 'https://www.vmall.com/product/430223039.html'},
+                  success: function(data){
+                  facebook64=parseInt(data.share.share_count);
+                  var tweet  = "https://share.yandex.ru/gpp.xml?url=https://www.vmall.com/product/430223039.html";
+                  $.ajax(tweet, { "dataType" :"jsonp",async : false }).done(function(json){
+                  twitter64=parseInt(json); 
+                  var total64 = twitter64+facebook64;
+                  console.log('--------------------'+facebook64);
+                  $('#share_count64').html(total64); 
+                  });
+                  }
+                  });
+                  console.log('--------'+facebook64);
+                  }) 
+               </script>                                                         </div></div></div></div><div class="stories_content_section"><div class="stories_play_icon_big"><img class="tab1" id="homevideo5" src="../../cdn-itcname.hihonor.com/pms/template/content/2017/20170901185805618.jpg" title="tab1.jpg" alt="Video 5" width="680" height="440" /><iframe id="ytvideo5" style="display:none;" width="680" height="440" frameborder="0"></iframe></div><div class="text_content_section text_content_section5"><div class="stories_video_name">We’re Honor</div><div class="stories_video_desc">Discover the world</div><div class="icon_play2" id="test_click5"></div></div><div class="stories_share_container"><div class="soc-icon1">            <a class="icon_blank_heart" type="btn" href="#" tabindex="-4"><div class="ban4-like-text">290</div>            </a>            <a class="icon_share" type="btn" tabindex="-4">               <div class="ban4-share-text" id="share_count65"></div>            </a>            <div class="share-container icon_sort_down">               <a class="icon_facebook" onclick="javsacript:shareonfb(&#39;Honor Watch&#39;,&#39;Honor Watch&#39;,&#39;Honor Watch Message&#39;,&#39;https://www.vmall.com/product/2323.html&#39;,&#39;65&#39;);" tabindex="-4"></a><a class="icon_twitter" onclick="javsacript:shareontwitter(&#39;https://twitter.com/intent/tweet?hashtags=hastegtesting&amp;text=textcontent111&amp;url=https://www.vmall.com/product/2323.html&#39;,&#39;65&#39;);" tabindex="-4"></a><a class="icon_instagram" href="javsacript:shareoninsta();" tabindex="-4"></a><script>  
+                  $(document).on('ready', function() {
+                  var twitter65=0;
+                  var facebook65=0;
+                  $.ajax({
+                  url: 'https://graph.facebook.com/',
+                  dataType: 'jsonp',
+                  type: 'GET',
+                  async : false,
+                  data: {id: 'https://www.vmall.com/product/2323.html'},
+                  success: function(data){
+                  facebook65=parseInt(data.share.share_count);
+                  var tweet  = "https://share.yandex.ru/gpp.xml?url=https://www.vmall.com/product/2323.html";
+                  $.ajax(tweet, { "dataType" :"jsonp",async : false }).done(function(json){
+                  twitter65=parseInt(json); 
+                  var total65 = twitter65+facebook65;
+                  console.log('--------------------'+facebook65);
+                  $('#share_count65').html(total65); 
+                  });
+                  }
+                  });
+                  console.log('--------'+facebook65);
+                  }) 
+               </script>                                                         </div></div></div></div><div class="stories_content_section"><div class="stories_play_icon_big"><img class="tab1" id="homevideo6" src="../../cdn-itcname.hihonor.com/pms/template/content/2017/20170908213236717.jpg" title="tab6.jpg" alt="Video 6" width="680" height="440" /><iframe id="ytvideo6" style="display:none;" width="680" height="440" frameborder="0"></iframe></div><div class="text_content_section text_content_section6"><div class="stories_video_name">Xtraordinary in the ordinary</div><div class="stories_video_desc"></div><div class="icon_play2" id="test_click6"></div></div><div class="stories_share_container"><div class="soc-icon1">            <a class="icon_blank_heart" type="btn" href="#" tabindex="-3"><div class="ban4-like-text">290</div>            </a>            <a class="icon_share" type="btn" tabindex="-3">               <div class="ban4-share-text" id="share_count66"></div>            </a>            <div class="share-container icon_sort_down">               <a class="icon_facebook" onclick="javsacript:shareonfb(&#39;Honor Selfie Stick&#39;,&#39;Honor Selfie Stick&#39;,&#39;Honor Selfie Stick Message&#39;,&#39;https://www.vmall.com/product/430223039.html&#39;,&#39;66&#39;);" tabindex="-3"></a><a class="icon_twitter" onclick="javsacript:shareontwitter(&#39;https://twitter.com/intent/tweet?hashtags=hastegtesting&amp;text=textcontent111&amp;url=https://www.vmall.com/product/430223039.html&#39;,&#39;66&#39;);" tabindex="-3"></a><script>  
+                  $(document).on('ready', function() {
+                   var twitter66=0;
+                   var facebook66=0;
+                   $.ajax({
+                   url: 'https://graph.facebook.com/',
+                   dataType: 'jsonp',
+                   type: 'GET',
+                   async : false,
+                   data: {id: 'https://www.vmall.com/product/430223039.html'},
+                   success: function(data){
+                   facebook66=parseInt(data.share.share_count);
+                   var tweet  = "https://share.yandex.ru/gpp.xml?url=https://www.vmall.com/product/430223039.html";
+                   $.ajax(tweet, { "dataType" :"jsonp",async : false }).done(function(json){
+                   twitter66=parseInt(json); 
+                   var total66 = twitter66+facebook66;
+                   console.log('--------------------'+facebook66);
+                   $('#share_count66').html(total66); 
+                   });
+                   }
+                   });
+                   console.log('--------'+facebook66);
+                   }) 
+               </script>                                                      </div></div></div></div><div class="stories_content_section"><div class="stories_play_icon_big"><img class="tab1" id="homevideo7" src="../../cdn-itcname.hihonor.com/pms/template/content/2017/2017090118580631.jpg" title="tab7.jpg" alt="Video 7" width="680" height="440" /><iframe id="ytvideo7" style="display:none;" width="680" height="440" frameborder="0"></iframe></div><div class="text_content_section text_content_section7"><div class="stories_video_name">For The Brave</div><div class="stories_video_desc">Design through uniqueness</div><div class="icon_play2" id="test_click7"></div></div><div class="stories_share_container"><div class="soc-icon1">            <a class="icon_blank_heart" type="btn" href="#" tabindex="-3"><div class="ban4-like-text">290</div>            </a>            <a class="icon_share" type="btn" tabindex="-3">               <div class="ban4-share-text" id="share_count67"></div>            </a>            <div class="share-container icon_sort_down">               <a class="icon_facebook" onclick="javsacript:shareonfb(&#39;Honor Selfie Stick&#39;,&#39;Honor Selfie Stick&#39;,&#39;Honor Selfie Stick Message&#39;,&#39;https://www.vmall.com/product/430223039.html&#39;,&#39;67&#39;);" tabindex="-3"></a><a class="icon_twitter" onclick="javsacript:shareontwitter(&#39;https://twitter.com/intent/tweet?hashtags=hastegtesting&amp;text=textcontent111&amp;url=https://www.vmall.com/product/430223039.html&#39;,&#39;67&#39;);" tabindex="-3"></a><script>  
+                  $(document).on('ready', function() {
+                   var twitter67=0;
+                   var facebook67=0;
+                   $.ajax({
+                   url: 'https://graph.facebook.com/',
+                   dataType: 'jsonp',
+                   type: 'GET',
+                   async : false,
+                   data: {id: 'https://www.vmall.com/product/430223039.html'},
+                   success: function(data){
+                   facebook67=parseInt(data.share.share_count);
+                   var tweet  = "https://share.yandex.ru/gpp.xml?url=https://www.vmall.com/product/430223039.html";
+                   $.ajax(tweet, { "dataType" :"jsonp",async : false }).done(function(json){
+                   twitter67=parseInt(json); 
+                   var total67 = twitter67+facebook67;
+                   console.log('--------------------'+facebook67);
+                   $('#share_count67').html(total67); 
+                   });
+                   }
+                   });
+                   console.log('--------'+facebook67);
+                   }) 
+               </script>                                                      </div></div></div></div><div class="stories_content_section"><div class="stories_play_icon_big"><img class="tab1" id="homevideo8" src="../../cdn-itcname.hihonor.com/pms/template/content/2017/20170908213237134.jpg" title="tab8.jpg" alt="Video 8" width="680" height="440" /><iframe id="ytvideo8" style="display:none;" width="680" height="440" frameborder="0"></iframe></div><div class="text_content_section text_content_section8"><div class="stories_video_name">Shaping sound—Honor 9</div><div class="stories_video_desc"></div><div class="icon_play2" id="test_click8"></div></div><div class="stories_share_container"><div class="soc-icon1">            <a class="icon_blank_heart" type="btn" href="#" tabindex="-3"><div class="ban4-like-text">290</div>            </a>            <a class="icon_share" type="btn" tabindex="-3">               <div class="ban4-share-text" id="share_count68"></div>            </a>            <div class="share-container icon_sort_down">               <a class="icon_facebook" onclick="javsacript:shareonfb(&#39;Honor Selfie Stick&#39;,&#39;Honor Selfie Stick&#39;,&#39;Honor Selfie Stick Message&#39;,&#39;https://www.vmall.com/product/430223039.html&#39;,&#39;68&#39;);" tabindex="-3"></a><a class="icon_twitter" onclick="javsacript:shareontwitter(&#39;https://twitter.com/intent/tweet?hashtags=hastegtesting&amp;text=textcontent111&amp;url=https://www.vmall.com/product/430223039.html&#39;,&#39;68&#39;);" tabindex="-3"></a><script>  
+                  $(document).on('ready', function() {
+                   var twitter68=0;
+                   var facebook68=0;
+                   $.ajax({
+                   url: 'https://graph.facebook.com/',
+                   dataType: 'jsonp',
+                   type: 'GET',
+                   async : false,
+                   data: {id: 'https://www.vmall.com/product/430223039.html'},
+                   success: function(data){
+                   facebook68=parseInt(data.share.share_count);
+                   var tweet  = "https://share.yandex.ru/gpp.xml?url=https://www.vmall.com/product/430223039.html";
+                   $.ajax(tweet, { "dataType" :"jsonp",async : false }).done(function(json){
+                   twitter68=parseInt(json); 
+                   var total68 = twitter68+facebook68;
+                   console.log('--------------------'+facebook68);
+                   $('#share_count68').html(total68); 
+                   });
+                   }
+                   });
+                   console.log('--------'+facebook68);
+                   }) 
+               </script>                                                      </div></div></div></div><div class="stories_content_section"><div class="stories_play_icon_big"><img class="tab1" id="homevideo9" src="../../cdn-itcname.hihonor.com/pms/template/content/2017/20170901185806457.jpg" title="tab9.jpg" alt="Video 9" width="680" height="440" /><iframe id="ytvideo9" style="display:none;" width="680" height="440" frameborder="0"></iframe></div><div class="text_content_section text_content_section9"><div class="stories_video_name">Honor 9</div><div class="stories_video_desc">Dance with Honor 9</div><div class="icon_play2" id="test_click9"></div></div><div class="stories_share_container"><div class="soc-icon1">            <a class="icon_blank_heart" type="btn" href="#" tabindex="-3"><div class="ban4-like-text">290</div>            </a>            <a class="icon_share" type="btn" tabindex="-3">               <div class="ban4-share-text" id="share_count69"></div>            </a>            <div class="share-container icon_sort_down">               <a class="icon_facebook" onclick="javsacript:shareonfb(&#39;Honor Selfie Stick&#39;,&#39;Honor Selfie Stick&#39;,&#39;Honor Selfie Stick Message&#39;,&#39;https://www.vmall.com/product/430223039.html&#39;,&#39;69&#39;);" tabindex="-3"></a><a class="icon_twitter" onclick="javsacript:shareontwitter(&#39;https://twitter.com/intent/tweet?hashtags=hastegtesting&amp;text=textcontent111&amp;url=https://www.vmall.com/product/430223039.html&#39;,&#39;69&#39;);" tabindex="-3"></a><script>  
+                  $(document).on('ready', function() {
+                   var twitter69=0;
+                   var facebook69=0;
+                   $.ajax({
+                   url: 'https://graph.facebook.com/',
+                   dataType: 'jsonp',
+                   type: 'GET',
+                   async : false,
+                   data: {id: 'https://www.vmall.com/product/430223039.html'},
+                   success: function(data){
+                   facebook69=parseInt(data.share.share_count);
+                   var tweet  = "https://share.yandex.ru/gpp.xml?url=https://www.vmall.com/product/430223039.html";
+                   $.ajax(tweet, { "dataType" :"jsonp",async : false }).done(function(json){
+                   twitter69=parseInt(json); 
+                   var total69 = twitter69+facebook69;
+                   console.log('--------------------'+facebook69);
+                   $('#share_count69').html(total69); 
+                   });
+                   }
+                   });
+                   console.log('--------'+facebook69);
+                   }) 
+               </script>                                                      </div></div></div></div><div class="stories_content_section"><div class="stories_play_icon_big"><img class="tab1" id="homevideo10" src="../../cdn-itcname.hihonor.com/pms/template/content/2017/20170908213236921.jpg" title="tab10.jpg" alt="Video 10" width="680" height="440" /><iframe id="ytvideo10" style="display:none;" width="680" height="440" frameborder="0"></iframe></div><div class="text_content_section text_content_section10"><div class="stories_video_name">Zero Gravity—Honor France</div><div class="stories_video_desc"></div><div class="icon_play2" id="test_click10"></div></div><div class="stories_share_container"><div class="soc-icon1">            <a class="icon_blank_heart" type="btn" href="#" tabindex="-3"><div class="ban4-like-text">290</div>            </a>            <a class="icon_share" type="btn" tabindex="-3">               <div class="ban4-share-text" id="share_count70"></div>            </a>            <div class="share-container icon_sort_down">               <a class="icon_facebook" onclick="javsacript:shareonfb(&#39;Honor Selfie Stick&#39;,&#39;Honor Selfie Stick&#39;,&#39;Honor Selfie Stick Message&#39;,&#39;https://www.vmall.com/product/430223039.html&#39;,&#39;70&#39;);" tabindex="-3"></a><a class="icon_twitter" onclick="javsacript:shareontwitter(&#39;https://twitter.com/intent/tweet?hashtags=hastegtesting&amp;text=textcontent111&amp;url=https://www.vmall.com/product/430223039.html&#39;,&#39;70&#39;);" tabindex="-3"></a><script>  
+                  $(document).on('ready', function() {
+                   var twitter70=0;
+                   var facebook70=0;
+                   $.ajax({
+                   url: 'https://graph.facebook.com/',
+                   dataType: 'jsonp',
+                   type: 'GET',
+                   async : false,
+                   data: {id: 'https://www.vmall.com/product/430223039.html'},
+                   success: function(data){
+                   facebook70=parseInt(data.share.share_count);
+                   var tweet  = "https://share.yandex.ru/gpp.xml?url=https://www.vmall.com/product/430223039.html";
+                   $.ajax(tweet, { "dataType" :"jsonp",async : false }).done(function(json){
+                   twitter70=parseInt(json); 
+                   var total70 = twitter70+facebook70;
+                   console.log('--------------------'+facebook70);
+                   $('#share_count70').html(total70); 
+                   });
+                   }
+                   });
+                   console.log('--------'+facebook70);
+                   }) 
+               </script>                                                      </div></div></div></div><div class="stories_content_section"><div class="stories_play_icon_big"><img class="tab1" id="homevideo11" src="../../cdn-itcname.hihonor.com/pms/template/content/2017/20170908213236504.jpg" title="tab11.jpg" alt="Video 11" width="680" height="440" /><iframe id="ytvideo11" style="display:none;" width="680" height="440" frameborder="0"></iframe></div><div class="text_content_section text_content_section11"><div class="stories_video_name">Honor Talent—Honor Italy</div><div class="stories_video_desc"></div><div class="icon_play2" id="test_click11"></div></div><div class="stories_share_container"><div class="soc-icon1">            <a class="icon_blank_heart" type="btn" href="#" tabindex="-3"><div class="ban4-like-text">290</div>            </a>            <a class="icon_share" type="btn" tabindex="-3">               <div class="ban4-share-text" id="share_count71"></div>            </a>            <div class="share-container icon_sort_down">               <a class="icon_facebook" onclick="javsacript:shareonfb(&#39;Honor Selfie Stick&#39;,&#39;Honor Selfie Stick&#39;,&#39;Honor Selfie Stick Message&#39;,&#39;https://www.vmall.com/product/430223039.html&#39;,&#39;71&#39;);" tabindex="-3"></a><a class="icon_twitter" onclick="javsacript:shareontwitter(&#39;https://twitter.com/intent/tweet?hashtags=hastegtesting&amp;text=textcontent111&amp;url=https://www.vmall.com/product/430223039.html&#39;,&#39;71&#39;);" tabindex="-3"></a><script>  
+                  $(document).on('ready', function() {
+                   var twitter71=0;
+                   var facebook71=0;
+                   $.ajax({
+                   url: 'https://graph.facebook.com/',
+                   dataType: 'jsonp',
+                   type: 'GET',
+                   async : false,
+                   data: {id: 'https://www.vmall.com/product/430223039.html'},
+                   success: function(data){
+                   facebook71=parseInt(data.share.share_count);
+                   var tweet  = "https://share.yandex.ru/gpp.xml?url=https://www.vmall.com/product/430223039.html";
+                   $.ajax(tweet, { "dataType" :"jsonp",async : false }).done(function(json){
+                   twitter71=parseInt(json); 
+                   var total71 = twitter71+facebook71;
+                   console.log('--------------------'+facebook71);
+                   $('#share_count71').html(total71); 
+                   });
+                   }
+                   });
+                   console.log('--------'+facebook71);
+                   }) 
+               </script>                                                      </div></div></div></div></div><div class="stories_thumbnail_section"><ul class="square" id="stories_Slide_Nav"><li><a class="stories_thumbnails icon_play" href="javascript:void(0)"><img class="tab1" src="../../cdn-itcname.hihonor.com/pms/template/content/2017/20170901185802614.jpg" title="tab1.jpg" alt="Video 1" /><h3>Double or Nothing</h3><div class="hover-content  icon_sort_up"></div></a></li><li><a class="stories_thumbnails icon_play" href="javascript:void(0)"><img class="tab2" src="../../cdn-itcname.hihonor.com/pms/template/content/2017/20170901185802812.jpg" title="tab2.jpg" alt="Video 2" /><h3>Brooklyn Beckham</h3><div class="hover-content  icon_sort_up"></div></a></li><li><a class="stories_thumbnails icon_play" href="javascript:void(0)"><img class="tab3" src="../../cdn-itcname.hihonor.com/pms/template/content/2017/2017090118580332.jpg" title="tab3.jpg" alt="Video 3" /><h3>Honor 8</h3><div class="hover-content  icon_sort_up"></div></a></li><li><a class="stories_thumbnails icon_play" href="javascript:void(0)"><img class="tab4" src="../../cdn-itcname.hihonor.com/pms/template/content/2017/20170901185803243.jpg" title="tab4.jpg" alt="Video 4" /><h3>honor 7</h3><div class="hover-content  icon_sort_up"></div></a></li><li><a class="stories_thumbnails icon_play" href="javascript:void(0)"><img class="tab5" src="../../cdn-itcname.hihonor.com/pms/template/content/2017/20170901185803446.jpg" title="tab5.jpg" alt="Video 5" /><h3>We’re Honor</h3><div class="hover-content  icon_sort_up"></div></a></li><li><a class="stories_thumbnails icon_play" href="javascript:void(0)"><img class="tab6" src="../../cdn-itcname.hihonor.com/pms/template/content/2017/2017090821323546.jpg" title="tab6.jpg" alt="Video 6" /><h3>Xtraordinary in the ordinary</h3><div class="hover-content  icon_sort_up"></div></a></li><li><a class="stories_thumbnails icon_play" href="javascript:void(0)"><img class="tab7" src="../../cdn-itcname.hihonor.com/pms/template/content/2017/20170901185803862.jpg" title="tab7.jpg" alt="Video 7" /><h3>For The Brave</h3><div class="hover-content  icon_sort_up"></div></a></li><li><a class="stories_thumbnails icon_play" href="javascript:void(0)"><img class="tab8" src="../../cdn-itcname.hihonor.com/pms/template/content/2017/20170908213235465.jpg" title="tab8.jpg" alt="Video 8" /><h3>Shaping sound—Honor 9</h3><div class="hover-content  icon_sort_up"></div></a></li><li><a class="stories_thumbnails icon_play" href="javascript:void(0)"><img class="tab9" src="../../cdn-itcname.hihonor.com/pms/template/content/2017/20170901185804285.jpg" title="tab9.jpg" alt="Video 9" /><h3>Honor 9</h3><div class="hover-content  icon_sort_up"></div></a></li><li><a class="stories_thumbnails icon_play" href="javascript:void(0)"><img class="tab10" src="../../cdn-itcname.hihonor.com/pms/template/content/2017/20170908213235249.jpg" title="tab10.jpg" alt="Video 10" /><h3>Zero Gravity—Honor France</h3><div class="hover-content  icon_sort_up"></div></a></li><li><a class="stories_thumbnails icon_play" href="javascript:void(0)"><img class="tab11" src="../../cdn-itcname.hihonor.com/pms/template/content/2017/20170908213234840.jpg" title="tab11.jpg" alt="Video 11" /><h3>Honor Talent—Honor Italy</h3><div class="hover-content  icon_sort_up"></div></a></li></ul></div></div><script type="text/javascript">
+$( window ).on( "load", function() {
+if ((jQuery("li.slick-current").hasClass("slick-current"))==true){
+jQuery("li.slick-current.slick-center").addClass('active')
+}
+
+});
+
+$(document).on('ready', function() {
+
+//slider start
+$("#stories-slide-wrapper").on('init afterChange', function(event, slick, currentSlide, nextSlide){
+var currItem = $("#stories-slide-wrapper").find('.slick-current'),
+prevItemName = currItem.prev().find('.stories_video_name').text().trim().toUpperCase().slice(-6),
+nextItemName = currItem.next().find('.stories_video_name').text().trim().toUpperCase();
+$(".soc-icon1").show();
+$('.prevItemText').find('span').text(prevItemName);
+$('.nextItemText').find('span').text(nextItemName);
+if ((jQuery("li.slick-slide").hasClass("active"))==true){
+jQuery("li.slick-slide").removeClass('active');
+}	
+if ((jQuery("li.slick-current").hasClass("slick-current"))==true){
+jQuery("li.slick-current.slick-center").addClass('active')
+}			
+});
+
+$("#stories-slide-wrapper").on('beforeChange', function(event, slick, currentSlide, nextSlide){
+
+var obj=$("#stories-slide-wrapper .slick-current");
+obj.find('[id^="ytvideo"]').hide();
+obj.find('[id^="homevideo"]').show();
+
+obj.find('[id^="ytvideo"]').attr('src', "")
+
+obj.find('[class^="soc-icon"]').show();
+obj.find('[id^="test_click"]').show();
+obj.find('[class^="text_content_section"]').show();
+
+});
+
+$('#stories-slide-wrapper').slick({
+slidesToShow: 1,
+slidesToScroll: 1,
+dots: false,
+infinite: true,
+speed: 1000,
+centerMode: true,
+initialSlide: 0,
+arrow: true,
+prevArrow: "<a class='prevItemText'><span></span></a><a class='slick-prev'><span>PREV</span></a>",
+nextArrow: "<a class='slick-next'><span>NEXT</span></a><a class='nextItemText'><span></span></a>",
+autoplay: false,
+centerPadding: '120px',
+asNavFor: '#stories_Slide_Nav',
+});
+
+$('#stories_Slide_Nav').slick({
+slidesToShow: 3,
+slidesToScroll: 1,
+asNavFor: '#stories-slide-wrapper',
+dots: false,
+arrow: false,
+prevArrow: false,
+nextArrow: false,
+focusOnSelect: true,
+centerMode: true,
+infinite: true,
+initialSlide: 0,
+variableWidth: true
+});
+
+//play icon clieck event
+//1  start
+jQuery(document).on('click','#test_click1',function(e){
+jQuery('#ytvideo1').show();
+jQuery('#homevideo1').hide();
+videoID='xEHVMD1CyKM';
+var url = "https://www.youtube.com/embed/" + videoID + "?rel=0&autoplay=1&showinfo=0&wmode=transparent";
+jQuery('#ytvideo1').attr('src', url)
+$(".soc-icon1,#test_click1 ").hide();
+
+$("#ytvideo1").mouseenter(function(){
+$(".soc-icon1,.text_content_section1").show();
+$(".soc-icon1").hover(hoverShare);
+function hoverShare(){
+$(".soc-icon1,.text_content_section1").css('display','block');
+}
+});
+$("#ytvideo1").mouseleave(function(){
+$(".soc-icon1,.text_content_section1").hide();
+
+}); 		
+}); 
+//1 end
+//2	 start
+jQuery(document).on('click','#test_click2',function(e){
+jQuery('#ytvideo2').show();
+jQuery('#homevideo2').hide();
+videoID='fKtGqq0M58o';
+var url = "https://www.youtube.com/embed/" + videoID + "?rel=0&autoplay=1&showinfo=0&wmode=transparent";
+jQuery('#ytvideo2').attr('src', url)
+$(".soc-icon1,#test_click2 ").hide();
+
+$("#ytvideo2").mouseenter(function(){
+$(".soc-icon1,.text_content_section2").show();
+$(".soc-icon1").hover(hoverShare);
+function hoverShare(){
+$(".soc-icon1,.text_content_section2").css('display','block');
+}
+});
+$("#ytvideo2").mouseleave(function(){
+$(".soc-icon1,.text_content_section2").hide();
+
+}); 		
+});
+//2 end
+//3 start
+jQuery(document).on('click','#test_click3',function(e){
+jQuery('#ytvideo3').show();
+jQuery('#homevideo3').hide();
+videoID='wmT0rWWLnsM';
+var url = "https://www.youtube.com/embed/" + videoID + "?rel=0&autoplay=1&showinfo=0&wmode=transparent";
+jQuery('#ytvideo3').attr('src', url)
+$(".soc-icon1,#test_click3 ").hide();
+
+$("#ytvideo3").mouseenter(function(){
+$(".soc-icon1,.text_content_section3").show();
+$(".soc-icon1").hover(hoverShare);
+function hoverShare(){
+$(".soc-icon1,.text_content_section3").css('display','block');
+}
+});
+$("#ytvideo3").mouseleave(function(){
+$(".soc-icon1,.text_content_section3").hide();
+
+}); 		
+});
+//3 end
+//4  start
+jQuery(document).on('click','#test_click4',function(e){
+jQuery('#ytvideo4').show();
+jQuery('#homevideo4').hide();
+videoID='FEaKOr-Jg7U';
+var url = "https://www.youtube.com/embed/" + videoID + "?rel=0&autoplay=1&showinfo=0&wmode=transparent";
+jQuery('#ytvideo4').attr('src', url)
+$(".soc-icon1,#test_click4 ").hide();
+
+$("#ytvideo4").mouseenter(function(){
+$(".soc-icon1,.text_content_section4").show();
+$(".soc-icon1").hover(hoverShare);
+function hoverShare(){
+$(".soc-icon1,.text_content_section4").css('display','block');
+}
+});
+$("#ytvideo4").mouseleave(function(){
+$(".soc-icon1,.text_content_section4").hide();
+
+}); 		
+});
+// 4 end	
+//5 start
+jQuery(document).on('click','#test_click5',function(e){
+jQuery('#ytvideo5').show();
+jQuery('#homevideo5').hide();
+videoID='ehUP_FuNfQU';
+var url = "https://www.youtube.com/embed/" + videoID + "?rel=0&autoplay=1&showinfo=0&wmode=transparent";
+jQuery('#ytvideo5').attr('src', url)
+$(".soc-icon1,#test_click5 ").hide();
+$("#ytvideo5").mouseenter(function(){
+$(".soc-icon1,.text_content_section5").show();
+$(".soc-icon1").hover(hoverShare);
+function hoverShare(){
+$(".soc-icon1,.text_content_section5").css('display','block');
+}
+});
+$("#ytvideo5").mouseleave(function(){
+$(".soc-icon1,.text_content_section5").hide();
+}); 		
+});	
+//5 end
+
+//6 start
+jQuery(document).on('click','#test_click6',function(e){
+jQuery('#ytvideo6').show();
+jQuery('#homevideo6').hide();
+videoID='2OPM1Y-OjzY';
+var url = "https://www.youtube.com/embed/" + videoID + "?rel=0&autoplay=1&showinfo=0&wmode=transparent";
+jQuery('#ytvideo6').attr('src', url)
+$(".soc-icon1,#test_click6 ").hide();
+$("#ytvideo6").mouseenter(function(){
+$(".soc-icon1,.text_content_section6").show();
+$(".soc-icon1").hover(hoverShare);
+function hoverShare(){
+$(".soc-icon1,.text_content_section6").css('display','block');
+}
+});
+$("#ytvideo6").mouseleave(function(){
+$(".soc-icon1,.text_content_section6").hide();
+}); 		
+});	
+//6 end
+//7 start
+jQuery(document).on('click','#test_click7',function(e){
+jQuery('#ytvideo7').show();
+jQuery('#homevideo7').hide();
+videoID='Zvn1KFRufqw';
+var url = "https://www.youtube.com/embed/" + videoID + "?rel=0&autoplay=1&showinfo=0&wmode=transparent";
+jQuery('#ytvideo7').attr('src', url)
+$(".soc-icon1,#test_click7 ").hide();
+$("#ytvideo7").mouseenter(function(){
+$(".soc-icon1,.text_content_section7").show();
+$(".soc-icon1").hover(hoverShare);
+function hoverShare(){
+$(".soc-icon1,.text_content_section7").css('display','block');
+}
+});
+$("#ytvideo7").mouseleave(function(){
+$(".soc-icon1,.text_content_section7").hide();
+}); 		
+});	
+//7 end
+//8 start
+jQuery(document).on('click','#test_click8',function(e){
+jQuery('#ytvideo8').show();
+jQuery('#homevideo8').hide();
+videoID='Yp0MuuFY3B8';
+var url = "https://www.youtube.com/embed/" + videoID + "?rel=0&autoplay=1&showinfo=0&wmode=transparent";
+jQuery('#ytvideo8').attr('src', url)
+$(".soc-icon1,#test_click8 ").hide();
+$("#ytvideo8").mouseenter(function(){
+$(".soc-icon1,.text_content_section8").show();
+$(".soc-icon1").hover(hoverShare);
+function hoverShare(){
+$(".soc-icon1,.text_content_section8").css('display','block');
+}
+});
+$("#ytvideo8").mouseleave(function(){
+$(".soc-icon1,.text_content_section8").hide();
+}); 		
+});	
+//8 end
+//9 start
+jQuery(document).on('click','#test_click9',function(e){
+jQuery('#ytvideo9').show();
+jQuery('#homevideo9').hide();
+videoID='WKaVYYunx_k';
+var url = "https://www.youtube.com/embed/" + videoID + "?rel=0&autoplay=1&showinfo=0&wmode=transparent";
+jQuery('#ytvideo9').attr('src', url)
+$(".soc-icon1,#test_click9 ").hide();
+$("#ytvideo9").mouseenter(function(){
+$(".soc-icon1,.text_content_section9").show();
+$(".soc-icon1").hover(hoverShare);
+function hoverShare(){
+$(".soc-icon1,.text_content_section9").css('display','block');
+}
+});
+$("#ytvideo9").mouseleave(function(){
+$(".soc-icon1,.text_content_section9").hide();
+}); 		
+});	
+//9 end
+//10 start
+jQuery(document).on('click','#test_click10',function(e){
+jQuery('#ytvideo10').show();
+jQuery('#homevideo10').hide();
+videoID='Q2FJ5UOi1QE';
+var url = "https://www.youtube.com/embed/" + videoID + "?rel=0&autoplay=1&showinfo=0&wmode=transparent";
+jQuery('#ytvideo10').attr('src', url)
+$(".soc-icon1,#test_click10 ").hide();
+$("#ytvideo10").mouseenter(function(){
+$(".soc-icon1,.text_content_section10").show();
+$(".soc-icon1").hover(hoverShare);
+function hoverShare(){
+$(".soc-icon1,.text_content_section10").css('display','block');
+}
+});
+$("#ytvideo10").mouseleave(function(){
+$(".soc-icon1,.text_content_section10").hide();
+}); 		
+});	
+//10 end
+//11 start
+jQuery(document).on('click','#test_click11',function(e){
+jQuery('#ytvideo11').show();
+jQuery('#homevideo11').hide();
+videoID='XvxT1X9c6B0';
+var url = "https://www.youtube.com/embed/" + videoID + "?rel=0&autoplay=1&showinfo=0&wmode=transparent";
+jQuery('#ytvideo11').attr('src', url)
+$(".soc-icon1,#test_click11 ").hide();
+$("#ytvideo11").mouseenter(function(){
+$(".soc-icon1,.text_content_section11").show();
+$(".soc-icon1").hover(hoverShare);
+function hoverShare(){
+$(".soc-icon1,.text_content_section11").css('display','block');
+}
+});
+$("#ytvideo11").mouseleave(function(){
+$(".soc-icon1,.text_content_section11").hide();
+}); 		
+});	
+//11 end   
+});
+</script>
+<!--Related News Block Starts -->
+
+<!--Related News Block Ends -->
+
+
+<script>
+$("document").ready(function(){
+	ec.notification.load();
+	ec.notification.trackorderpopup();
+});
+
+</script>
+<style>
+#whoson_chat_link {
+   display:none !important;   
+} 
+#wo_online {
+   display:none !important;   
+  
+  }
+  #wo_online_image {
+      display:none !important;   
+  }
+</style><!-- Embedded WhosOn: Insert the script below at the point on your page where you want the Click To Chat link to appear --><script type="text/javascript" src="../../honor.whoson.com/include077c.js?domain=www.hihonor.com-it"></script><script type="text/javascript">
+if(typeof sWOTrackPage=='function')sWOTrackPage();
+
+function openchat(){
+  sWOStartChat();
+}
+</script>
+<footer>
+<div class="wrap_details"><div class="footer_details_wrapper"><div class="delivery"><div class="icon-delivery"></div><div class="delivery-title">CONSEGNA GRATUITA</div><div class="delivery-desc">PER ORDINI OLTRE €99</div></div><div class="days"><div class="icon-timeline"></div><div class="days-title">14 GIORNI</div><div class="days-desc">RESO GRATUITO</div></div><div class="payment"><div class="icon-secure"></div><div class="payment-title">PAGAMENTO SICURO</div><div class="payment-desc">STORE UFFICIALE HONOR</div></div><div class="year"><div class="icon-shield"></div><div class="year-title">2 ANNI</div><div class="year-desc">DI GARANZIA</div></div></div></div>
+<!--need to remove below text once cms content <div class="wrap_details"><div class="footer_details_wrapper"><div class="delivery"><div class="icon-delivery"></div><div class="delivery-title">CONSEGNA GRATUITA</div><div class="delivery-desc">PER ORDINI OLTRE €99</div></div><div class="days"><div class="icon-timeline"></div><div class="days-title">14 GIORNI</div><div class="days-desc">RESO GRATUITO</div></div><div class="payment"><div class="icon-secure"></div><div class="payment-title">PAGAMENTO SICURO</div><div class="payment-desc">STORE UFFICIALE HONOR</div></div><div class="year"><div class="icon-shield"></div><div class="year-title">2 ANNI</div><div class="year-desc">DI GARANZIA</div></div></div></div> start reflects -->
+<!--<div class="wrap_details"><div class="footer_details_wrapper"><div class="delivery"><div class="icon-delivery"></div><div class="delivery-title">Free delivery</div><div class="delivery-desc">On orders above �99</div></div><div class="days"><div class="icon-timeline"></div><div class="days-title">14 day</div><div class="days-desc">No-hassle returns</div></div><div class="payment"><div class="icon-secure"></div><div class="payment-title">100% secure payment</div><div class="payment-desc">huawei & Honor online store</div></div><div class="year"><div class="icon-shield"></div><div class="year-title">2 year</div><div class="year-desc">manufacture warranty</div></div></div></div>-->
+
+<div class="footer-primary">
+	<div class="subscription-block">
+		<form data-action="#" method="post" id="subscribe-form" class="subscribe-form">
+        <div class="form-group">
+			<div class="info-block">
+				<div class="info-txt">Resta sempre aggiornato</div>
+				<div class="info-txt-smaller">Registrati per aggiornamenti,  offerte e molto altro</div>
+			</div>
+            <div class="txtbox-btn">
+				<input type="hidden" name="random_token" id="random_token" value="">
+				<input name="newsletter" type="hidden" id="newsletter">
+				<div class="subscribe-error-msg-alert"> 
+                    <span class="subscribe-input-validate-email">
+                       <input type="email"  onkeypress="ec.notification.newslettersubscribe(event, false)" id="email" name="email" placeholder="Inserisci il tuo indirizzo Email" maxlength=50 class="subscribe-input" autocomplete="off" >
+                    </span>
+                     <span onclick="ec.notification.newslettersubscribe(event, true)" class="subscribe-icon icon_next_page"></span>
+                </div>
+            </div>
+			<div class="error-msg" id="error_msg"></div>
+        </div>
+    </form>
+    
+<!-- Confirm popup message -->
+<div id="ec_ui_confirm" class="popup-area popup-define-area hide">
+   <div class="b">
+      <p id="ec_ui_confirm_msg"><br /></p>
+      <div class="popup-button-area"><a id="ec_ui_confirm_yes" href="javascript:;" class="button-action-yes btn_blue_primary" title='S&#236;'><span>S&#236;</span></a><a id="ec_ui_confirm_no" href="javascript:;" class="button-action-no btn_black_secondary" title='No'><span>No</span></a></div>
+   </div>
+   <div class="f"><s class="icon-arrow-down"></s></div>
+</div>
+<!-- New Confirm popup message -->
+<div id="ec_ui_confirm_new" class="popup-area-new hide">
+    <div class="b">
+       <p id="ec_ui_confirm_new_msg"><br /></p>
+       <div class="popup-button-area"><a id="ec_ui_confirm_new_yes" href="javascript:;" class="box-button-style-1" title='S&#236;'><span>S&#236;</span></a><a id="ec_ui_confirm_new_no" href="javascript:;" class="box-button-style-1" title='No'><span>No</span></a></div>
+    </div>
+</div>
+
+<!-- UI tips popup -->
+<div id="ec_ui_tips" class="popup-area popup-define-area hide">
+    <div class="b">
+        <p id="ec_ui_tips_msg" class="tac">
+            <br />
+        </p>
+        <div class="popup-button-area tac">
+            <a id="ec_ui_tips_yes" href="javascript:;" class="button-action-yes btn_blue_primary" title='OK'>
+                <span>Yes</span>
+            </a>
+        </div>
+    </div>
+</div>    
+	<div class="social-block"><div class="info-block"><div class="info-txt">SEGUI HONOR</div><div class="info-txt-smaller">Condividi la tua passione.</div></div><div class="icon-block"><a class="icon_facebook" href="https://www.facebook.com/HonorIT" target="_blank"></a><a class="icon_instagram" href="https://www.instagram.com/honor_italia" target="_blank"></a><a class="icon_twitter" href="https://twitter.com/Honor_IT" target="_blank"></a><a class="icon_Youtube" href="https://www.youtube.com/channel/UCF75JbYhaYRJw1_44gRtfmQ" target="_blank"></a></div></div>
+</div></div>
+<script>
+
+  $(window).load(function(){
+
+        $("#index_slider .ec-slider-item, #index_slider .ec-slider-list,  #index_slider a, #index_slider").css("height","600px");
+
+
+  });
+
+
+</script><style>
+
+.wide .ec-slider-nav-1 {
+    margin-left: 0px;
+    left: 49%;
+    width: auto;
+}
+
+	.naver ul{
+	    display:block;
+	  }
+	  .wide .naver li, .wide .naver li:hover{
+	           margin-top: 0px; 
+	  }
+
+	  .order-header .progress-area{
+	        padding-top: 22px;
+	  }
+		.pro-feature-area {
+		   text-align:center;
+		   }
+		   .accessory .temp-two-prod-detail-width .pro-feature-area img{
+		   width: auto;
+		   }
+		   .honor-wall .tabs,  .honor-wall .nav-bar{
+		   display:none;
+		   }
+
+
+		   footer .footer-secondary .footer-secondary-one .item-parent .item-block:nth-last-child(1){
+		       padding: 0 94px 0 0;
+		   }
+		   footer .footer-secondary .footer-secondary-one .country-block .country{
+			border-top:0px;
+		   }
+		   footer .footer-secondary .footer-secondary-one .country-block{
+		   width: 110px;
+		   }
+		   label#footerCountry{
+		       position: relative;
+		    top: 2px;
+		   }
+		   footer .footer-secondary .footer-secondary-one .country-block .icon_next_page{
+		       top: 80px; 
+		   }
+	  .footer-secondary .partner-icon{
+	        margin-left: -9px;
+	  }
+  footer .footer-secondary .footer-secondary-one .item-parent .item-block{padding: 0px 84px 0 0px;}
+  footer .footer-secondary .footer-secondary-one .item-parent .item-block:nth-last-child(2) {padding: 0 85px 0 0;}
+  footer .footer-secondary .footer-secondary-one .call-us-block .call-us{padding: 15px 0 12px 0;}
+  a.chat_us_btn.btn_black_secondary {
+    background-color: #00b2e6;
+    border:none;
+}
+  a.chat_us_btn.btn_black_secondary:hover {
+    background-color: #1b9fd6;
+}
+.pro-gallery-area .pro-gallery-nav{
+  bottom: 10px!important;
+}
+.pro-property-area .pro-meta-area .price-block-com{
+  padding-top: 10px;
+}
+#pro-skus dt{
+  width: auto;
+}
+#pro-quantity-area dt{
+  float: none;
+}
+.pro-summary-area .pro-property-area{
+  padding-top: 20px;
+}
+
+
+</style><div class="footer-secondary"><div class="footer-secondary-one"><div class="item-parent"><div class="item-block"><div class="info-title">INFORMAZIONI SU HONOR</div><ul><li><a href="cmsContentba69.html?key=web_cms_brands" target="_self" textvalue="Honor Brand">Honor Brand</a></li><li><a href="cmsContente6c2.html?key=web_cms_events" target="_self" title="Honor Attività">Honor Attività</a></li></ul></div><div class="item-block"><div class="info-title">PRODOTTI &amp; SERVIZI</div><ul><li><a href="item/639090033/index.html" target="_self" textvalue="Honor 9">Honor 9</a></li><li><a href="item/775214205/index.html" target="_self" textvalue="Honor 8 Pro">Honor 8 Pro</a></li><li><a href="item/805154013/index.html" target="_self" textvalue="Honor 8">Honor 8</a></li><li><a href="item/205715997/index.html" target="_self" textvalue="Honor 6X">Honor 6X</a></li><li><a href="it/item/211451478/index" target="_self" textvalue="Honor 6A">Honor 6A</a></li><li><a href="http://www.hihonor.com/it/tradein/index.html" target="_blank" textvalue="Trade-In Smartphone Usati">Trade-In Smartphone Usati</a></li><li><a href="https://honor.simplesurance.eu/" target="_blank" textvalue="Assicurazione Smartphone">Assicurazione Smartphone</a></li></ul></div><div class="item-block"><div class="info-title">SUPPORTO</div><ul><li><a href="http://www.hihonor.com/it/support/service-center/index.html" target="_blank" textvalue="x-Centro Servizi">Centro Servizi</a></li><li><a href="http://www.hihonor.com/it/support/warranty-notice/index.html" target="_blank" textvalue="x-Informativa sulla garanzia">Informativa sulla garanzia</a></li><li><a href="cmsContent62ad.html?key=web_cms_return_agreement" target="_self" textvalue="Informativa sui resi">Informativa sui resi</a></li><li><a href="cmsContentdef5.html?key=web_cms_shipping_policy" target="_self" textvalue="Spedizioni">Spedizioni</a></li><li><a href="cmsContentec8f.html?key=web_cms_faq" target="_self" textvalue="FAQ">FAQ</a></li><li><p><a href="http://www.hihonor.com/it/support/service-center/index.html" target="_blank" textvalue="Prodotti Manuali">Manuali di prodotto</a></p></li><li><p><a href="https://store.hihonor.com/it" target="_blank" textvalue="Prodotti Manuali"></a><a href="http://www.hihonor.com/it/support/service-center/index.html" target="_blank" textvalue="Aggiornamento Software">Aggiornamento Software</a></p></li></ul></div></div><div class="call-us-block"><div class="info-text"><div class="info-title">Contattaci</div><div>Lunedì - Venerdì 8:00-21:00</div><div><span style="padding-right:3px;">Sabato:</span>9:00-14:00 </div><div>(Eccetto giorni festivi)</div></div><div class="call-us"><span class="icon_phone"></span><span>800 646 667</span></div><div class="call-us-email"><a href="mailTo:italy.support@hihonor.com" target="_self" textvalue="italy.support@hihonor.com">italy.support@hihonor.com</a></div><div class="chat-us-sec"><a href="javascript:openchat();" class="chat_us_btn btn_black_secondary"><span class="icon_chat chat_icon_footer"></span> LIVE CHAT </a></div><div style="font-family:&#39;proximanovalight&#39;;font-size:11px;font-weight:normal;line-height:20px;color:#666;letter-spacing:.22px;margin-top:9px;margin-left:38px;"><div style="line-height:9px;">Lunedì - Venerdì 8:00-21:00 </div><div>(Eccetto giorni festivi)</div></div></div><div class="country-block"><div class="country"><span class="icon_next_page" id="footerFgArrow"></span><img id="footerFg" src="../../cdn-itcname.hihonor.com/pms/template/content/2017/20170913180451794.jpg" width="22" height="16" /><label id="footerCountry">ITALY</label></div><div class="language" id="footerLang">Italiano</div></div></div><div class="footer-secondary-two"><div class="item-block"><div class="partner-block"><div class="info-title">Metodi di pagamento</div><div class="partner-icon"><img src="../../cdn-escname.hihonor.com/pms/template/content/2017/20171121164721549.jpg" style="float:none;width:466px;height:38px;" width="466" height="38" border="0" hspace="0" vspace="0" /></div></div><div class="partner-block"><div class="info-title">Partner di consegna</div><div class="partner-icon"><img src="../../cdn-itcname.hihonor.com/pms/template/content/2017/20171025170922314.png" title="20170729180232243.png" style="float:none;" /></div></div></div><div class="item-block"><ul class="menu-item"><li><a href="cmsContent0416.html?key=web_cms_privacy" target="_self" textvalue="Informativa sulla privacy">Informativa sulla privacy</a><span>|</span></li><li><a href="cmsContent9430.html?key=web_cms_terms" target="_self" textvalue="Termini d’uso">Termini e condizioni</a><span>|</span></li><li><a href="cmsContent3ae3.html?key=web_cms_limited" target="_self" textvalue="Dichiarazione dei cookie">Avviso Legale</a></li><li><br /></li></ul><div class="copyright-block"><span>COPYRIGHT ©HUAWEI HONOR 1998-2017.TUTTI I DIRITTI RISERVATI.</span></div></div></div></div>
+</footer>
+<script type="text/javascript">
+                         
+ var config = ["9.0",
+                   "3.6", 
+                   "5.1",
+                   "2.0"]; //ie,firefox,safari,chorme
+				   
+    if (checkBrowserDeprecated(config) && getBadBrowser('browserWarning') != 'seen') {
+		
+		
+        jQuery(document).ready(function() {
+			jQuery("#check-browser1").show();
+			jQuery("#browser-support-overlay").show();
+			
+			jQuery('#custom-noThanks').click(function(){
+				jQuery("#check-browser1").hide();	
+				jQuery("#browser-support-overlay").hide();
+				create_cookie('browserWarning', 'seen', 15, 'https://store.hihonor.com/');
+			});
+        });
+		
+    }
+     //Based on document.referer check if register or login
+     var uri = location.href;
+     var referer = document.referrer;
+    if(uri.indexOf("ANONYMITY_LOGIN_NAME") >= 0 && referer){
+        if(referer.indexOf("userRegister") >=0){
+            ec.ga.eventTracking('Account','Register Success', "Header");
+        } else {
+            ec.ga.eventTracking('Account','Login Success', "Header");
+        }
+   }
+	function hideCustomModal(){
+		create_cookie('browserWarning', 'seen', 15, 'https://store.hihonor.com/');
+		jQuery('#custom-alert').fadeOut( "slow" );
+	}
+    function checkBrowserDeprecated(versionArray){
+    //jQuery.browser.device = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|symbian|palm|opera mini/i.test(navigator.userAgent.toLowerCase()));
+    //if(!jQuery.browser.device){
+         if(checkIsIEBrowser1()){
+			 var IEV = parseInt(getIEBrowserVersion());
+			 if(IEV <= 8){
+				 if(parseInt(getIEBrowserVersion()) < versionArray[0]){
+					return true;
+				}
+				else{
+					return false;
+				}
+			 }
+			 else{
+				 if(getBadBrowser('browserWarning') != 'seen'){
+					 jQuery('#custom-alert').css('display','block');
+				 }
+			 }
+            
+        }
+        else if(jQuery.browser.mozilla && parseFloat(jQuery.browser.version) < versionArray[1]){ 
+        return true;
+        }
+        else if((jQuery.browser.chrome = /chrome/.test(navigator.userAgent.toLowerCase()))){ 
+            var userAgent = navigator.userAgent.toLowerCase();
+            userAgent = userAgent.substring(userAgent.indexOf('chrome/index.html') +7);
+            userAgent = userAgent.substring(0,userAgent.indexOf('.'));
+            jQuery.browser.version = userAgent;
+            jQuery.browser.safari = false;
+            if(parseFloat(jQuery.browser.version) < versionArray[3]){
+            return true;
+            }
+        }
+        else if(jQuery.browser.safari){ 
+            var userAgent = navigator.userAgent.toLowerCase();
+            userAgent = userAgent.substring(userAgent.indexOf('version/index.html') +8);
+            userAgent = userAgent.substring(0,userAgent.indexOf('.'));
+            jQuery.browser.version = userAgent;
+            if(parseFloat(jQuery.browser.version) < versionArray[2]){
+            return true;
+            }
+        }
+        else {
+        return false;
+        }
+    //}
+}
+
+
+function checkIsIEBrowser1(){
+    var ua= navigator.userAgent, tem, 
+    M= ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+    if(/trident/i.test(M[1])){
+        tem=  /\brv[ :]+(\d+)/g.exec(ua) || [];
+        tem= 'MSIE '+(tem[1] || '');
+
+        if(tem.indexOf("MSIE") != -1)
+            return true;
+        else    
+            return false;
+    }
+    
+    M= M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?'];
+    if((tem= ua.match(/version\/(\d+)/i))!= null) M.splice(1, 1, tem[1]);
+    if(M.join(' ').indexOf("MSIE") != -1)
+        return true;
+    else
+        return false;
+
+}
+
+
+function getIEBrowserVersion(){
+    var ua= navigator.userAgent, tem, 
+    M= ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+    if(/trident/i.test(M[1])){
+        tem=  /\brv[ :]+(\d+)/g.exec(ua) || [];
+        return (tem[1] || '');
+    }
+    
+    M= M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?'];
+    if((tem= ua.match(/version\/(\d+)/i))!= null) M.splice(1, 1, tem[1]);
+    
+    if(M.join(' ').indexOf("MSIE") != -1)
+        return M[1];
+
+}
+
+function getBadBrowser(c_name)
+{
+    if (document.cookie.length>0)
+    {
+    c_start=document.cookie.indexOf(c_name + "=");
+    if (c_start!=-1)
+        { 
+        c_start=c_start + c_name.length+1; 
+        c_end=document.cookie.indexOf(";",c_start);
+        if (c_end==-1) c_end=document.cookie.length;
+        return unescape(document.cookie.substring(c_start,c_end));
+        } 
+    }
+    return "";
+}   
+
+function create_cookie(name, value, days2expire, path) {
+  var date = new Date();
+  var secure="";
+  if(checkSslCert==="true") {
+    secure="secure";
+  }
+  date.setTime(date.getTime() + (days2expire * 24 * 60 * 60 * 1000));
+  var expires = date.toUTCString();
+  document.cookie = name + '=' + value + '; ' +
+                   'expires=' + expires + '; ' +
+                   'path=' + path + '; ' +
+                   secure;
+}
+						 
+                        </script>
+						
+<div id="check-browser1" style="display: none;z-index:9999;">						
+<div>
+    <div class=top-backcrossbrowser>
+        <p class=out-date>Did you know your browser is out of date?</p>
+    </div>
+    <div class=content-maincheckbrowser>
+        <p>For an optimized experience, upgrade your browser or install the latest version of any other new generation browser.</p>
+        <p class=click-hereicon>Click on the icon to download</p>
+    </div>
+    <div class=browsers>
+        <ul>
+            <li>
+                <a href="https://www.microsoft.com/windows/Internet-explorer/" target=_blank><SpaN class="browser-icon ie" title="Internet Explorer"></SpaN><BR><SpaN>Internet Explorer 10+</SpaN></a> </li>
+            <li>
+                <a href="https://www.mozilla.org/en-US/firefox/new/" target=_blank><SpaN class="browser-icon ff" title="Firefox "></SpaN><BR><SpaN>Firefox 3.6+</SpaN></a> </li>
+            <li>
+                <a href="https://www.google.com/chrome/browser/desktop/" target=_blank><SpaN class="browser-icon chrome" title="Chrome  "></SpaN><BR><SpaN>Chrome 2.0+</SpaN></a> </li>
+            <li>
+                <a href="https://www.apple.com/safari/download/" target=_blank><SpaN class="browser-icon safari" title=Safari></SpaN><BR><SpaN>Safari 5.1+</SpaN></a> </li>
+        </ul>
+    </div>
+    <div class=maincheckbrowser>
+        <a id=custom-noThanks class=custom-noThanks onclick=hideCustomModal()>No Thanks</a>
+    </div>
+</div>
+</div>
+<div class="hungBar" id="tools-nav" style="bottom:100px;"><a href="#" class="hungBar-top" title="Torna su" id="hungBar-top" style="display:block;"><i><font><font>Back to top</font></font></i></a></div>
+<div id="browser-support-overlay" style="display: none;
+    background: grey;
+    right: 0px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+"></div>
+
+</body>
+
+<!-- Mirrored from store.hihonor.com/it/cmsContent?key=web_cms_brands by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Nov 2017 08:37:53 GMT -->
+</html>

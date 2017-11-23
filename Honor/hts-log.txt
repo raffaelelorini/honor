@@ -1,0 +1,219 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 23 Nov 2017 09:28:39 at https://store.hihonor.com/it/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://store.hihonor.com/it/ -O1 "C:\Mie pagine Web\Honor" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+09:30:39	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/stylus/css/mCSB_buttons.png
+09:30:57	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/images/echannel/+btn/btn4.png
+09:31:00	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/images/echannel/+icon/icon31.png
+09:31:01	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/images/echannel/+bg/bg54.png
+09:31:01	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/images/echannel/+bg/bg31.png
+09:31:02	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/images/echannel/+bg/bg22.jpg
+09:31:02	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/images/echannel/+icon/icon33.png
+09:31:02	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/images/echannel/+icon/icon34.png
+09:31:03	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/images/echannel/+icon/icon_code.jpg
+09:31:03	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/images/echannel/+icon/icon33.png
+09:31:04	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/images/echannel/+icon/icon40.png
+09:31:04	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/images/echannel/+icon/icon48.png
+09:31:04	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/images/echannel/+icon/icon48.png
+09:31:15	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/images/echannel/honor/bg/bg1.png?2150924
+09:31:16	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/images/echannel/honor/sprites/sprites1.png?2150924
+09:31:16	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/images/echannel/honor/bg/bg2.png?2150924
+09:31:35	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/images/sprites/sprites7.png
+09:31:36	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/images/prites/sprites7.png
+09:32:15	Error: 	"Bad Request" (400) at link https://www.googletagmanager.com/gtm.js?id= (from https://store.hihonor.com/it/)
+09:37:35	Warning: 	Unexpected socket error during pre-loop
+09:37:36	Warning: 	Unexpected socket error during pre-loop
+09:38:19	Warning: 	Moved Temporarily for https://store.hihonor.com/it/chrome/
+09:38:19	Warning: 	File has moved from https://store.hihonor.com/it/chrome/ to https://store.hihonor.com/it
+09:38:19	Warning: 	Moved Temporarily for https://store.hihonor.com/it/version/
+09:38:19	Warning: 	File has moved from https://store.hihonor.com/it/version/ to https://store.hihonor.com/it
+09:38:19	Error: 	"Not Found" (404) at link https://cdn-itcname.hihonor.com/it/images/icon3.png (from https://cdn-itcname.hihonor.com/it/stylus/css/styles.min.css?20112017)
+09:38:19	Error: 	"Not Found" (404) at link https://cdn-itcname.hihonor.com/it/images/echannel/+sprites/sprites2.png (from https://cdn-itcname.hihonor.com/it/stylus/css/styles.min.css?20112017)
+09:38:19	Error: 	"Not Found" (404) at link https://cdn-itcname.hihonor.com/it/images/echannel/+sprites/sprites11.png (from https://cdn-itcname.hihonor.com/it/stylus/css/styles.min.css?20112017)
+09:38:19	Error: 	"Not Found" (404) at link https://cdn-itcname.hihonor.com/it/images/echannel/+icon/icon32.png (from https://cdn-itcname.hihonor.com/it/stylus/css/styles.min.css?20112017)
+09:38:19	Error: 	"Not Found" (404) at link https://cdn-itcname.hihonor.com/it/images/echannel/+bg/bg1.png (from https://cdn-itcname.hihonor.com/it/stylus/css/styles.min.css?20112017)
+09:38:19	Error: 	"Not Found" (404) at link https://cdn-itcname.hihonor.com/it/images/echannel/+icon/icon3.png (from https://cdn-itcname.hihonor.com/it/stylus/css/styles.min.css?20112017)
+09:38:19	Error: 	"Not Found" (404) at link https://cdn-itcname.hihonor.com/it/images/echannel/+bg/bg6.png (from https://cdn-itcname.hihonor.com/it/stylus/css/styles.min.css?20112017)
+09:38:19	Error: 	"Not Found" (404) at link https://cdn-itcname.hihonor.com/it/images/echannel/+icon/icon1.png (from https://cdn-itcname.hihonor.com/it/stylus/css/styles.min.css?20112017)
+09:38:19	Error: 	"Not Found" (404) at link https://cdn-itcname.hihonor.com/it/images/echannel/+icon/icon11.png (from https://cdn-itcname.hihonor.com/it/stylus/css/styles.min.css?20112017)
+09:38:19	Error: 	"Not Found" (404) at link https://cdn-itcname.hihonor.com/it/images/echannel/+icon/icon8.png (from https://cdn-itcname.hihonor.com/it/stylus/css/styles.min.css?20112017)
+09:38:19	Error: 	"Not Found" (404) at link https://cdn-itcname.hihonor.com/it/images/echannel/honor/icon/icon1.png?2150924 (from https://cdn-itcname.hihonor.com/it/stylus/css/styles.min.css?20112017)
+09:38:19	Warning: 	Moved Temporarily for https://store.hihonor.com/it/v/
+09:38:19	Warning: 	File has moved from https://store.hihonor.com/it/v/ to https://store.hihonor.com/it
+09:38:20	Warning: 	Moved Temporarily for https://store.hihonor.com/it/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+09:38:20	Warning: 	File has moved from https://store.hihonor.com/it/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/ to https://store.hihonor.com/it
+09:38:20	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/stylus/css/mCSB_buttons.png
+09:38:21	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/images/echannel/+btn/btn4.png
+09:38:21	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/images/echannel/+icon/icon31.png
+09:38:21	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/images/echannel/+bg/bg54.png
+09:38:21	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/images/echannel/+bg/bg31.png
+09:38:21	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/images/echannel/+bg/bg22.jpg
+09:38:22	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/images/echannel/+icon/icon33.png
+09:38:22	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/images/echannel/+icon/icon_code.jpg
+09:38:22	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/images/echannel/+icon/icon33.png
+09:38:23	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/images/echannel/+icon/icon40.png
+09:38:23	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/images/echannel/+icon/icon48.png
+09:38:23	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/images/echannel/+icon/icon48.png
+09:38:23	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/images/echannel/honor/bg/bg1.png?2150924
+09:38:23	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/images/echannel/honor/sprites/sprites1.png?2150924
+09:38:24	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/images/sprites/sprites7.png
+09:38:24	Warning: 	link is probably looping, type unknown, aborting: https://cdn-itcname.hihonor.com/it/images/prites/sprites7.png
+09:39:00	Error: 	"Not Found" (404) at link https://cdn-itcname.hihonor.com/it/stylus/css/common/ec.pager/pager.min.css?21112017 (from https://store.hihonor.com/it/product/639090033.html)
+09:39:00	Warning: 	Retry after error -5 (Unable to get server's address: Host sconosciuto. ) at link blromstest.vmall.com:8080/it/images/echannel/bg/bg41.jpg (from https://store.hihonor.com/it/product/639090033.html)
+09:39:00	Warning: 	Moved Temporarily for https://store.hihonor.com/it/product/chrome/
+09:39:00	Warning: 	File has moved from https://store.hihonor.com/it/product/chrome/ to https://store.hihonor.com/it
+09:39:00	Warning: 	Moved Temporarily for https://store.hihonor.com/it/product/version/
+09:39:00	Warning: 	File has moved from https://store.hihonor.com/it/product/version/ to https://store.hihonor.com/it
+09:39:07	Warning: 	Retry after error -4 (No data (connection closed)) at link https://store.hihonor.com/it/member/order?t=1511425787733 (from https://store.hihonor.com/it/cmsContent?key=wap_cms_events)
+09:39:07	Warning: 	Retry after error -4 (Receive Error) at link https://store.hihonor.com/it/member/myInformation?t=1511425787734timestamp (from https://store.hihonor.com/it/cmsContent?key=wap_cms_events)
+09:40:03	Warning: 	Retry after error -4 (Connect Error) at link https://store.hihonor.com/it/member?t=1511425787734 (from https://store.hihonor.com/it/cmsContent?key=wap_cms_events)
+09:40:04	Warning: 	Retry after error -4 (Connect Error) at link https://store.hihonor.com/it/member/order?t=1511425787734 (from https://store.hihonor.com/it/cmsContent?key=wap_cms_events)
+09:40:04	Warning: 	Retry after error -4 (Connect Error) at link https://store.hihonor.com/it/account/logout (from https://store.hihonor.com/it/cmsContent?key=wap_cms_events)
+09:40:05	Warning: 	Retry after error -4 (Connect Error) at link https://store.hihonor.com/it/product/display/{ (from https://store.hihonor.com/it/cmsContent?key=wap_cms_events)
+09:40:59	Warning: 	Retry after error -4 (Connect Error) at link https://store.hihonor.com/it/member/petal (from https://store.hihonor.com/it/cmsContent?key=wap_cms_events)
+09:41:00	Warning: 	Retry after error -4 (Connect Error) at link https://store.hihonor.com/it/account/login (from https://store.hihonor.com/it/cmsContent?key=wap_cms_events)
+09:41:02	Warning: 	Retry after error -5 (Unable to get server's address: Host sconosciuto. ) at link cdn-it.hihonor.com/pms/template/content/2017/20170804184929638.png (from https://store.hihonor.com/it/cmsContent?key=wap_cms_events)
+09:41:02	Warning: 	Retry after error -4 (Receive Error) at link https://cdn-itcname.hihonor.com/pms/template/content/2017/20170904124345474.jpg (from https://store.hihonor.com/it/cmsContent?key=wap_cms_events)
+09:41:05	Warning: 	Retry after error -4 (Connect Error) at link https://cdn-itcname.hihonor.com/pms/template/content/2017/20170904124342533.jpg (from https://store.hihonor.com/it/cmsContent?key=wap_cms_events)
+09:41:06	Warning: 	Retry after error -4 (Connect Error) at link https://cdn-itcname.hihonor.com/pms/template/content/2017/20170904124343609.jpg (from https://store.hihonor.com/it/cmsContent?key=wap_cms_events)
+09:41:07	Warning: 	Retry after error -4 (Connect Error) at link https://cdn-itcname.hihonor.com/pms/template/content/2017/2017090412434237.jpg (from https://store.hihonor.com/it/cmsContent?key=wap_cms_events)
+09:41:07	Warning: 	Retry after error -4 (Connect Error) at link https://cdn-itcname.hihonor.com/pms/template/content/2017/20170904124340237.jpg (from https://store.hihonor.com/it/cmsContent?key=wap_cms_events)
+09:41:09	Warning: 	Retry after error -4 (Connect Error) at link https://cdn-itcname.hihonor.com/pms/template/content/2017/20170904124340896.jpg (from https://store.hihonor.com/it/cmsContent?key=wap_cms_events)
+09:41:09	Warning: 	Retry after error -4 (Connect Error) at link https://cdn-itcname.hihonor.com/pms/template/content/2017/20170911174153815.jpg (from https://store.hihonor.com/it/cmsContent?key=wap_cms_events)
+09:41:10	Warning: 	Retry after error -4 (Connect Error) at link https://store.hihonor.com/it/it/item/211451478/index (from https://store.hihonor.com/it/cmsContent?key=wap_cms_events)
+09:41:11	Warning: 	Retry after error -4 (Connect Error) at link https://store.hihonor.com/it/member/order?t=1511425792443 (from https://store.hihonor.com/it/list-157)
+09:41:55	Warning: 	Retry after error -4 (Connect Error) at link https://store.hihonor.com/it/member/myInformation?t=1511425792443timestamp (from https://store.hihonor.com/it/list-157)
+09:42:01	Warning: 	Retry after error -4 (Connect Error) at link https://store.hihonor.com/it/member?t=1511425792443 (from https://store.hihonor.com/it/list-157)
+09:42:09	Warning: 	Retry after error -4 (Connect Error) at link https://store.hihonor.com/it/list-156 (from https://store.hihonor.com/it/list-157)
+09:42:09	Warning: 	Retry after error -4 (Connect Error) at link https://cdn-itcname.hihonor.com/it/js/product/new_list.min.js?21112017 (from https://store.hihonor.com/it/list-157)
+09:42:11	Warning: 	Retry after error -4 (Connect Error) at link https://store.hihonor.com/it/product/display/211451478.html (from https://store.hihonor.com/it/list-157)
+09:42:12	Warning: 	Retry after error -4 (Connect Error) at link https://store.hihonor.com/it/product/display/672559893.html (from https://store.hihonor.com/it/list-157)
+09:42:53	Warning: 	Retry after error -4 (Connect Error) at link https://cdn-itcname.hihonor.com/pms/product/6901443201846/428_428_1509114140474mp.jpg (from https://store.hihonor.com/it/list-157)
+09:42:55	Warning: 	Retry after error -4 (Connect Error) at link https://store.hihonor.com/it/product/display/205715997.html (from https://store.hihonor.com/it/list-157)
+09:42:57	Warning: 	Retry after error -4 (Connect Error) at link https://store.hihonor.com/it/product/display/805154013.html (from https://store.hihonor.com/it/list-157)
+09:43:02	Warning: 	Retry after error -4 (Connect Error) at link https://store.hihonor.com/it/product/display/775214205.html (from https://store.hihonor.com/it/list-157)
+09:43:07	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://cdn-it.hihonor.com/shopdc/cdn/modules/common/pc/css/common.css?v=1.2.14 (from https://store.hihonor.com/it/trovailcodicev1.html)
+09:43:07	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://cdn-it.hihonor.com/shopdc/pic/b430637e-6640-4262-a862-84bd9a500193.jpg (from https://store.hihonor.com/it/trovailcodicev1.html)
+09:43:07	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://cdn-it.hihonor.com/shopdc/pic/71e5a1dc-8557-44e1-90e3-7597e7fe49ca.jpg (from https://store.hihonor.com/it/trovailcodicev1.html)
+09:43:07	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://cdn-it.hihonor.com/shopdc/cdn/modules/common/pc/js/jquery-1.11.1.min.js (from https://store.hihonor.com/it/trovailcodicev1.html)
+09:43:07	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://cdn-it.hihonor.com/shopdc/cdn/modules/common/pc/js/utils.js?v=1.2.14 (from https://store.hihonor.com/it/trovailcodicev1.html)
+09:43:07	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://cdn-it.hihonor.com/shopdc/cdn/modules/common/pc/js/config-pc.js?v=1.2.14 (from https://store.hihonor.com/it/trovailcodicev1.html)
+09:43:07	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://cdn-it.hihonor.com/shopdc/cdn/modules/common/pc/js/report.js?v=1.2.14 (from https://store.hihonor.com/it/trovailcodicev1.html)
+09:43:07	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://cdn-it.hihonor.com/shopdc/pic/da02e1e1-f5ef-472b-b1ac-3f6e1a001448.jpg (from https://store.hihonor.com/it/honorblackfriday.html)
+09:43:07	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://cdn-it.hihonor.com/shopdc/pic/2a9e553e-01cd-4a4e-a883-307aca17dc2a.jpg (from https://store.hihonor.com/it/honorblackfriday.html)
+09:43:07	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://cdn-it.hihonor.com/shopdc/pic/b439c9ce-a3cd-419c-a962-0cd902d6c33d.jpg (from https://store.hihonor.com/it/honorblackfriday.html)
+09:43:07	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://cdn-it.hihonor.com/shopdc/pic/6e8c3467-e7ac-46eb-a44a-7b295087786f.jpg (from https://store.hihonor.com/it/dfa.html)
+09:43:07	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://cdn-it.hihonor.com/shopdc/pic/56fa1e6b-f334-4658-b731-621b69fa891c.jpg (from https://store.hihonor.com/it/dfa.html)
+09:43:07	Warning: 	Moved Temporarily for https://store.hihonor.com/it/${domainMain}/
+09:43:07	Warning: 	File has moved from https://store.hihonor.com/it/${domainMain}/ to https://store.hihonor.com/it
+09:43:39	Error: 	"Not Found" (404) at link https://cdn-itcname.hihonor.com/it/images/echannel/+icon/icon34.png (from https://cdn-itcname.hihonor.com/it/stylus/css/styles.min.css?21112017)
+09:43:39	Error: 	"Not Found" (404) at link https://cdn-itcname.hihonor.com/it/images/echannel/honor/bg/bg2.png?2150924 (from https://cdn-itcname.hihonor.com/it/stylus/css/styles.min.css?21112017)
+09:43:43	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link blromstest.vmall.com:8080/it/images/echannel/bg/bg41.jpg (from https://store.hihonor.com/it/product/639090033.html)
+09:43:43	Warning: 	Moved Temporarily for https://store.hihonor.com/it/item/217766903/chrome/chrome/
+09:43:43	Warning: 	File has moved from https://store.hihonor.com/it/item/217766903/chrome/chrome/ to https://store.hihonor.com/it
+09:43:43	Warning: 	Moved Temporarily for https://store.hihonor.com/it/item/217766903/chrome/version/
+09:43:43	Warning: 	File has moved from https://store.hihonor.com/it/item/217766903/chrome/version/ to https://store.hihonor.com/it
+09:43:43	Warning: 	Moved Temporarily for https://store.hihonor.com/it/item/217766903/version/chrome/
+09:43:43	Warning: 	File has moved from https://store.hihonor.com/it/item/217766903/version/chrome/ to https://store.hihonor.com/it
+09:43:43	Warning: 	Moved Temporarily for https://store.hihonor.com/it/item/217766903/version/version/
+09:43:43	Warning: 	File has moved from https://store.hihonor.com/it/item/217766903/version/version/ to https://store.hihonor.com/it
+09:43:44	Warning: 	Found for https://store.hihonor.com/it/member/order?t=1511425787733
+09:43:44	Warning: 	File has moved from https://store.hihonor.com/it/member/order?t=1511425787733 to https://store.hihonor.com/it/account/login?url=https%3A%2F%2Fstore.hihonor.com%2Fit%2Fmember%2Forder%3Ft%3D1511425787733
+09:43:44	Warning: 	Found for https://store.hihonor.com/it/member/myInformation?t=1511425787734timestamp
+09:43:44	Warning: 	File has moved from https://store.hihonor.com/it/member/myInformation?t=1511425787734timestamp to https://store.hihonor.com/it/account/login?url=https%3A%2F%2Fstore.hihonor.com%2Fit%2Fmember%2FmyInformation%3Ft%3D1511425787734timestamp
+09:43:45	Warning: 	Found for https://store.hihonor.com/it/member?t=1511425787734
+09:43:45	Warning: 	File has moved from https://store.hihonor.com/it/member?t=1511425787734 to https://store.hihonor.com/it/account/login?url=https%3A%2F%2Fstore.hihonor.com%2Fit%2Fmember%3Ft%3D1511425787734
+09:43:45	Warning: 	Found for https://store.hihonor.com/it/member/order?t=1511425787734
+09:43:45	Warning: 	File has moved from https://store.hihonor.com/it/member/order?t=1511425787734 to https://store.hihonor.com/it/account/login?url=https%3A%2F%2Fstore.hihonor.com%2Fit%2Fmember%2Forder%3Ft%3D1511425787734
+09:43:46	Warning: 	Found for https://store.hihonor.com/it/account/logout
+09:43:46	Warning: 	File has moved from https://store.hihonor.com/it/account/logout to https://hwid7.vmall.com/CAS/logout?service=https://store.hihonor.com/it
+09:43:46	Warning: 	Moved Temporarily for https://store.hihonor.com/it/product/display/{
+09:43:46	Warning: 	File has moved from https://store.hihonor.com/it/product/display/{ to https://store.hihonor.com/it
+09:43:46	Warning: 	Found for https://store.hihonor.com/it/member/petal
+09:43:46	Warning: 	File has moved from https://store.hihonor.com/it/member/petal to https://store.hihonor.com/it/account/login?url=https%3A%2F%2Fstore.hihonor.com%2Fit%2Fmember%2Fpetal
+09:43:46	Warning: 	Found for https://store.hihonor.com/it/account/login
+09:43:46	Warning: 	File has moved from https://store.hihonor.com/it/account/login to https://hwid7.vmall.com/CAS/remoteLogin?service=https%3A%2F%2Fstore.hihonor.com%2Fit%2Faccount%2Facaslogin&loginChannel=26000701&reqClientType=26&countryCode=it&lang=it-IT&loginUrl=https%3A%2F%2Fhwid7.vmall.com%2FCAS%2Fportal%2Flogin.html
+09:43:46	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link cdn-it.hihonor.com/pms/template/content/2017/20170804184929638.png (from https://store.hihonor.com/it/cmsContent?key=wap_cms_events)
+09:43:46	Warning: 	Moved Temporarily for https://store.hihonor.com/it/it/item/211451478/index
+09:43:46	Warning: 	File has moved from https://store.hihonor.com/it/it/item/211451478/index to https://store.hihonor.com/it
+09:43:46	Warning: 	Found for https://store.hihonor.com/it/member/order?t=1511425792443
+09:43:46	Warning: 	File has moved from https://store.hihonor.com/it/member/order?t=1511425792443 to https://store.hihonor.com/it/account/login?url=https%3A%2F%2Fstore.hihonor.com%2Fit%2Fmember%2Forder%3Ft%3D1511425792443
+09:43:47	Warning: 	Found for https://store.hihonor.com/it/member/myInformation?t=1511425792443timestamp
+09:43:47	Warning: 	File has moved from https://store.hihonor.com/it/member/myInformation?t=1511425792443timestamp to https://store.hihonor.com/it/account/login?url=https%3A%2F%2Fstore.hihonor.com%2Fit%2Fmember%2FmyInformation%3Ft%3D1511425792443timestamp
+09:43:48	Warning: 	Found for https://store.hihonor.com/it/member?t=1511425792443
+09:43:48	Warning: 	File has moved from https://store.hihonor.com/it/member?t=1511425792443 to https://store.hihonor.com/it/account/login?url=https%3A%2F%2Fstore.hihonor.com%2Fit%2Fmember%3Ft%3D1511425792443
+09:43:50	Warning: 	Found for https://store.hihonor.com/it/product/display/211451478.html
+09:43:50	Warning: 	File has moved from https://store.hihonor.com/it/product/display/211451478.html to /it/product/211451478.html
+09:43:50	Warning: 	Found for https://store.hihonor.com/it/product/display/672559893.html
+09:43:50	Warning: 	File has moved from https://store.hihonor.com/it/product/display/672559893.html to /it/product/672559893.html
+09:43:50	Warning: 	Found for https://store.hihonor.com/it/product/display/205715997.html
+09:43:50	Warning: 	File has moved from https://store.hihonor.com/it/product/display/205715997.html to /it/product/205715997.html
+09:43:50	Warning: 	Found for https://store.hihonor.com/it/product/display/805154013.html
+09:43:50	Warning: 	File has moved from https://store.hihonor.com/it/product/display/805154013.html to /it/product/805154013.html
+09:43:51	Warning: 	Found for https://store.hihonor.com/it/product/display/775214205.html
+09:43:51	Warning: 	File has moved from https://store.hihonor.com/it/product/display/775214205.html to /it/product/775214205.html
+09:43:51	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://cdn-it.hihonor.com/shopdc/cdn/modules/common/pc/css/common.css?v=1.2.14 (from https://store.hihonor.com/it/trovailcodicev1.html)
+09:43:51	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://cdn-it.hihonor.com/shopdc/pic/b430637e-6640-4262-a862-84bd9a500193.jpg (from https://store.hihonor.com/it/trovailcodicev1.html)
+09:43:51	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://cdn-it.hihonor.com/shopdc/pic/71e5a1dc-8557-44e1-90e3-7597e7fe49ca.jpg (from https://store.hihonor.com/it/trovailcodicev1.html)
+09:43:51	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://cdn-it.hihonor.com/shopdc/cdn/modules/common/pc/js/jquery-1.11.1.min.js (from https://store.hihonor.com/it/trovailcodicev1.html)
+09:43:51	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://cdn-it.hihonor.com/shopdc/cdn/modules/common/pc/js/utils.js?v=1.2.14 (from https://store.hihonor.com/it/trovailcodicev1.html)
+09:43:51	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://cdn-it.hihonor.com/shopdc/cdn/modules/common/pc/js/config-pc.js?v=1.2.14 (from https://store.hihonor.com/it/trovailcodicev1.html)
+09:43:51	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://cdn-it.hihonor.com/shopdc/cdn/modules/common/pc/js/report.js?v=1.2.14 (from https://store.hihonor.com/it/trovailcodicev1.html)
+09:43:51	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://cdn-it.hihonor.com/shopdc/pic/da02e1e1-f5ef-472b-b1ac-3f6e1a001448.jpg (from https://store.hihonor.com/it/honorblackfriday.html)
+09:43:51	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://cdn-it.hihonor.com/shopdc/pic/2a9e553e-01cd-4a4e-a883-307aca17dc2a.jpg (from https://store.hihonor.com/it/honorblackfriday.html)
+09:43:51	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://cdn-it.hihonor.com/shopdc/pic/b439c9ce-a3cd-419c-a962-0cd902d6c33d.jpg (from https://store.hihonor.com/it/honorblackfriday.html)
+09:43:51	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://cdn-it.hihonor.com/shopdc/pic/6e8c3467-e7ac-46eb-a44a-7b295087786f.jpg (from https://store.hihonor.com/it/dfa.html)
+09:43:51	Warning: 	Retry after error -5 (Unable to get server's address: unknown error) at link https://cdn-it.hihonor.com/shopdc/pic/56fa1e6b-f334-4658-b731-621b69fa891c.jpg (from https://store.hihonor.com/it/dfa.html)
+09:43:51	Warning: 	Moved Temporarily for https://store.hihonor.com/it/item/639090033/chrome/chrome/
+09:43:51	Warning: 	File has moved from https://store.hihonor.com/it/item/639090033/chrome/chrome/ to https://store.hihonor.com/it
+09:43:51	Warning: 	Moved Temporarily for https://store.hihonor.com/it/item/639090033/chrome/version/
+09:43:51	Warning: 	File has moved from https://store.hihonor.com/it/item/639090033/chrome/version/ to https://store.hihonor.com/it
+09:43:51	Warning: 	Moved Temporarily for https://store.hihonor.com/it/item/639090033/version/chrome/
+09:43:51	Warning: 	File has moved from https://store.hihonor.com/it/item/639090033/version/chrome/ to https://store.hihonor.com/it
+09:43:51	Warning: 	Moved Temporarily for https://store.hihonor.com/it/item/639090033/version/version/
+09:43:51	Warning: 	File has moved from https://store.hihonor.com/it/item/639090033/version/version/ to https://store.hihonor.com/it
+09:43:51	Warning: 	Moved Temporarily for https://store.hihonor.com/it/item/775214205/chrome/chrome/
+09:43:51	Warning: 	File has moved from https://store.hihonor.com/it/item/775214205/chrome/chrome/ to https://store.hihonor.com/it
+09:43:51	Warning: 	Moved Temporarily for https://store.hihonor.com/it/item/775214205/chrome/version/
+09:43:51	Warning: 	File has moved from https://store.hihonor.com/it/item/775214205/chrome/version/ to https://store.hihonor.com/it
+09:43:51	Warning: 	Moved Temporarily for https://store.hihonor.com/it/item/775214205/version/chrome/
+09:43:51	Warning: 	File has moved from https://store.hihonor.com/it/item/775214205/version/chrome/ to https://store.hihonor.com/it
+09:43:51	Warning: 	Moved Temporarily for https://store.hihonor.com/it/item/775214205/version/version/
+09:43:51	Warning: 	File has moved from https://store.hihonor.com/it/item/775214205/version/version/ to https://store.hihonor.com/it
+09:43:51	Warning: 	Moved Temporarily for https://store.hihonor.com/it/item/805154013/chrome/chrome/
+09:43:51	Warning: 	File has moved from https://store.hihonor.com/it/item/805154013/chrome/chrome/ to https://store.hihonor.com/it
+09:43:51	Warning: 	Moved Temporarily for https://store.hihonor.com/it/item/805154013/chrome/version/
+09:43:51	Warning: 	File has moved from https://store.hihonor.com/it/item/805154013/chrome/version/ to https://store.hihonor.com/it
+09:43:51	Warning: 	Moved Temporarily for https://store.hihonor.com/it/item/805154013/version/chrome/
+09:43:51	Warning: 	File has moved from https://store.hihonor.com/it/item/805154013/version/chrome/ to https://store.hihonor.com/it
+09:43:51	Warning: 	Moved Temporarily for https://store.hihonor.com/it/item/805154013/version/version/
+09:43:51	Warning: 	File has moved from https://store.hihonor.com/it/item/805154013/version/version/ to https://store.hihonor.com/it
+09:43:51	Warning: 	Moved Temporarily for https://store.hihonor.com/it/item/205715997/chrome/chrome/
+09:43:51	Warning: 	File has moved from https://store.hihonor.com/it/item/205715997/chrome/chrome/ to https://store.hihonor.com/it
+09:43:51	Warning: 	Moved Temporarily for https://store.hihonor.com/it/item/205715997/chrome/version/
+09:43:51	Warning: 	File has moved from https://store.hihonor.com/it/item/205715997/chrome/version/ to https://store.hihonor.com/it
+09:43:51	Warning: 	Moved Temporarily for https://store.hihonor.com/it/item/205715997/version/chrome/
+09:43:51	Warning: 	File has moved from https://store.hihonor.com/it/item/205715997/version/chrome/ to https://store.hihonor.com/it
+09:43:51	Warning: 	Moved Temporarily for https://store.hihonor.com/it/item/205715997/version/version/
+09:43:51	Warning: 	File has moved from https://store.hihonor.com/it/item/205715997/version/version/ to https://store.hihonor.com/it
+09:43:51	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link blromstest.vmall.com:8080/it/images/echannel/bg/bg41.jpg (from https://store.hihonor.com/it/product/639090033.html)
+09:43:51	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link cdn-it.hihonor.com/pms/template/content/2017/20170804184929638.png (from https://store.hihonor.com/it/cmsContent?key=wap_cms_events)
+09:43:51	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://cdn-it.hihonor.com/shopdc/cdn/modules/common/pc/css/common.css?v=1.2.14 (from https://store.hihonor.com/it/trovailcodicev1.html)
+09:43:51	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://cdn-it.hihonor.com/shopdc/pic/b430637e-6640-4262-a862-84bd9a500193.jpg (from https://store.hihonor.com/it/trovailcodicev1.html)
+09:43:51	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://cdn-it.hihonor.com/shopdc/pic/71e5a1dc-8557-44e1-90e3-7597e7fe49ca.jpg (from https://store.hihonor.com/it/trovailcodicev1.html)
+09:43:51	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://cdn-it.hihonor.com/shopdc/cdn/modules/common/pc/js/jquery-1.11.1.min.js (from https://store.hihonor.com/it/trovailcodicev1.html)
+09:43:51	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://cdn-it.hihonor.com/shopdc/cdn/modules/common/pc/js/utils.js?v=1.2.14 (from https://store.hihonor.com/it/trovailcodicev1.html)
+09:43:51	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://cdn-it.hihonor.com/shopdc/cdn/modules/common/pc/js/config-pc.js?v=1.2.14 (from https://store.hihonor.com/it/trovailcodicev1.html)
+09:43:51	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://cdn-it.hihonor.com/shopdc/cdn/modules/common/pc/js/report.js?v=1.2.14 (from https://store.hihonor.com/it/trovailcodicev1.html)
+09:43:51	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://cdn-it.hihonor.com/shopdc/pic/da02e1e1-f5ef-472b-b1ac-3f6e1a001448.jpg (from https://store.hihonor.com/it/honorblackfriday.html)
+09:43:51	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://cdn-it.hihonor.com/shopdc/pic/2a9e553e-01cd-4a4e-a883-307aca17dc2a.jpg (from https://store.hihonor.com/it/honorblackfriday.html)
+09:43:51	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://cdn-it.hihonor.com/shopdc/pic/b439c9ce-a3cd-419c-a962-0cd902d6c33d.jpg (from https://store.hihonor.com/it/honorblackfriday.html)
+09:43:51	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://cdn-it.hihonor.com/shopdc/pic/6e8c3467-e7ac-46eb-a44a-7b295087786f.jpg (from https://store.hihonor.com/it/dfa.html)
+09:43:51	Error: 	"Unable to get server's address: unknown error" (-5) after 2 retries at link https://cdn-it.hihonor.com/shopdc/pic/56fa1e6b-f334-4658-b731-621b69fa891c.jpg (from https://store.hihonor.com/it/dfa.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 15 minutes 12 seconds : 584 links scanned, 455 files written (15472719 bytes overall) [7899749 bytes received at 8662 bytes/sec], 11696998 bytes transferred using HTTP compression in 158 files, ratio 26%, 13.0 requests per connection
+(29 errors, 179 warnings, 0 messages)
